@@ -1,0 +1,38 @@
+$color-teal:            #418b94;
+$color-black:           #1d1d1e;
+$color-navhighlight:    #2a2a2c;
+$color-blackmed:        #312f32;
+$color-greyMed:         #444444;
+$color-greyDark:        #5B5B5E;
+$color-blacklight:      #6d6e72;
+$color-grey:            #c4c4c4;
+$color-plum:            #66465a;
+$color-watermelon:      #ed6564;
+$color-jadeite:         #b4ddc9;
+$color-tealmed:         #3B8B94;
+$color-darkteal:        #195d67;
+$textcolor:             $color-greyDark;
+$textcolorLite:         $color-greyMed;
+$color-heroBG:          rgba(91,91,94,0.9);
+$white:                 #ffffff;
+$black90:               rgba(0,0,0,0.9);
+$black75:               rgba(0,0,0,0.75);
+$black70:               rgba(0,0,0,0.70);
+$black50:               rgba(0,0,0,0.5);
+$black25:               rgba(0,0,0,0.25);
+$black15:               rgba(0,0,0,0.15);
+$black10:               rgba(0,0,0,0.1);
+$black5:                rgba(0,0,0,0.05);
+
+@mixin svgWhite() {
+  filter: invert(1) sepia(0) saturate(0) hue-rotate(0) brightness(1);
+}
+@mixin svgJadeite() {
+  filter: invert(92%) sepia(83%) saturate(173%) hue-rotate(71deg) brightness(91%) contrast(89%);
+}
+@mixin svgWatermelon() {
+  filter: invert(63%) sepia(39%) saturate(3960%) hue-rotate(321deg) brightness(98%) contrast(88%);
+}
+@mixin svgTeal() {
+  filter: invert(50%) sepia(65%) saturate(322%) hue-rotate(138deg) brightness(85%) contrast(90%);
+}

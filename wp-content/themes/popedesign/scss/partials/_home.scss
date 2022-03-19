@@ -1,0 +1,133 @@
+.home {
+  .hero.home-hero {
+    padding-top: 0;
+    .item {
+      @include breakpoint(desktop){
+        max-height: 910px;
+      }
+    }
+    .content-block {
+      .inner {
+        width: 430px;
+        padding: 10px 60px 50px 45px;
+        @include breakpoint(mobile){
+          width: 100%;
+          padding: 0;
+          padding-top: 10px;
+        }
+        p {
+          font-size: 32px;
+          font-weight: 300;
+          line-height: 1.33em;
+        }
+      }
+    }
+  }
+  .sub-hero {
+    padding-bottom: 90px;
+    padding-top: 40px;
+    @include breakpoint(mobile){
+      padding-bottom: 30px;
+    }
+  }
+  .cta-blurb {
+    padding-top: 0;
+    margin-top: -60px;
+    padding-bottom: 120px;
+    @include breakpoint(mobile){
+      margin-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+  section.news {
+    background: #FAFAFA;
+    @include breakpoint(mobile){
+      padding-top: 30px;
+    }
+    .intro {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 45px;
+      @include breakpoint(mobile){
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      h2 {
+        font-size: 32px;
+        color: $color-teal;
+        margin-bottom: 0;
+      }
+      a {
+        font-size: 18px;
+        font-weight: 600;
+        color: $color-teal;
+        text-decoration: none;
+        padding-bottom: 3px;
+        @include breakpoint(mobile){
+          display: none;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .news-items {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      @include breakpoint(mobile){
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .news-item {
+        width: 30%;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        @include breakpoint(mobile){
+          width: 100%;
+          margin-bottom: 60px;
+        }
+        img {
+          margin-bottom: 20px;
+          @include breakpoint(mobile){
+            margin-bottom: 0;
+          }
+        }
+        h3 {
+          font-size: 20px;
+          margin-bottom: 15px;
+          font-weight: 600;
+          color: $color-darkteal;
+          @include breakpoint(mobile){
+            margin-bottom: 5px;
+          }
+        }
+        h4 {
+          font-weight: 300;
+          font-size: 14px;
+          text-transform: uppercase;
+          margin-top: 0;
+          margin-bottom: 40px;
+          @include breakpoint(mobile){
+            margin-bottom: 15px;
+          }
+        }
+        a {
+          display: block;
+          color: $color-watermelon;
+          font-weight: 600;
+          font-size: 16px;
+          text-decoration: none;
+          margin-top: auto;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

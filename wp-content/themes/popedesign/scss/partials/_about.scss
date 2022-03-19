@@ -1,0 +1,15 @@
+.page-template-template-about {
+  .content-chunk {
+    padding-top: 20px;
+  }
+  .full-photo {
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    @include breakpoint(mobile){
+      margin-bottom: 0;
+    }
+  }
+  .cta-blurb {
+    margin-bottom: 60px;
+  }
+}

@@ -60,7 +60,17 @@ get_header();
   <img src="https://loremflickr.com/1280/440/paris" alt="">
 </section>
 
-<section class="content-chunk">
+
+<section class="small-cta">
+  <div class="container">
+    <div class="inner">
+      <h3>Through our work we strive to enhance lives and forge long-term, trusted partnerships with each client.</h3>
+      <a href="#"><span>HOW CAN WE WORK WITH YOU?</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="content-chunk">
   <div class="container">
     <div class="inner">
       <h2>Our Culture</h2>
@@ -72,11 +82,12 @@ get_header();
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="people">
   <div class="container">
-    <h2>Our Team</h2>
+    <h2>Leadership Team</h2>
+    <p>Pope Design Group is led by a diverse group of individuals representing our various practice areas. Each of them is dedicated to making sure team members are empowered, motivated, capable, and equipped to work effectively. We encourage everyone in the firm to have project ownership, take initiative, contribute creatively, and make a difference in the community.</p>
     <ul class="inner">
 
       <li>
@@ -180,7 +191,41 @@ get_header();
   </div>
 </section>
 
-<section class="content-chunk">
+<section class="photo-block photo-left color-primary">
+  <div class="container">
+    <div class="inner">
+      <div class="photo">
+        <img src="https://loremflickr.com/650/470/paris" alt="">
+      </div>
+      <div class="content">
+        <h2>Our History</h2>
+        <p>
+          Pope Design Group started in 1974 and has grown through the years staying true to the founding principles of customer service, quality design and collaborative partnership.
+        </p>
+        <a href="#"><span>LEARN MORE ABOUT OUR LEGACY</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="photo-block photo-right color-secondary">
+  <div class="container">
+    <div class="inner">
+      <div class="photo">
+        <img src="https://loremflickr.com/650/470/london" alt="">
+      </div>
+      <div class="content">
+        <h2>Join Our Team</h2>
+        <p>
+          We seek team members who exemplify our core values and share our mission to use design to enhance lives. Our culture supports a rewarding and enriching workplace to collaborate on exciting projects, while having some fun.
+        </p>
+        <a href="#"><span>COME WORK WITH US!</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="content-chunk">
   <div class="container">
     <div class="inner">
       <h2>Careers</h2>
@@ -192,9 +237,9 @@ get_header();
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
-<section class="hero">
+<!-- <section class="hero">
   <div class="carousel">
 
     <div class="owl-carousel owl-theme about-carousel">
@@ -210,7 +255,7 @@ get_header();
       <a href="#">VIEW OUR PROJECTS</a>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="cta-blurb">

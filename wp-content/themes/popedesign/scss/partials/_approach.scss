@@ -1,14 +1,6 @@
 .page-template-template-approach {
   .subpage-head {
-    .subhead {
-      background: linear-gradient(270deg, #ffffff 30%, $color-plum 30%);
-      @include breakpoint(mobile){
-        background: $color-plum;
-      }
-      h2 {
-        font-weight: 500;
-      }
-    }
+    background: linear-gradient(270deg, $white 50%, $color-plum 50%);
   }
   .sub-hero {
     .inner {
@@ -20,9 +12,6 @@
         }
       }
     }
-  }
-  .content-chunk {
-    // padding-top: 20px;
   }
   .full-photo {
     margin-bottom: 60px;

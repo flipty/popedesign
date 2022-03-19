@@ -44,7 +44,7 @@ function html5_search_form( $form ) {
      $form = '<form role="search" method="get" class="searchform" id="search-form" action="' . home_url( '/' ) . '" >
      <label class="screen-reader-text" for="s">' . __('',  'domain') . '</label>
      <input type="search" class="searchInput" value="' . get_search_query() . '" name="s" id="s" placeholder="Search" />
-     <input type="submit" id="searchsubmit" value="'. esc_attr__('>', 'popedesign') .'" />
+     <input type="submit" aria-label="search" id="searchsubmit" value="'. esc_attr__('>', 'popedesign') .'" />
      </form>';
      return $form;
 }

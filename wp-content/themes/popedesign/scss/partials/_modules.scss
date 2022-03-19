@@ -83,7 +83,7 @@ section.hero {
   }
 }
 
-section.sub-hero { //optional classes: rings-left, rings-right, rings-reversed
+section.sub-hero { //optional classes: rings-left, rings-right, rings-reversed rings-altcolor
   position: relative;
   overflow: hidden;
   @include breakpoint(mobile){
@@ -232,6 +232,26 @@ section.sub-hero { //optional classes: rings-left, rings-right, rings-reversed
     .rings {
       .ring1 {
         border-color: $color-tealmed;
+      }
+      .ring2 {
+        border-color: $color-blacklight;
+      }
+    }
+  }
+  &.rings-altcolor {
+    .rings {
+      .ring1 {
+        border-color: $color-blacklight;
+      }
+      .ring2 {
+        border-color: $color-plum;
+      }
+    }
+  }
+  &.rings-reversed.rings-altcolor {
+    .rings {
+      .ring1 {
+        border-color: $color-plum;
       }
       .ring2 {
         border-color: $color-blacklight;
@@ -623,8 +643,13 @@ section.people {
   h2 {
     color: $color-teal;
     font-size: 38px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     text-align: center;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 40px;
   }
   ul.inner {
     display: flex;
@@ -725,6 +750,76 @@ section.services {
         }
       }
 
+    }
+  }
+}
+
+.small-cta {
+  .inner {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    @include breakpoint(mobile){
+      display: block;
+    }
+    h3 {
+      font-size: 24px;
+      color: $color-teal;
+      width: 50%;
+      @include breakpoint(mobile){
+        display: block;
+        width: 100%;
+      }
+    }
+    a {
+      display: inline-block;
+      text-align: right;
+      font-size: 28px;
+      color: $color-watermelon;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 20px;
+      border-bottom: solid 2px $color-grey;
+      padding-bottom: 20px;
+      @include breakpoint(mobile){
+        font-size: 24px;
+        font-weight: 500;
+        margin-left: 0;
+        text-align: left;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        span {
+          width: 75%;
+          line-height: 1.4em;
+        }
+      }
+      &:after {
+        display: inline-block;
+        content: '';
+        width: 35px;
+        height: 35px;
+        position: relative;
+        top: 7px;
+        left: 5px;
+        margin-left: 10px;
+        background: url('../images/arrow-circle.svg');
+        background-size: 35px;
+        transform: rotate(180deg);
+        @include svgWatermelon();
+        @include breakpoint(mobile){
+          margin-left: -25px;
+          margin-top: -10px;
+        }
+      }
+      &:hover {
+        color: $color-teal;
+        border-color: $color-teal;
+        &:after {
+          @include svgTeal();
+        }
+      }
     }
   }
 }

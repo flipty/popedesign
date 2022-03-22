@@ -36,3 +36,8 @@ $black5:                rgba(0,0,0,0.05);
 @mixin svgTeal() {
   filter: invert(50%) sepia(65%) saturate(322%) hue-rotate(138deg) brightness(85%) contrast(90%);
 }
+
+@mixin bg-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}

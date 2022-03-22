@@ -64,7 +64,7 @@ get_header();
 <section class="small-cta">
   <div class="container">
     <div class="inner">
-      <h3>Through our work we strive to enhance lives and forge long-term, trusted partnerships with each client.</h3>
+      <h3>Through our work we strive to enhance lives<br>and forge long-term, trusted partnerships with each client.</h3>
       <a href="#"><span>HOW CAN WE WORK WITH YOU?</span></a>
     </div>
   </div>

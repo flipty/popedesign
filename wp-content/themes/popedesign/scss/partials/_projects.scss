@@ -1,0 +1,37 @@
+.page-template-template-projects {
+  .subpage-head {
+    .inner {
+      .content {
+        .h2 {
+          @include breakpoint(desktop){
+            padding-top: 120px;
+          }
+        }
+      }
+    }
+  }
+  .small-cta {
+    padding-bottom: 30px;
+    @include breakpoint(mobile){
+      padding-top: 0;
+      padding-bottom: 30px;
+    }
+  }
+  .isotope-grid {
+    padding-top: 30px;
+  }
+  .photo-block.color-primary {
+    margin-top: 60px;
+    @include breakpoint(mobile){
+      margin-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+  .photo-block.color-secondary {
+    margin-bottom: 0px;
+  }
+  .cta-blurb {
+    padding-bottom: 90px;
+  }
+}

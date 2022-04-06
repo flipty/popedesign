@@ -1,0 +1,738 @@
+/*
+Theme Name:         Pope Architects
+Description:        A custom theme for Pope Architects.
+Version:            1.1.0
+Author:             Dave Tesch and Ashby Utting
+Author URI:         http://hamsterdance.com/
+*/
+
+@media only screen and (min-width: 769px){
+    body.admin-bar .navbar-default {
+    	margin-top: 31px;
+    }
+    #home-intro {
+        margin-bottom: 30px;
+    }
+    
+    footer  {
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+ 	footer .brand {
+		margin-left: -15px;
+	}
+
+	footer .extras {
+		padding-right: 0;	
+	}
+	footer .row.subFooter .copyright {
+		margin-left: -15px;
+	}
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+		margin-left: -25px;
+	}
+    
+    .projectTypeList strong a, .projectTypeList strong {
+    	/*
+        height: 1em;
+        overflow: hidden;
+        */
+    }
+    
+    .projectTypeList .col-md-4 p strong a {
+    	color: #205868;
+    }
+    
+	.projectHeadline {
+		position: relative;
+		margin-top: -91px;
+		background: rgba(132,150,149,0.8);
+		height: 91px;
+	}
+
+	.projectHeadline h1 {
+		font-size: 3vh;
+		margin: 0;
+		line-height: 91px;
+		white-space: nowrap;	
+	}
+
+	#project-carousel .item .itemContent {
+		height: 120px;
+	}
+
+	#project-carousel .owl-next,
+	#project-carousel .owl-prev {
+		top: 17%;
+	}
+	#project-carousel .item .itemContent img {
+		width: 140%;
+		margin-left: -10%;
+        margin-top: -20%;
+	}
+    
+    #projectDetail.container {
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    
+	#projectDetail .breadcrumb {
+		padding-right: 100px;
+	}
+	#projectDetail .statBlock { 
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+	#projectDetail .stats .stat {
+		text-align: left;
+		font-size: 13px;
+	}
+	
+	#projectDetail .stats .value {
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+	#projectDetail .testimonial p.tags {
+		border-top: solid 1px #808285;
+	}
+	#projectDetail .detailText .post-content {
+		margin-top: 30px;
+	}
+	#projectDetail .detailText p {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+
+	#projectDetail .project-quote {
+		border-bottom: none;
+		margin-top: 40px;
+	}
+
+	#projectDetail .project-quote p {
+		font-family: "Montserrat";
+		font-size: 14px;
+		font-weight: 200;
+		color: #808285;
+	}
+
+	#projectDetail .project-quote h3 {
+		text-align: right;
+		font-family: "Montserrat";
+		font-size: 14px;
+		font-weight: 500;
+		color: #808285;		
+	}
+
+	.introArea h1 {
+		margin-left: -15px;
+	}
+	
+    #search .introArea h1 {
+    	margin-left: 0;
+    }
+    	
+    #newsDetail.container {
+    	padding-left: 5px;
+    }
+    
+	#newsDetail .introArea h1 {
+		margin-left: 0;
+        width: 66%;
+	}
+	#newsDetail img
+	{
+		max-width: 100%;
+		height: auto;
+	}
+	#newsDetail h3 {
+		font-size: 18px;
+		color: #000;
+        line-height: 1.5em;
+	}
+    
+    #projectList.content-area .isotope h2 {
+    	text-transform: uppercase;
+    }
+	
+	.content-area#newsDetail .col-xs-8.featuredStory {
+		width: 66.666666%;
+	}
+	#careers .introArea h1 {
+		margin-left: 0;
+	}
+	#culture.content-area blockquote em.endquote {
+		bottom: -20%;
+	}
+	#culture.content-area blockquote em.startquote {
+		top: 14%;
+		left: -11%;
+	}
+
+    #services ul {
+    	padding-left: 40px;
+    }
+    
+	#services ul li {
+		margin-left: -25px;
+	}
+
+	.content-area blockquote p, 
+    blockquote p,
+	#bioDetail p.quote 
+    {
+		font-size: 16px;
+	}
+	.tax-project-type .content-area .isotope h2 {
+		font-size: 15px;	
+	}
+    
+    /* increase font size request */
+    .content-area p {
+    	font-size: 95%;
+        margin-bottom: 20px;
+    }
+    .content-area .post-content ul {
+    	padding-left: 17px;
+        margin-bottom: 20px;
+    }
+    
+    .isotope img {
+    	width: 101%;
+    }
+    
+    #news-ctabanners .isotope img {
+    	width: auto;
+    }
+    #news-ctabanners .isotope.personIso img, 
+    #news-ctabanners .isotope.projectIso img 
+    {
+    	width: 101%;
+    }
+    #company .post-content p {
+    	margin-left: -15px;
+    }
+
+}
+
+.breadcrumb a:hover{
+	text-decoration: underline;
+}
+
+.breadcrumb a:before {
+	text-decoration: none !important;
+}
+
+.pageNav ul{
+	border-top: none;    
+}
+
+.pageNav h5, 
+.pageNav .categories h5,
+.pageNav .archive h5
+{
+	font-size: 17px;
+    width: auto;
+}
+
+footer .socials a.linkedin {
+	border-radius: 2px;
+    top: 1px;
+}
+
+a.linkedin .icon-linkedin {
+	font-size: 13px;
+    position: relative;
+    top: -2px;
+}
+
+.isotope.no-link{
+	cursor:default;
+}
+
+.jobListing {
+	border-bottom: solid 1px #CCC;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+h2.jobListing {
+	padding-bottom: 20px;
+}
+
+.jobListing h4 {
+	padding-bottom: 10px;
+}
+
+.breadcrumb {
+	padding-right: 0;
+}
+
+#services .wp-caption .wp-caption-text {
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+.projectTypeList strong a,
+.projectTypeList strong {
+	color:#444444;
+	font-size: 15px;
+	line-height: 1em;
+	display: block;
+}
+
+.projectTypeList br {
+	display: none;
+}
+
+.projectTypeList h2 {
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+#bioDetail .quote em.endquote {
+	bottom: 0;
+	right: auto;
+}
+#bioDetail .quote em, 
+#home-quote p em,
+#culture.content-area blockquote em,
+.content-area blockquote em
+{
+	font-family: "Montserrat";
+	color:#67686b;
+}
+
+#home-quote p em.startquote{
+	left: -1px;
+}
+#home-carousel .item .itemContent img {
+	height: auto !important;
+}
+
+.content-area#services h3 {
+	color:#000;
+	font-size: 24px;
+    /* requested */
+    color: #205868;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#wpcf7-f517-p9511-o1 select.wpcf7-select {
+	background: #e7e7e7;
+	border: none;
+	width: 100%;
+	padding: 0.85em;
+	font-size: 13px;
+	height: 3.5em;
+	border-radius: 0;
+	margin-bottom: 0.5em;
+}
+@media only screen and (max-width: 769px){
+	.row.projectTypeList {
+		clear: both;
+		padding: 20px;
+		margin: -20px 0;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	#culture .introArea .post-content > .row,
+    #company .introArea .post-content > .row,
+    #privacy-legal .introArea .post-content .row,
+    #job-captain-8211-healthcare .post-content .row,
+    #architectural-specifications-writer .post-content .row
+    {
+    	margin: 0;
+    }
+    
+    #projectList .isotope h2 {
+    	text-transform: uppercase;
+    }
+    
+    .container#newsList {
+    	padding-right: 0;
+    }
+    
+    #culture img, 
+    #company img
+    {
+        width: 100%;
+    }
+    
+    iframe {
+    	max-width: 100%;
+    }
+    
+    #projectList .introArea {
+		margin-bottom: 0;
+	}
+
+	#project-detail .owl-controls {
+		display: none !important;
+	}
+	
+	#bioList .post-content p {
+		padding: 20px;
+	}
+    
+    #projectDetail .breadcrumb {
+    	margin-top: 15px;
+    }
+
+	#projectDetail .breadcrumb a {
+		font-size: 9px;	
+	}
+	#projectDetail .project-quote p, 
+	#projectDetail .project-quote h3
+	 {
+		font-family: "Lato";
+		font-size: 14px;
+		font-weight: 200;
+		color: #808285;
+	}
+	#projectDetail .project-quote h3 {
+		font-weight: 500;
+	}	
+    #projectDetail .detailText {
+    	padding-top: 25px;
+    }
+	.breadcrumb {
+		margin-top: 60px;
+		margin-bottom: 0;
+		text-align: left;
+		display: block;
+		padding-left: 0;
+	}
+    
+    #newsList.container
+    {
+        margin-right: 15px;
+    }
+    
+    .page-template-template-news .prevPage, 
+    .page-template-template-news .nextPage 
+    {
+    	display: none;
+    }
+    
+    #newsList .breadcrumb {
+    	display: none;
+    }
+    
+    #newsList .introArea > h1 {
+    	margin-top: 70px;
+    }
+
+	#bioDetail .quote em.startquote {
+		top: 4.5%;
+		left: -12%;
+	}
+
+	#bioDetail .quote em.endquote {
+		right: 4%;
+        bottom: 13%;
+	}
+
+	#bioDetail h1 em {
+		font-size: 33%;
+	}
+    /*
+	footer .socials a.footer-search {
+		display: none;
+	}
+	*/
+       
+    footer .socials a.footer-search,
+    footer .socials .glyphicon-search {
+    	display: inline-block;
+    }
+    
+    footer .socials .glyphicon-search {
+    	font-size: 19px;
+        position: relative;
+        top: 6px;
+    }
+ 
+    	
+    footer .socials a.linkedin, 
+    footer .socials a.facebook,
+    footer .socials a.twitter,
+    footer .socials a.instagram
+    {
+    	width: 30px;
+        height: 30px;
+        font-size: 15px;
+        top: 1px;
+    }
+    footer .socials a.instagram{
+        display: none; /*temp*/
+    	top: -3px;
+    }
+    
+    #services > .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #services ul {
+    	width: 90%;
+    }
+    
+    #services .introArea .post-content p, 
+	#services .introArea .post-content h3 
+	{
+		padding: 0 15px;
+	}
+    
+	#services .introArea .post-content li {
+		margin-left: 20px;
+	}
+	#newsDetail img {
+		width: 100%;
+		height: auto;
+	}
+	#newsDetail .col-xs-4 {
+		width: 100%;
+	}
+	#newsDetail h3 {
+		font-size: 18px;
+		color: #000;
+	}
+
+	#newsDetail .post-content .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+    
+    .single-news .pageNav div.prevPage, 
+    .single-news .pageNav div.nextPage 
+    {
+    	display: none;
+        margin: 0;
+    }
+    
+	.pageNav h5 {
+		width: 100% !important;
+		font-size: 15px !important;
+	}
+	.pageNav .archive {
+		float: left;
+		clear: both;
+		margin-top: 20px;
+	}
+	.breadcrumb a:nth-child(3) {
+		display: none;
+	}
+	#contact .post-content > .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.content-area input[type="submit"] {
+		margin-bottom: 30px;
+		float: none;
+	}
+	.extras .navbar-nav a {
+	    width: 50%;
+	    float: right;
+	}
+
+	#contact .breadcrumb {
+		display: none;
+	}
+
+	.home #home-quote p em.endquote {
+		bottom: -26%;
+	}
+    .projectHeadline h1 {
+    	font-size: 16px;
+    }
+    
+    #services .col-sm-4 {
+    	padding: 0;
+    }
+    
+    #services .col-sm-4 > div.wp-caption {
+        width: auto !important;
+    }
+    #culture.content-area blockquote em.startquote {
+    	left: -17%;
+    }
+    .pageNav .nextPage, .pageNav .prevPage {
+    	width: 50%;
+        float: left;
+    }
+    a.linkedin .icon-linkedin {
+		font-size: 20px;
+    	position: relative;
+    	top: 0;
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+	}
+	
+    #home-carousel .item .itemContent .itemContentFooter h1 {
+    	font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait){
+    .breadcrumb {
+    	margin-top: 125px;
+    }
+    .breadcrumb a:nth-child(3) {
+    	display: inline-block;
+    }
+    #newsDetail .breadcrumb a:nth-child(3) {
+    	display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) and (orientation: portrait){
+    .breadcrumb {
+    	margin-top: 70px;
+    }
+}
+
+/* big picture carousel sizing media queries */
+
+@media only screen and (min-width: 1280px){
+    #home-carousel {
+    	height: 610px;
+        overflow: hidden;
+    }
+    #home-carousel .item .itemContent .itemContentFooter {
+    	bottom: 68px;
+    }
+    #home-carousel.owl-theme .owl-controls {
+    	/*top: -106px;*/
+        bottom: 100px;
+    }
+}
+@media only screen and (min-width: 1310px) and (max-width: 1350px){
+    #home-carousel {
+    	height: 610px;
+        overflow: hidden;
+    }
+    #home-carousel .item .itemContent .itemContentFooter {
+    	bottom: 14%;
+    }
+    #home-carousel.owl-theme .owl-controls {
+    	/*top: -140px;*/
+        bottom 130px;
+    }
+}
+
+@media only screen and (min-width: 1351px) and (max-width: 1375px){
+    #home-carousel {
+    	height: 610px;
+        overflow: hidden;
+    }
+    #home-carousel .item .itemContent .itemContentFooter {
+    	bottom: 16%;
+    }
+    #home-carousel.owl-theme .owl-controls {
+    	/*top: -155px;*/
+        bottom: 150px;
+    }
+}
+
+@media only screen and (min-width: 1376px) and (max-width: 1439px){
+    #home-carousel {
+    	height: 610px;
+        overflow: hidden;
+    }
+    #home-carousel .item .itemContent .itemContentFooter {
+    	bottom: 19%;
+    }
+    #home-carousel.owl-theme .owl-controls {
+    	/*top: -175px;*/
+        bottom: 175px;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    #home-carousel {
+    	height: 695px;
+    }    
+    #home-carousel .item .itemContent .itemContentFooter {
+    	bottom: 68px;
+    }
+    #home-carousel.owl-theme .owl-controls {
+    	/*top: -116px;*/
+        bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1510px){
+    #home-carousel {
+    	height: 610px;
+        overflow: hidden;
+    }
+    #home-carousel .item .itemContent .itemContentFooter {
+    	bottom: 23%;
+    }
+    #home-carousel.owl-theme .owl-controls {
+    	/*top: -223px;*/
+        top: -258px;
+    }
+}
+
+@media only screen and (min-width: 1511px) and (max-width: 1580px){
+    #home-carousel {
+    	height: 610px;
+        overflow: hidden;
+    }
+    #home-carousel .item .itemContent .itemContentFooter {
+    	bottom: 25%;
+    }
+    #home-carousel.owl-theme .owl-controls {
+    	/*top: -250px;*/
+        top: -286px;
+    }
+}
+
+@media only screen and (min-width: 1581px) and (max-width: 1679px){
+    #home-carousel {
+    	height: 590px;
+        overflow: hidden;
+    }
+    #home-carousel .item .itemContent .itemContentFooter {
+    	bottom: 27%;
+        bottom: 31%;
+    }
+    #home-carousel.owl-theme .owl-controls {
+    	top: -340px;
+    }
+}
+
+@media only screen and (min-width: 1680px){
+    #home-carousel {
+    	height: 823px;
+    }        
+    #home-carousel .item .itemContent .itemContentFooter {
+    	bottom: 68px;
+    }
+    #home-carousel.owl-theme .owl-controls {
+    	top: -138px;
+    }
+
+}
+@media only screen and (min-width: 1920px){
+    #home-carousel {
+    	height: 910px;
+    }    
+    #home-carousel .item .itemContent .itemContentFooter {
+    	bottom: 111px;
+    }
+    #home-carousel.owl-theme .owl-controls {
+    	top: -150px;
+        top: -182px;
+    }
+}
+
+.tax-project-type .content-area .isotope h2 {
+	text-transform: uppercase;
+}

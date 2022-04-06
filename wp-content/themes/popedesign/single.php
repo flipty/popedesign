@@ -14,9 +14,25 @@ get_header();
 		/* Start the Loop */
 		while ( have_posts() ) : the_post();
 		?>
+	<main>
 
-			<h1>SINGLE.PHP <?php the_title();?></h1>
+		<section class="subpage-head-small"><!--logic for color-->
+		    <div class="container">
+		      <div class="inner">
+		          <h1>
+		            Headline
+		          </h1>
+		      </div>
+		    </div>
+		</section>
+
+		<div class="container">
 			<?php the_content();?>
+		</div>
+
+	</main>
+
+
 
 		<?php
 		endwhile; // End the loop.

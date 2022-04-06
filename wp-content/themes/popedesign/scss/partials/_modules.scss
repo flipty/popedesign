@@ -404,9 +404,9 @@ section.cta-blurb {
         margin-bottom: 30px;
       }
       p {
-        font-size: 32px;
+        font-size: 28px;
         padding-right: 30px;
-        padding-left: 60px;
+        padding-left: 30px;
         color: $textcolorLite;
         margin-bottom: 0;
         @include breakpoint(mobile){
@@ -477,7 +477,7 @@ section.cta-blurb {
 section.subpage-head {
   background: linear-gradient(270deg, $white 50%, $color-teal 50%);
   max-height: 290px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   @include breakpoint(mobile){
     background: $color-teal;
     max-height: none;
@@ -524,8 +524,8 @@ section.subpage-head {
       .h2 {
         display: block;
         padding-top: 90px;
-        font-size: 50px;
-        font-weight: 300;
+        font-size: 46px;
+        font-weight: 500;
         @include breakpoint(awkward){
           font-size: 36px;
           padding-right: 10px;
@@ -566,6 +566,68 @@ section.subpage-head {
     top: -70px;
     @include breakpoint(mobile){
       display: none;
+    }
+  }
+}
+
+section.subpage-head-small {
+  background: linear-gradient(270deg, $color-teal 75%, $color-grey 25%);
+  max-height: 290px;
+  margin-bottom: 50px;
+  padding: 0;
+  @include breakpoint(mobile){
+    background: $color-teal;
+    max-height: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+  }
+  .inner {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    max-width: 33%;
+    background: $color-grey;
+    h1 {
+      font-size: 24px;
+      line-height: 70px;
+      font-weight: 300;
+      padding: 0;
+      margin: 0;
+      color: $white;
+      background: $color-grey;
+      text-align: right;
+      width: 100%;
+      padding-right: 60px;
+      @include breakpoint(mobile){
+        text-align: left;
+        background: $color-teal;
+        padding-left: 30px;
+        font-weight: 500;
+        padding-top: 2px;
+      }
+      // @include breakpoint(awkward){
+      //   font-size: 18px;
+      //   padding-right: 10px;
+      // }
+    }
+    .h2 {
+      display: block;
+      padding-top: 90px;
+      font-size: 46px;
+      font-weight: 500;
+      // @include breakpoint(awkward){
+      //   font-size: 36px;
+      //   padding-right: 10px;
+      // }
+      @include breakpoint(mobile){
+        text-align: left;
+        font-size: 40px;
+        font-weight: 500;
+        padding-left: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
     }
   }
 }
@@ -663,7 +725,7 @@ section.people {
       a {
         text-decoration: none;
       }
-      width: 31%;
+      width: 28%;
       margin-bottom: 50px;
       text-align: center;
       @include breakpoint(mobile){
@@ -865,7 +927,7 @@ section.services {
           }
           h4 {
             text-transform: uppercase;
-            font-weight: 100;
+            font-weight: 500;
           }
         }
       }

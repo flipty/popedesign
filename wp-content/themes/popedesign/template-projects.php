@@ -125,7 +125,7 @@ get_header();
   </div>
 </section>
 
-<section class="photo-block photo-left color-primary">
+<!-- <section class="photo-block photo-left color-primary">
   <div class="container">
     <div class="inner">
       <div class="photo">
@@ -157,7 +157,7 @@ get_header();
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="cta-blurb">
   <div class="container">

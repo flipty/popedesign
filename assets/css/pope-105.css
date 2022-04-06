@@ -1,0 +1,1617 @@
+@import 'plugins.css';
+
+@font-face {
+  font-family: 'PopeGlyphs';
+  src: url('../fonts/popeglyphs.woff') format('woff');
+  font-style: normal;
+}
+
+/*
+ .d8888b.  888      .d88888b.  888888b.         d8888 888      
+d88P  Y88b 888     d88P" "Y88b 888  "88b       d88888 888      
+888    888 888     888     888 888  .88P      d88P888 888      
+888        888     888     888 8888888K.     d88P 888 888      
+888  88888 888     888     888 888  "Y88b   d88P  888 888      
+888    888 888     888     888 888    888  d88P   888 888      
+Y88b  d88P 888     Y88b. .d88P 888   d88P d8888888888 888      
+ "Y8888P88 88888888 "Y88888P"  8888888P" d88P     888 88888888
+*/
+
+#bioList .isotope.marketing{
+    cursor: pointer;
+}
+footer #nav-menu-item-9528{
+    padding-right:20px;
+}
+
+footer .socials a.footer-search{
+    background: transparent;
+    font-size:12px;
+    top: 0;
+}
+
+footer .socials a.footer-search .glyphicon{
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
+body{
+    font-family: "Montserrat";
+    /*overflow-x: hidden;*/
+}
+
+a {
+    color: #205868;
+}
+
+.btn {
+    border-radius: 0;
+    padding: 12px 24px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    cursor: inherit;
+    display: block;
+}
+
+.btn-default {
+    color: #666;
+}
+
+.btn-upload {
+    background: #849695 !important;
+    color: #FFF;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    position:relative;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    position:relative;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    position:relative;
+    margin: 5px 20px 20px 0;
+}
+
+.alignnone{
+    position:relative;
+    max-width:100%;
+    margin-bottom:20px;
+}
+
+.alignnone img{
+    width:100%;
+    max-width:100%;
+    height:auto;
+}
+
+.alignright img{float:right; margin:0 0 1em 1em; width:100%; height:auto;}
+.alignleft img{float:left; margin:0 1em 1em 0; width:100%; height:auto;}
+.aligncenter img {display: block; margin-left: auto; margin-right: auto; width:100%; height:auto;}
+a .alignright img{float:right; margin:0 0 1em 1em}
+a .alignleft img{float:left; margin:0 1em 1em 0}
+a .aligncenter img{display: block; margin-left: auto; margin-right: auto}
+
+.content-area p.wp-caption-text, p.wp-caption-text{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    color:#ffffff;
+    text-align:right;
+    display:block;
+    padding:10px;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    background-color: rgba(132,151,150,0.9);
+    margin-bottom:0;
+}
+
+.alignright .wp-caption-text{ margin:0 0 1em 1em}
+.alignleft .wp-caption-text{ margin:0 1em 1em 0}
+.aligncenter .wp-caption-text { margin-left: auto; margin-right: auto}
+
+.wpcf7-submit{
+    color: #666;
+    border-radius: 0;
+    padding: 12px 24px;
+    background-color: #fff;
+    border-color: #ccc;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid;
+}
+.wpcf7-submit:hover{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+  
+.content-area blockquote, blockquote {
+    margin: 20px 0 0 10%;
+    border-left: 0px;
+    font-size: 21px;
+    position: relative;  
+    width: 80%;
+} 
+.content-area blockquote p, blockquote p{
+    color: #67686b;
+    text-align: left;
+    position: relative;
+    display:block;
+}
+
+.content-area blockquote em {
+    font-family: "Helvetica Neue", "Helvetia", "Arial", sans-serif;
+    font-size: 9vh;
+    position: absolute;
+}
+
+.content-area blockquote em.startquote {
+    top: 5%;
+    left: -9%;
+}
+
+.content-area blockquote em.endquote {
+    bottom: -1%;
+    right: -3%;
+}
+
+#searchResults li{
+    list-style-type:none;
+}
+
+#searchResults h3{
+    margin-bottom:5px;
+}
+
+#contact iframe{
+    max-width:100%;
+}
+
+
+/*
+888    888 8888888888        d8888 8888888b.  8888888888 8888888b.  
+888    888 888              d88888 888  "Y88b 888        888   Y88b 
+888    888 888             d88P888 888    888 888        888    888 
+8888888888 8888888        d88P 888 888    888 8888888    888   d88P 
+888    888 888           d88P  888 888    888 888        8888888P"  
+888    888 888          d88P   888 888    888 888        888 T88b   
+888    888 888         d8888888888 888  .d88P 888        888  T88b  
+888    888 8888888888 d88P     888 8888888P"  8888888888 888   T88b 
+*/
+
+.navbar-default {
+    border: none;
+    background: url(../header.png) no-repeat;
+    background-position: top right;
+    /*border-right: solid 150px transparent;*/
+}
+
+@media (max-width: 992px) {
+    .navbar-default{    
+        background: none;
+        border: none;
+    }
+}
+
+.navbar-header {
+    width: 20%;
+    height: 100px;
+}
+
+.navbar-brand {
+    height: auto;
+    width: 200px;
+}
+
+.navbar-brand>img {
+    width: 90%;
+    margin-left: 25%;
+    margin-left: 0;
+    margin-top: 4.5%;
+}
+
+@media (min-width: 768px) {
+    ul.nav.navbar-nav {
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>li>a:hover
+{
+    background: none;
+    border-bottom: solid 3px #666;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background: none;
+}
+
+.navbar-nav>li {
+    margin-left: 30px;
+}
+
+.navbar-nav>li:first-child {
+    margin-left: 0px;
+}
+
+ul.nav.navbar-nav>li>a {
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 0;
+    line-height: 15px;
+    border-bottom: solid 3px transparent;
+}
+
+.navbar .container {
+    position: relative;
+}
+
+.navbar #searchbar {
+    position: absolute;
+    right: 19%;
+    top: 10%;
+    display: none;
+}
+
+.navbar #searchbar .glyphicon {
+    color: #666;
+    font-size: 16px;
+    top: 4px;
+    margin-right: 10px;
+}
+
+.navbar #searchbar input[type="text"]{
+    border: solid 1px #666;
+    width: 230px;
+}
+
+.navbar-toggle {
+    margin-top: 12px;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: #666;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background: none;
+}
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+@media (min-width: 768px) {
+    .navbar #searchbar {
+        display: block;
+    }
+}
+
+
+/*
+888    888  .d88888b.  888b     d888 8888888888 
+888    888 d88P" "Y88b 8888b   d8888 888        
+888    888 888     888 88888b.d88888 888        
+8888888888 888     888 888Y88888P888 8888888    
+888    888 888     888 888 Y888P 888 888        
+888    888 888     888 888  Y8P  888 888        
+888    888 Y88b. .d88P 888   "   888 888        
+888    888  "Y88888P"  888       888 8888888888
+*/
+
+#home-carousel .item .itemContent {
+    width: 100%;
+    position: relative;
+}
+#home-carousel .item .itemContent img {
+    width: 100%;
+}
+
+#home-carousel .item .itemContent .itemContentFooter {
+    position: absolute;
+    bottom: 0;
+    background: rgba(113,133,138,0.8);
+    width: 100%;
+    height: 15%;
+    max-height: 100px;
+}
+
+#home-carousel .item .itemContent .itemContentFooter h1 {
+    width: auto;
+    color: #FFF;
+    font-size: 30px;
+    display: inline-block;
+    /*padding: 0.5em 0 0 1em;*/
+}
+
+#home-carousel .item .itemContent .itemContentFooter h1 a {
+    display: block;
+    float: right;
+    margin-left: 3em;
+    font-size: 13px;
+    color: #FFF;
+    margin-bottom: 20px;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+
+#home-carousel .item .itemContent .itemContentFooter h1 a:after {
+    font-family: "Glyphicons Halflings";
+    content:"\e072";
+    font-size: 78%;
+    margin-left: 0.5em;
+}
+
+#home-carousel .item .itemContent .itemContentFooter h1 a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+#home-carousel .container.controls {
+    position: relative;
+}
+
+#home-carousel.owl-theme .owl-controls {
+    position: absolute;
+    bottom: 1%;
+    right: 0;
+}
+
+#home-carousel.owl-theme .owl-controls .owl-page span {
+    border-radius: 0;
+    border: solid 1px #fff;
+    border-color: #FFF;
+    width: 10px;
+    height: 10px;
+    margin: 5px 3px;
+    opacity: 1;
+}
+
+#home-carousel.owl-theme .owl-controls .owl-page.active span {
+    border-radius: 0;
+    background: #FFF;
+}
+
+#home-intro {
+    background: #849796;
+    border-bottom: solid 10px #67686b;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+#home-intro p {
+    text-align: center;
+    color: #FFF;
+    width: 75%;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+#home-ctabanners > .isotope:first-child {
+    margin-left: 0;
+}
+
+#quote-carousel .item {
+    width: 100%;
+}
+
+#home-quote {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#home-quote p {
+    font-size: 21px;
+    padding: 2em;
+    padding-bottom: 0;
+    color: #67686b;
+    position: relative;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#home-quote p span.signature {
+    display: block;
+    text-align: right;
+    font-size: 90%;
+}
+
+#home-quote p span.secondary {
+    display: block;
+    text-align: right;
+    font-size: 60%;
+}
+
+#home-quote p em {
+    font-family: "Helvetica Neue", "Helvetia", "Arial", sans-serif;
+    font-size: 9vh;
+    position: absolute;
+}
+
+#home-quote p em.startquote {
+    top: 5%;
+    left: 1%;
+}
+
+#home-quote p em.endquote {
+    bottom: -37%;
+    right: 1%;
+}
+
+/*
+8888888 .d8888b.   .d88888b.   .d8888b.  
+  888  d88P  Y88b d88P" "Y88b d88P  Y88b 
+  888  Y88b.      888     888 Y88b.      
+  888   "Y888b.   888     888  "Y888b.   
+  888      "Y88b. 888     888     "Y88b. 
+  888        "888 888     888       "888 
+  888  Y88b  d88P Y88b. .d88P Y88b  d88P 
+8888888 "Y8888P"   "Y88888P"   "Y8888P"  
+*/
+
+.isotope {
+    /*width: 30%;*/
+    width: 32%;
+    display: block;
+    height: 250px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    /*background-size: cover;*/
+}
+
+.isotope.no-image h2{
+    height:100%;
+}
+
+.isotope img {
+    opacity: 0.65;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    width: auto;
+    height: 100%
+    /*width: 100%;
+    height:auto;*/
+}
+
+.isotope:hover {
+    cursor: pointer;
+}
+
+.isotope:hover img {
+    opacity: 1;
+}
+
+.isotope h2 {
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    color: #fff;
+    width: 100%;
+    font-size: 20px;
+    line-height: 6vh;
+    background: rgba(132,151,150,0.9);
+    padding: 0;
+    margin: 0;
+    padding-right: 1em;
+}
+
+.isotope.marketing {
+    background: #532f63;    
+}
+
+.isotope.marketing h2 {
+    background: none;
+    line-height: 2.5em;
+}
+
+.isotope#recent,
+.isotope.isoLeft 
+{
+    /*margin-right: 3%;*/
+    margin-right: 1%;
+}
+
+.isotope#news,
+.isotope.isoCenter 
+{
+    /*margin: auto 2% auto 2%;*/
+    margin: auto 1% auto 1%;
+}
+
+.isotope#blog,
+.isotope.isoRight 
+{
+    margin: 0 auto;
+    float: right;
+    /*margin-right: 3%;*/
+    margin-left: 1%;
+}
+
+.content-area .isotope {
+    overflow: hidden;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+
+.content-area .isotope h2 {
+    color: #fff;
+    line-height: 1.2em;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    padding-left: 0.5em;
+}
+
+.content-area .isotope h2 em {
+    font-style: normal;
+    display: block;
+    font-size: 80%;
+    color: #cedddc;
+}
+
+/*
+ .d8888b.  888     888 888888b.   
+d88P  Y88b 888     888 888  "88b  
+Y88b.      888     888 888  .88P  
+ "Y888b.   888     888 8888888K.  
+    "Y88b. 888     888 888  "Y88b 
+      "888 888     888 888    888 
+Y88b  d88P Y88b. .d88P 888   d88P 
+ "Y8888P"   "Y88888P"  8888888P"  
+
+8888888b.     d8888  .d8888b.  8888888888 
+888   Y88b   d88888 d88P  Y88b 888        
+888    888  d88P888 888    888 888        
+888   d88P d88P 888 888        8888888    
+8888888P" d88P  888 888  88888 888        
+888      d88P   888 888    888 888        
+888     d8888888888 Y88b  d88P 888        
+888    d88P     888  "Y8888P88 8888888888
+ */
+
+.header-image {
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.header-image img {
+    width: 100%;
+    height:auto;
+}
+
+.breadcrumb {
+    background: none;
+    text-align: right;
+    padding-right: 10%;
+}
+
+.breadcrumb a {
+    color: #808285;
+    font-size: 12px;
+    padding: 0 0 0 0.5em;
+}
+
+.breadcrumb a:before {
+    content: "//";
+    letter-spacing: -4px;
+    padding-right: 1em;
+}
+
+.breadcrumb a:first-child:before {
+    content: "";
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+}
+
+.content-area h1 {
+    color: #205868;
+    font-size: 31px;
+    font-weight: normal;
+}
+
+.content-area h2 {
+    color: #205868;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.content-area h3 {
+    color: #205868;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content-area h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.content-area p {
+    font-size: 85%;
+    color: #010101;
+    line-height: 2em;
+}
+
+.content-area ul li {
+    font-size: 85%;
+    color: #010101;
+    line-height: 2em;
+    margin-bottom: 0.75em;    
+}
+
+.content-area .aside {
+    padding-top: 20px;
+}
+
+.content-area .aside img {
+    width: 100%;
+    margin-bottom: 5px;
+    height:auto;
+}
+
+.content-area input[type="text"],
+.content-area input[type="email"], 
+.content-area textarea 
+{
+    background: #e7e7e7;
+    border: none;
+    width: 100%;
+    padding: 0.85em;
+    font-size: 13px;
+    margin-bottom: 0.5em;
+}
+
+.content-area input[type="submit"]{
+    float: right;
+}
+
+/*
+888b    888 8888888888 888       888  .d8888b.  
+8888b   888 888        888   o   888 d88P  Y88b 
+88888b  888 888        888  d8b  888 Y88b.      
+888Y88b 888 8888888    888 d888b 888  "Y888b.   
+888 Y88b888 888        888d88888b888     "Y88b. 
+888  Y88888 888        88888P Y88888       "888 
+888   Y8888 888        8888P   Y8888 Y88b  d88P 
+888    Y888 8888888888 888P     Y888  "Y8888P" 
+*/
+
+.content-area#newsList .featuredImage .isotope {
+    margin-bottom: 20px;
+}
+
+.content-area#newsList .featuredImage .isotope img {
+    opacity: 1;   
+}
+
+.content-area#newsList .featuredStory {
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.content-area#newsDetail .featuredStory {
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.content-area#newsList .featuredContent {
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    width: 67%;
+}
+
+.content-area#newsList .featuredContent h1 {
+    margin-top: 0;
+}
+
+.content-area#newsList .featuredContent h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+.content-area#newsDetail .detailImage img, 
+.content-area#newsDetail .detailContent img.newsImage 
+{
+    width: 100%;
+} 
+
+.content-area#newsDetail .detailContent h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+.content-area#newsList .featuredContent a.readMore {
+    text-transform: uppercase;
+    display: block;
+    float: right;
+    margin-top: 1em;
+}
+
+.content-area#newsList .featuredContent a.readMore:after {
+    content: " >>";
+}
+
+.pageNav .nextPage,
+.pageNav .prevPage {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pageNav .nextPage a{
+    float: right;
+}
+.pageNav .prevPage a{
+    float: left;
+}
+
+.pageNav .nextPage a,
+.pageNav .prevPage a {
+    background: #366877;
+    border-color: #366877;
+    color: #FFF;
+    border-radius: 0;
+    padding: 12px 24px;
+    width: 175px;
+    text-align:center;
+}
+
+.pageNav h5 {
+    color: #205868;
+    font-size: 1.7vw;
+    background: #FFF;
+    position: relative;
+    width: auto;
+    clear: both;
+}
+
+.pageNav .categories h5 {
+    width: 17%;
+}
+
+.pageNav .archive{
+    float:right;
+}
+.pageNav .archive h5 {
+    width: 25%;
+}
+
+.pageNav ul, .pageNav ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+.pageNav ul {
+    border-top: solid 1px #919191;
+    margin-top: -15px;
+    
+}
+
+.pageNav ul li {
+    display: inline-block;
+    float: left;
+    width: auto;
+    padding-top: 15px;
+}
+
+.pageNav ul li a {
+    color: #666;
+    font-size: 12px;
+}
+
+.pageNav ul li a:before {
+    content: "//";
+    letter-spacing: -4px;
+    padding-right: 0.5em;
+    padding-left: 0.25em;
+}
+
+.pageNav ul li:first-child a:before {
+    content: "";
+    padding: 0;
+}
+
+#newsDetail .featuredImage {
+    width: 100%;
+}
+
+/*
+888888b.  8888888 .d88888b.   .d8888b.  
+888  "88b   888  d88P" "Y88b d88P  Y88b 
+888  .88P   888  888     888 Y88b.      
+8888888K.   888  888     888  "Y888b.   
+888  "Y88b  888  888     888     "Y88b. 
+888    888  888  888     888       "888 
+888   d88P  888  Y88b. .d88P Y88b  d88P 
+8888888P" 8888888 "Y88888P"   "Y8888P"  
+*/
+
+#bioList .isotope h2 {
+    text-transform: uppercase;
+}
+
+#bioList .isotope:hover {
+    cursor: pointer;
+}
+
+#bioList .introArea {
+    margin-bottom: 40px;
+}
+
+#bioDetail h1 { 
+    margin-bottom: 0;
+}
+
+#bioDetail h1 em {
+    font-size: 70%;
+    color: #808285;
+    font-style: normal;
+    padding-left: 10px;
+}
+
+#bioDetail  h2 {
+    font-size: 18px;
+    color: #808285;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#bioDetail {
+    margin: 0 auto;
+}
+
+#bioDetail p.quote {
+    font-size: 21px;
+    padding: 0 0 2em 0;
+    color: #67686b;
+    position: relative;
+    text-align: left;
+    margin-bottom: 0;
+    position: relative;
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+#bioDetail .quote em {
+    font-family: "Helvetica Neue", "Helvetia", "Arial", sans-serif;
+    font-size: 9vh;
+    position: absolute;
+}
+
+#bioDetail .quote em.startquote {
+    top: 5%;
+    left: -9%;
+}
+
+#bioDetail .quote em.endquote {
+    bottom: 10%;
+    right: 1%;
+}
+
+/*
+8888888b.  8888888b.   .d88888b. 888888 8888888888 .d8888b. 88888888888 
+888   Y88b 888   Y88b d88P" "Y88b  "88b 888       d88P  Y88b    888     
+888    888 888    888 888     888   888 888       888    888    888     
+888   d88P 888   d88P 888     888   888 8888888   888           888     
+8888888P"  8888888P"  888     888   888 888       888           888     
+888        888 T88b   888     888   888 888       888    888    888     
+888        888  T88b  Y88b. .d88P   88P 888       Y88b  d88P    888     
+888        888   T88b  "Y88888P"    888 8888888888 "Y8888P"     888     
+                                  .d88P                                 
+                                .d88P"                                  
+                               888P"                                    
+*/
+
+#projectList .introArea {
+    margin-bottom: 40px;
+}
+
+#projectType.content-area .isotope h2 {
+    font-size: 15px;
+}
+
+#projectType .introArea h1 {
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+#projectType .projectTypeList p {
+    color: #808285;
+    line-height: 1.5em;
+    margin: 2em 0;
+}
+
+#projectType .projectTypeList p strong {
+    color: #333;
+
+}
+
+.header-image.carouselTarget {
+    height: auto;
+}
+
+#project-carousel .item {
+    margin: 0 5px;
+    overflow: hidden;
+}
+
+#project-carousel .activeItem {
+    border: solid 3px #532f63;
+}
+
+#project-carousel .item .itemContent {
+    width: 100%;
+    position: relative;
+}
+#project-carousel .item .itemContent img {
+    width: 178%; /* makes square with 1280x720*/
+    width: 155%; /* makes square with 1280x825*/
+    width: 160%; /* 1680 x 900 */
+    margin-left: -25%;
+    margin-left: -33%;
+    height: auto;
+}
+
+#project-carousel .item:hover {
+    cursor: pointer;
+}
+
+#project-carousel .owl-prev,
+#project-carousel .owl-next {
+    background: none;
+    color: #808285;
+    font-size: 50px;
+}
+
+#project-carousel .owl-prev {
+    font-family: "PopeGlyphs";
+    position: absolute;
+    left: -5%;
+    top: 25%;
+}
+
+#project-carousel .owl-next {
+    font-family: "PopeGlyphs";
+    position: absolute;
+    right: -5%;
+    top: 25%;
+}
+
+#projectDetail .breadcrumb {
+    margin-top: 20px;
+}
+
+#projectDetail .testimonial h3 {
+    font-size: 17px;
+    color: #000;
+}
+
+#projectDetail .testimonial p {
+    line-height: 2em;
+    font-style: italic;
+    font-size: 13px;
+    font-family: serif;
+    padding-bottom: 20px;
+}
+
+#projectDetail .detailText h2 {
+    font-size: 18px;
+    color: #808285;
+}
+#projectDetail .project-quote{
+   border-bottom: solid 1px #999; 
+}
+
+#projectDetail .testimonial p.tags {
+    line-height: 2em;
+    font-style: normal;
+    
+    font-family: "Montserrat";
+    color: #808285;
+    padding-top: 10px;
+    font-size: 11px;
+}
+
+#projectDetail .testimonial p.tags a {
+    color: #808285;
+}
+
+#projectDetail .statBlock {
+    margin: 20px 0;
+}
+
+#projectDetail .stats {
+    color: #808285;
+}
+
+#projectDetail .stats .stat {
+    text-align: right;
+}
+
+.projectHeadline {
+    background: #849695;
+}
+
+.projectHeadline h1 {
+    color: #FFF;
+    font-size: 35px;
+    margin: 0.75em 0;
+}
+
+    /* DETAIL CAROUSEL */
+#project-detail .item {
+    width: 100%;
+}
+#project-detail .activeItem {
+    border: solid 3px #532f63;
+}
+#project-detail .owl-controls {
+    position: absolute;
+    z-index: 999999;
+    top: 35%;
+    width: 100%;
+}
+#project-detail .owl-prev,
+#project-detail .owl-next {
+    background: none;
+    color: #fff;
+    font-size: 150px;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+#project-detail .owl-prev {
+    font-family: "PopeGlyphs";
+    position: absolute;
+    left: 0;
+    top: 25%;
+}
+#project-detail .owl-next {
+    font-family: "PopeGlyphs";
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+
+/*
+8888888888 .d88888b.   .d88888b. 88888888888 8888888888 8888888b.  
+888       d88P" "Y88b d88P" "Y88b    888     888        888   Y88b 
+888       888     888 888     888    888     888        888    888 
+8888888   888     888 888     888    888     8888888    888   d88P 
+888       888     888 888     888    888     888        8888888P"  
+888       888     888 888     888    888     888        888 T88b   
+888       Y88b. .d88P Y88b. .d88P    888     888        888  T88b  
+888        "Y88888P"   "Y88888P"     888     8888888888 888   T88b 
+*/
+
+footer {
+    background: #532e63;
+    padding: 1em;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #CCC;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .container{
+    color: #CCC;
+}
+
+footer .brand img {
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+
+footer .navigation {
+    padding-right: 0;
+}
+
+footer ul.nav.navbar-nav {
+    margin-top: 0;
+    margin-left: 0;
+    float: right;
+}
+
+footer .navigation ul.nav.navbar-nav > li {
+    border-bottom: solid 1px #fff;
+    margin: 0;
+    padding-right: 17px;
+    padding-bottom: 10px;
+}
+
+footer .extras ul.navbar-nav {
+    border-bottom: solid 1px #fff;
+    width: 100%;
+}
+
+footer ul.nav.navbar-nav > li:first-child {
+    padding-bottom: 10px;
+}
+
+footer ul.nav.navbar-nav > li > a {
+    border-bottom: none;
+}
+
+footer ul.nav.navbar-nav li.dropdown {
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: none;
+    margin-right: -30px;
+}
+
+footer ul.nav.navbar-nav li.dropdown:first-child {
+    margin-right: -10px;
+}
+
+footer ul.nav.navbar-nav .dropdown-menu {
+    display: block !important;
+    position: static;
+    padding: 0;
+    min-width: 1px;
+    overflow: visible;
+    width: auto;
+    background: none;
+    box-shadow: none;
+    border: none;
+    border-top: solid 1px #fff;
+    margin-top: 10px;
+    min-width: 95px;
+}
+
+footer ul.nav.navbar-nav .dropdown-menu li:first-child {
+    padding-top: 10px;
+}
+
+footer ul.nav.navbar-nav .dropdown-menu li a {
+    color: #CCC;
+}
+
+footer ul.nav.navbar-nav .dropdown-menu li a:hover {
+    color: #fff;
+}
+
+footer ul.nav.navbar-nav .dropdown-menu>li>a {
+    padding: 0;
+}
+
+footer .nav li a:focus, footer .nav li a:hover {
+    background: none;
+    color: #FFF;
+}
+
+footer .dropdown-menu {
+    font-size: 11px;
+}
+
+footer .extras {
+    text-align: right;
+    padding-left: 0;
+}
+
+footer .extras ul.nav.navbar-nav > li:first-child {
+    text-align: right;
+    width: 100%;
+}
+
+footer .extras ul.nav.navbar-nav > li:first-child a {
+    font-size: 10px;
+}
+
+footer .subFooter .legal {
+    text-align: right;
+}
+
+footer .socials {
+    margin-top: 50px;
+}
+
+footer .socials a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-family: "PopeGlyphs";
+    font-size: 9px;
+    color: #FFF;
+    background: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    text-align: center;
+    padding-top: 4px;
+    margin-left: 5px;
+    position: relative;
+    top: -3px;
+}
+
+footer .socials a:hover {
+    text-decoration: none;
+}
+
+footer .socials a .icon {
+    font-style: normal;
+}
+
+footer .socials a.linkedin .icon:before { content: '\e800'; } /* '' */
+footer .socials a.facebook .icon:before { content: '\e801'; } /* '' */
+footer .socials a.twitter .icon:before { content: '\e802'; } /* '' */
+
+footer .socials a.linkedin {
+    background: #007bb5;
+}
+
+footer .socials a.facebook {
+    background: #3b5998;
+}
+
+footer .socials a.twitter {
+    background: #00aced;
+}
+
+.nopadding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#services .alignnone{
+    margin-top:20px;
+}
+
+#services ul li{
+    width:50%;
+    float:left;
+    position:relative;
+}
+
+
+/*
+888b     d888 8888888888 8888888b. 8888888        d8888 
+8888b   d8888 888        888  "Y88b  888         d88888 
+88888b.d88888 888        888    888  888        d88P888 
+888Y88888P888 8888888    888    888  888       d88P 888 
+888 Y888P 888 888        888    888  888      d88P  888 
+888  Y8P  888 888        888    888  888     d88P   888 
+888   "   888 888        888  .d88P  888    d8888888888 
+888       888 8888888888 8888888P" 8888888 d88P     888
+
+ .d88888b.  888     888 8888888888 8888888b.  8888888 8888888888 .d8888b.  
+d88P" "Y88b 888     888 888        888   Y88b   888   888       d88P  Y88b 
+888     888 888     888 888        888    888   888   888       Y88b.      
+888     888 888     888 8888888    888   d88P   888   8888888    "Y888b.   
+888     888 888     888 888        8888888P"    888   888           "Y88b. 
+888 Y8b 888 888     888 888        888 T88b     888   888             "888 
+Y88b.Y8b88P Y88b. .d88P 888        888  T88b    888   888       Y88b  d88P 
+ "Y888888"   "Y88888P"  8888888888 888   T88b 8888888 8888888888 "Y8888P"  
+       Y8b                                                                
+*/
+/* most phones */
+@media only screen and (max-width: 768px){
+    #nav-menu-item-9528{
+        padding-right:auto;
+    }
+    .navbar-default {
+        border: none;
+    }
+
+    .navbar .container {
+        background: #FFF;
+    }
+    .navbar-header {
+        height: auto;
+        width: auto;
+    }
+    .navbar-brand {
+        width: 30%;
+    }
+    .navbar-nav>li, .navbar-nav>li:first-child {
+        margin-left: 3em;
+        padding: 0.6em 0;
+    }
+    .header-image {
+        height: 110px;
+        display: none;
+    }
+
+    .header-image.carouselTarget {
+        display: block;
+        height: auto;
+        margin-top: 55px;
+    }
+
+    #home-carousel.owl-theme .owl-controls, 
+    #project-carousel.owl-theme .owl-controls
+    {
+        display: none !important;
+    }
+
+    #home-carousel .item .itemContent .itemContentFooter h1{
+        font-size: 14px;
+    }
+
+    .isotope {
+        width: 100%;
+        display: block;
+        height: 250px;
+        float: left;
+        position: relative;
+        margin: 0 !important;
+        margin-top: 15px !important;
+    }
+
+    .isotope.marketing h2 {
+        font-size: 34px;
+    }
+
+    .content-area#newsList .featuredContent {
+        width: 94%;
+    }
+
+    .content-area#newsList .featuredContent h1 {
+        margin-top: 20px;
+    }
+
+    #home-carousel .item .itemContent .itemContentFooter {
+        height: 77px;
+    }
+
+    #home-carousel .item .itemContent .itemContentFooter h1 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    #home-carousel .item .itemContent .itemContentFooter h1 a {
+        display: block;
+        float: none;
+        font-size: 75%;
+        margin-left: 0;
+    }
+
+    #home-intro p {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    #home-quote {
+        width: 90%;
+    }
+
+    #home-quote p {
+        font-size: 16px;
+    }
+
+    #home-carousel {
+        margin-top: 57px;
+    }
+
+    #home-ctabanners h2 {
+        padding: 1em;
+    }
+    #home-quote p span.secondary {
+        font-size: 100%;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .content-area ul {
+        padding-left: 20px;
+    }
+
+    #projectDetail .stats .stat {
+        text-align: left;
+        font-weight: bold;
+    }
+
+    #projectDetail .detailText {
+        /*padding-top: 50px;*/
+    }
+
+    #project-carousel {
+        /*display: none !important;*/
+        margin-top: 15px;
+    }
+
+    #project-carousel .item {
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .projectHeadline h1 {
+        font-size: 20px;
+    }
+
+
+    footer .extras ul.navbar-nav {
+        margin: 0;
+        position: relative;
+        top: -100px;
+        border: none;
+    }
+
+    footer .extras ul.navbar-nav li {
+        margin: 0;
+    }
+
+    footer .subFooter .copyright {
+        padding-bottom: 10px;
+    }
+
+    footer .subFooter .copyright, footer .subFooter .legal {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    footer .brand img {
+        width: 25%;
+    }
+
+    footer .socials {
+        margin-top: -25px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer .socials a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        padding-top: 6px;
+    }
+
+    footer .socials .glyphicon-search {
+        display: none;
+    }
+
+    #services ul li{
+        width:100%;
+    }
+}
+/*handle the awkward and tablets*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .navbar .container {
+        background: rgba(255,255,255,0.9);
+    }
+    .navbar #searchbar {
+        right: 3%;
+    }
+    .navbar-brand>img {
+        margin-top: 5%;
+    }
+    #home-carousel.owl-theme .owl-controls {
+        right: 3%;
+    }
+}
+
+/*portrait tablets...*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    ul.nav.navbar-nav {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .navbar-brand>img {
+        margin-top: 0;
+    }
+
+    .isotope.marketing h2 {
+        font-size: 60px;
+    }
+
+    #home-carousel .item .itemContent .itemContentFooter h1 a {
+        margin-top: 0.25em;
+    }
+    #home-carousel {
+        margin-top: 118px;
+    }
+    footer .brand img {
+        width: 18%;
+    }
+    .header-image {
+        height: 225px;
+    }
+    .breadcrumb {
+        display: block;
+        margin-bottom: 0;
+    }
+    ul.nav.navbar-nav>li>a {
+        font-size: 14px;
+    }
+    .header-image.carouselTarget {
+        margin-top: 118px;
+    }
+}
+/*landscape tablets...*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    
+}
+
+/* large screens */
+@media (min-width: 1202px) {
+    .content-area .isotope, 
+    .content-area#newsList .featuredImage .isotope
+    {
+        margin-bottom: 25px;
+    }
+
+    #home-carousel .item .itemContent .itemContentFooter h1 {
+        padding-top: 15px;
+    }
+
+}

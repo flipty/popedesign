@@ -41,6 +41,18 @@ var popedesign = {
       paginationSpeed : 2000 //how long does it take to physically move?
       }
     );
+    $('#project-carousel').owlCarousel(
+      {
+      autoplay: true,
+      loop: true,
+      margin: 10,
+      items: 1,
+      autoPlay: true,
+      autoplayTimeout: 8000,
+      autoplayHoverPause: true,
+      paginationSpeed : 2000 //how long does it take to physically move?
+      }
+    );
     $('.about-carousel').owlCarousel(
       {
       autoplay: false,

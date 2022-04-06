@@ -113,21 +113,18 @@ get_header();
       <div class="news-item">
         <img src="https://loremflickr.com/380/275/dog" alt="">
         <h3>Title goes here</h3>
-        <h4>MONDAY JANUARY 14, 2022</h4>
         <a href="#">READ THE FULL ARTICLE</a>
       </div>
 
       <div class="news-item">
         <img src="https://loremflickr.com/380/275/cat" alt="">
         <h3>Title goes here that wraps to two lines because why not?</h3>
-        <h4>MONDAY JANUARY 14, 2022</h4>
         <a href="#">READ THE FULL ARTICLE</a>
       </div>
 
       <div class="news-item">
         <img src="https://loremflickr.com/380/275/moose" alt="">
         <h3>Here's a news title that is so long that it actually makes all the other ones wallow in its wake</h3>
-        <h4>MONDAY JANUARY 14, 2022</h4>
         <a href="#">READ THE FULL ARTICLE</a>
       </div>
 

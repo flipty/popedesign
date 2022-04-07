@@ -37,3 +37,75 @@
     padding-bottom: 90px;
   }
 }
+
+.single-projects {
+  #project-detail {
+    max-height: 850px;
+    img {
+      max-height: 850px;
+      height: auto;
+    }
+  }
+  section.title {
+    background: $color-greyMed;
+    padding: 10px 0;
+    // margin-bottom: 20px;
+    h1 {
+      color: $white;
+      font-weight: 300;
+      font-size: 32px;
+    }
+  }
+  #project-carousel {
+    margin-bottom: 30px;
+    .item {
+      border: solid 4px $white;
+      &.activeItem {
+        border: solid 4px $color-teal;
+      }
+    }
+    .itemContent {
+      // height: 128px;
+      img {
+        height: auto;
+      }
+    }
+  }
+  .post-content {
+    > p {
+      margin-top: 0;
+      font-size: 18px;
+      line-height: 1.6;
+      color: $textcolor;
+    }
+  }
+  .statBlock {
+    .row {
+      flex-flow: column;
+      margin-bottom: 15px;
+      .stat {
+        font-size: 12px;
+        margin-bottom: 5px;
+        color: lighten($textcolorLite, 20%);
+      }
+      .value {
+        color: $textcolor;
+      }
+    }
+  }
+  p.tags {
+    border-top: solid 1px $black15;
+    padding-top: 20px;
+    margin-top: 15px;
+    font-size: 12px;
+    a {
+      color: $color-teal;
+      &:hover {
+        color: $color-plum;
+      }
+    }
+  }
+  footer {
+    // margin-top: 60px;
+  }
+}

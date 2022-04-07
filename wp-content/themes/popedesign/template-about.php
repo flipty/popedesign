@@ -49,7 +49,7 @@ get_header();
         <p>
           Pope Design Group’s values support our purpose — working together to create environments that enhance lives. When we say enhance lives we mean all lives — our team, our clients, project stakeholders and occupants are all important in our process. We understand that creativity and practicality must work together to bring our client’s vision to life. We	respect and support budgets and timelines while communicating and	collaborating to create amazing spaces.
         </p>
-        <a href="#">LEARN ABOUT THE HISTORY OF POPE DESIGN GROUP</a>
+        <a href="#">LEARN ABOUT OUR CULTURE</a>
       </div>
     </div>
 
@@ -60,15 +60,20 @@ get_header();
   <img src="https://loremflickr.com/1280/440/paris" alt="">
 </section>
 
-
-<section class="small-cta">
+<!-- <section class="cta-blurb">
   <div class="container">
     <div class="inner">
-      <h3>Through our work we strive to enhance lives<br>and forge long-term, trusted partnerships with each client.</h3>
-      <a href="#"><span>HOW CAN WE WORK WITH YOU?</span></a>
+      <div class="content">
+        <p>
+          Through our work we strive to enhance lives<br>and forge long-term, trusted partnerships with each client.
+        </p>
+      </div>
+      <div class="cta">
+        <a href="#"><span>LINK TO CULTURE PAGE</span></a>
+      </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- <section class="content-chunk">
   <div class="container">
@@ -89,104 +94,18 @@ get_header();
     <h2>Leadership Team</h2>
     <p>Pope Design Group is led by a diverse group of individuals representing our various practice areas. Each of them is dedicated to making sure team members are empowered, motivated, capable, and equipped to work effectively. We encourage everyone in the firm to have project ownership, take initiative, contribute creatively, and make a difference in the community.</p>
     <ul class="inner">
-
+      <?php while (have_rows('people')): the_row();
+      $person = get_sub_field('person');
+      $photo = get_field('photo', $person)
+      ?>
       <li>
-        <a href="#">
-          <img src="https://loremflickr.com/350/350/fruit" alt="Name">
-          <h3>Firstname Lastname</h3>
-          <h4>Title of the person</h4>
+        <a href="<?php echo get_the_permalink($person);?>">
+          <?php echo wp_get_attachment_image($photo, 'full');?>
+          <h3><?php echo get_the_title($person);?>, <?php echo get_field('accreditation', $person);?></h3>
+          <h4><?php echo get_field('title', $person);?></h4>
         </a>
       </li>
-
-      <li>
-        <a href="#">
-          <img src="https://loremflickr.com/350/350/fruit" alt="Name">
-          <h3>Firstname Lastname</h3>
-          <h4>Title of the person</h4>
-        </a>
-      </li>
-
-      <li>
-        <a href="#">
-          <img src="https://loremflickr.com/350/350/fruit" alt="Name">
-          <h3>Firstname Lastname</h3>
-          <h4>Title of the person</h4>
-        </a>
-      </li>
-
-      <li>
-        <a href="#">
-          <img src="https://loremflickr.com/350/350/fruit" alt="Name">
-          <h3>Firstname Lastname</h3>
-          <h4>Title of the person</h4>
-        </a>
-      </li>
-
-      <li>
-        <a href="#">
-          <img src="https://loremflickr.com/350/350/fruit" alt="Name">
-          <h3>Firstname Lastname</h3>
-          <h4>Title of the person</h4>
-        </a>
-      </li>
-
-      <li>
-        <a href="#">
-          <img src="https://loremflickr.com/350/350/fruit" alt="Name">
-          <h3>Firstname Lastname</h3>
-          <h4>Title of the person</h4>
-        </a>
-      </li>
-
-      <li>
-        <a href="#">
-          <img src="https://loremflickr.com/350/350/fruit" alt="Name">
-          <h3>Firstname Lastname</h3>
-          <h4>Title of the person</h4>
-        </a>
-      </li>
-
-      <li>
-        <a href="#">
-          <img src="https://loremflickr.com/350/350/fruit" alt="Name">
-          <h3>Firstname Lastname</h3>
-          <h4>Title of the person</h4>
-        </a>
-      </li>
-
-      <li>
-        <a href="#">
-          <img src="https://loremflickr.com/350/350/fruit" alt="Name">
-          <h3>Firstname Lastname</h3>
-          <h4>Title of the person</h4>
-        </a>
-      </li>
-
-      <li>
-        <a href="#">
-          <img src="https://loremflickr.com/350/350/fruit" alt="Name">
-          <h3>Firstname Lastname</h3>
-          <h4>Title of the person</h4>
-        </a>
-      </li>
-
-      <li>
-        <a href="#">
-          <img src="https://loremflickr.com/350/350/fruit" alt="Name">
-          <h3>Firstname Lastname</h3>
-          <h4>Title of the person</h4>
-        </a>
-      </li>
-
-      <li>
-        <a href="#">
-          <img src="https://loremflickr.com/350/350/fruit" alt="Name">
-          <h3>Firstname Lastname</h3>
-          <h4>Title of the person</h4>
-        </a>
-      </li>
-
-
+      <?php endwhile; ?>
     </ul>
   </div>
 </section>

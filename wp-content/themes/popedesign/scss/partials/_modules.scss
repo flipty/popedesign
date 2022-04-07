@@ -404,7 +404,7 @@ section.cta-blurb {
         margin-bottom: 30px;
       }
       p {
-        font-size: 28px;
+        font-size: 24px;
         padding-right: 30px;
         padding-left: 30px;
         color: $textcolorLite;
@@ -733,6 +733,7 @@ section.people {
       }
       img {
         width: 100%;
+        height: auto;
       }
       h3 {
         font-size: 18px;

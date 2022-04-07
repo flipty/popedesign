@@ -6,9 +6,9 @@
         <div class="contact">
           <a href="/" title="Pope Design Group"><img src="/wp-content/themes/popedesign/images/logo-reverse.svg" alt="Pope Design Group"></a>
           <p>
-            767 Eustis Street, Suite 190<br>
-            St. Paul, Minnesota, 55114<br>
-            <a href="tel:+16516429200" class="phone">651.642.9200</a>
+            <?php echo get_field('street_address', 'options');?><br>
+            <?php echo get_field('city_state_zip', 'options');?><br>
+            <a href="tel:+<?php echo get_field('phone_number', 'options');?>" class="phone"><?php echo get_field('phone_number_display', 'options');?></a>
           </p>
         </div>
         <div class="links">

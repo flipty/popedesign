@@ -8,13 +8,13 @@ get_header();
     <div class="owl-carousel owl-theme home-carousel">
 
       <div class="item">
-        <img src="https://loremflickr.com/1280/600/paris" alt="">
+        <img src="https://loremflickr.com/1680/900/paris" alt="">
       </div>
       <div class="item">
-        <img src="https://loremflickr.com/1280/600/brazil" alt="">
+        <img src="https://loremflickr.com/1680/900/brazil" alt="">
       </div>
       <div class="item">
-        <img src="https://loremflickr.com/1280/600/newyork" alt="">
+        <img src="https://loremflickr.com/1680/900/newyork" alt="">
       </div>
 
     </div>

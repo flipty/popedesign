@@ -38,17 +38,26 @@ main {
     justify-content: space-between;
     margin-left: -15px;
     margin-right: -15px;
+    @include breakpoint(mobile){
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
+    }
     > div[class^="col-"]{
       padding-left: 15px;
       padding-right: 15px;
+      @include breakpoint(mobile){
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
-    div.col-md-4 {
+    div.col-md-4, div.col-sm-4 {
       width: 33.3333333%;
       @include breakpoint(mobile){
         width: 100%;
       }
     }
-    div.col-md-8 {
+    div.col-md-8, div.col-sm-8 {
       width: 66.6666667%;
       @include breakpoint(mobile){
         width: 100%;
@@ -312,6 +321,7 @@ header {
 footer {
   background: $color-black;
   padding: 60px 0;
+  margin-top: 60px;
   color: $white;
   a {
     color: $white;
@@ -426,5 +436,42 @@ footer {
     padding-top: 30px;
     text-align: center;
     font-size: 12px;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 15px 0;
+  a {
+    display: block;
+    padding-right: 15px;
+    font-size: 16px;
+    color: $color-darkteal;
+    font-weight: 400;
+    text-decoration: none;
+    &:before {
+      display: inline-block;
+      margin-right: 15px;
+      content: '◡';
+      transform: rotate(180deg);
+      color: lighten($textcolorLite, 50%);
+      position: relative;
+      font-weight: 600;
+      top: 4px;
+    }
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+    &:hover {
+      color: $color-watermelon;
+      &:before {
+        // color: $color-teal;
+      }
+    }
   }
 }

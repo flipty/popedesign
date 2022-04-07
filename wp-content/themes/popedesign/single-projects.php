@@ -1,11 +1,34 @@
 <?php get_header(); ?>
 
-<?php get_template_part('partials/page', 'header'); ?>
-
 <?php if (have_posts()) : ?>
 
   <?php while (have_posts()) : the_post(); ?>
-    <div class="row">
+
+    <?php if( have_rows( 'photos' ) ): ?>
+
+          <div class="owl-carousel owl-theme" id="project-detail">
+
+          <?php while( have_rows( 'photos' ) ): the_row(); ?>
+
+            <div class="item">
+                 <?php echo wp_get_attachment_image( get_sub_field( 'photo' ), 'carousel'); ?>
+            </div><!--/item-->
+
+          <?php endwhile; ?>
+
+          </div>
+
+        <?php endif; ?>
+
+    <section class="title">
+      <div class="container"><h1><?php echo get_the_title();?></h1></div>
+    </section>
+
+    <div class="container">
+
+      <?php get_template_part('partials/page', 'breadcrumb'); ?>
+
+      <div class="row">
         <div class="col-xs-12">
 
         <?php if( have_rows( 'photos' ) ): ?>
@@ -28,6 +51,7 @@
 
         </div>
       </div>
+    </div>
         <?php
           $city = get_field('city');
           $state = get_field('state');

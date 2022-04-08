@@ -4,26 +4,21 @@ get_header();
 
 <section class="hero home-hero">
   <div class="carousel">
-
     <div class="owl-carousel owl-theme home-carousel">
-
-      <div class="item">
-        <img src="https://loremflickr.com/1680/900/paris" alt="">
-      </div>
-      <div class="item">
-        <img src="https://loremflickr.com/1680/900/brazil" alt="">
-      </div>
-      <div class="item">
-        <img src="https://loremflickr.com/1680/900/newyork" alt="">
-      </div>
-
+      <?php $images = get_field('carousel');
+      $size = 'full'; // (thumbnail, medium, large, full or custom size)
+      foreach( $images as $image_id ): ?>
+        <div class="item">
+          <?php echo wp_get_attachment_image( $image_id, $size ); ?>
+        </div>
+      <?php endforeach; ?>
     </div>
-
   </div>
   <div class="content-block">
     <div class="inner">
-      <p>We believe in working together to create environments that enhance lives.</p>
-      <a href="#">OUR PROJECTS</a>
+      <?php $hero = get_field('hero_content');?>
+      <p><?php echo $hero['intro_headline'];?></p>
+      <a href="<?php echo $hero['intro_link'];?>"><?php echo $hero['intro_link_text'];?></a>
     </div>
   </div>
 </section>
@@ -34,23 +29,18 @@ get_header();
     <div class="ring2"></div>
   </div>
   <div class="container">
-
     <div class="inner">
       <div class="headline">
-        <h1>Business Minded.<br>People Centered.</h1>
+        <h1><?php echo get_field('intro_headline');?></h1>
       </div>
       <div class="content">
-        <p>
-          Pope Design Group is an architecture and interior design firm of creative professionals. The firm has a diverse practice encompassing work in Senior Living, Multi-Family Housing, Workplace, Industrial, Healthcare, Education, Worship and Community markets.</p>
-        <p>
-          Founded in 1974 and headquartered in St. Paul, Minnesota, Pope Design Group embraces our founding principle of providing excellent design solutions tailored to the individual needs of every client. Our team of highly skilled designers, creators and problem solvers collaborate on a wide variety of projects in the Midwest and across the country.
-        </p>
+        <?php echo get_field('intro_content');?>
       </div>
     </div>
-
   </div>
 </section>
 
+<?php $block1 = get_field('block_1');?>
 <section class="photo-block photo-left color-primary">
   <div class="container">
     <div class="inner">
@@ -58,16 +48,14 @@ get_header();
         <img src="https://loremflickr.com/650/470/paris" alt="">
       </div>
       <div class="content">
-        <h2>Business Minded Designers</h2>
-        <p>
-          We welcome the active participation of our clients, construction partners, engineering consultants and other valued collaborators as integrated members of our project teams.
-        </p>
-        <a href="#">LEARN MORE ABOUT US</a>
+        <?php echo $block1['content'];?>
+        <a href="<?php echo $block1['link_page'];?>"><?php echo $block1['link_text'];?></a>
       </div>
     </div>
   </div>
 </section>
 
+<?php $block2 = get_field('block_2');?>
 <section class="photo-block photo-right color-secondary">
   <div class="container">
     <div class="inner">
@@ -75,26 +63,24 @@ get_header();
         <img src="https://loremflickr.com/650/470/london" alt="">
       </div>
       <div class="content">
-        <h2>People Centered Design</h2>
-        <p>
-          Every project is unique, and each collaborator brings their own perspective. We approach each project with critical questioning and effective listening.
-        </p>
-        <a href="#">VIEW OUR APPROACH</a>
+        <?php echo $block2['content'];?>
+        <a href="<?php echo $block2['link_page'];?>"><?php echo $block2['link_text'];?></a>
       </div>
     </div>
   </div>
 </section>
 
+<?php $cta = get_field('cta_area');?>
 <section class="cta-blurb">
   <div class="container">
     <div class="inner">
       <div class="content">
         <p>
-          We’ve built a reputation for listening to client needs and responding with thoughtful, practical design solutions.
+          <?php echo $cta['cta_content'];?>
         </p>
       </div>
       <div class="cta">
-        <a href="#"><span>TELL US ABOUT YOUR VISION</span></a>
+        <a href="<?php echo $cta['link_page'];?>"><span><?php echo $cta['link_text'];?></span></a>
       </div>
     </div>
   </div>
@@ -102,34 +88,47 @@ get_header();
 
 <section class="news">
   <div class="container">
-
     <div class="intro">
       <h2>News</h2>
-      <a href="#">VIEW ALL ARTICLES</a>
+      <a href="/news">VIEW ALL ARTICLES</a>
     </div>
-
     <div class="news-items">
-
-      <div class="news-item">
-        <img src="https://loremflickr.com/380/275/dog" alt="">
-        <h3>Title goes here</h3>
-        <a href="#">READ THE FULL ARTICLE</a>
-      </div>
-
-      <div class="news-item">
-        <img src="https://loremflickr.com/380/275/cat" alt="">
-        <h3>Title goes here that wraps to two lines because why not?</h3>
-        <a href="#">READ THE FULL ARTICLE</a>
-      </div>
-
-      <div class="news-item">
-        <img src="https://loremflickr.com/380/275/moose" alt="">
-        <h3>Here's a news title that is so long that it actually makes all the other ones wallow in its wake</h3>
-        <a href="#">READ THE FULL ARTICLE</a>
-      </div>
-
+    <?php
+    $newsargs = array(
+      'posts_per_page'  => 3,
+      'post_type'       => 'news',
+      'orderby'         => 'date',
+      'order'						=> 'DESC',
+      //do not show those excluded from the listing via ACF check option
+      'meta_query' => array(
+        'relation' => 'OR',
+        array(
+          'key'     => 'home_page_exempt',
+          'value'   => true,
+          'compare' => '!='
+        ),
+        array(
+          'key'     => 'home_page_exempt',
+          'value' 	=> 'null',
+          'compare' => 'NOT EXISTS'
+        )
+      )
+    );
+    $news_query = new WP_Query( $newsargs );
+    ?>
+    <?php if ($news_query->have_posts() ) : while ( $news_query->have_posts() ) : $news_query->the_post();?>
+      <?php $image = get_field('news_image');?>
+        <div class="news-item">
+          <div class="image">
+            <?php echo wp_get_attachment_image($image, 'full');?>
+          </div>
+          <h3><?php echo get_the_title();?></h3>
+          <a href="<?php echo get_the_permalink();?>">READ THE FULL ARTICLE</a>
+        </div>
+    <?php endwhile; else: ?>
+    <?php endif; ?>
+    <?php wp_reset_query(); ?>
     </div>
-
   </div>
 </section>
 

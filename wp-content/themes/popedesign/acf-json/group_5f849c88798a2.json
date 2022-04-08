@@ -1,38 +1,11 @@
 {
-    "key": "group_624cfa8d0b95f",
-    "title": "Home Page Custom Content",
+    "key": "group_5f849c88798a2",
+    "title": "About",
     "fields": [
         {
-            "key": "field_624f3b2615b1e",
-            "label": "Carousel",
-            "name": "carousel",
-            "type": "gallery",
-            "instructions": "Photos should be 1680 x 900",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "id",
-            "preview_size": "medium",
-            "insert": "append",
-            "library": "all",
-            "min": "",
-            "max": "",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_624f3b79ca108",
-            "label": "Hero Content",
-            "name": "hero_content",
+            "key": "field_624fb14a1ec51",
+            "label": "Page Header",
+            "name": "page_header",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -45,9 +18,33 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_624f3b89ca109",
-                    "label": "Intro Headline",
-                    "name": "intro_headline",
+                    "key": "field_624fb15d1ec52",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "900 x 420 (or 1800 x 840)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_624fb15f1ec53",
+                    "label": "Headline",
+                    "name": "headline",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -64,9 +61,102 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_624f3ba9ca10a",
-                    "label": "Intro Link",
-                    "name": "intro_link",
+                    "key": "field_624fb1611ec54",
+                    "label": "Subhead",
+                    "name": "subhead",
+                    "type": "text",
+                    "instructions": "Use \"br\" tag to force a new line",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_624fb24737550",
+            "label": "Sub-Hero",
+            "name": "sub_hero",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_624fb25c37551",
+                    "label": "Headline",
+                    "name": "headline",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "We Value:",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_624fb27637552",
+                    "label": "Subheadline",
+                    "name": "subheadline",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Passionate People<br>\r\nEntrepreneurial Spirit<br>\r\nExceeding Client Expectations<br>\r\nCollaborative Design<br>\r\nFocus on Excellence",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 5,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_624fb29e37553",
+                    "label": "Content",
+                    "name": "content",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_624fb2ab37554",
+                    "label": "Link Page",
+                    "name": "link_page",
                     "type": "page_link",
                     "instructions": "",
                     "required": 0,
@@ -83,9 +173,9 @@
                     "multiple": 0
                 },
                 {
-                    "key": "field_624f3bbeca10b",
-                    "label": "Intro Link Text",
-                    "name": "intro_link_text",
+                    "key": "field_624fb2b637555",
+                    "label": "Link Text",
+                    "name": "link_text",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -104,11 +194,35 @@
             ]
         },
         {
-            "key": "field_624f3be1ebbae",
-            "label": "Intro Headline",
-            "name": "intro_headline",
+            "key": "field_624fb1b875506",
+            "label": "Full Width Photo",
+            "name": "full_width_photo",
+            "type": "image",
+            "instructions": "1280 x 440 (or 2560 x 880)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_624fb210a29e0",
+            "label": "People Headline",
+            "name": "people_headline",
             "type": "text",
-            "instructions": "add a \"br\" tag to force a line break",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -123,11 +237,11 @@
             "maxlength": ""
         },
         {
-            "key": "field_624f3c24ebbaf",
-            "label": "Intro Content",
-            "name": "intro_content",
-            "type": "wysiwyg",
-            "instructions": "Only use paragraphs here.",
+            "key": "field_624fb218a29e1",
+            "label": "People Content",
+            "name": "people_content",
+            "type": "textarea",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -136,13 +250,56 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         },
         {
-            "key": "field_624f3c5b84e0d",
+            "key": "field_624fb1e0d59c4",
+            "label": "People",
+            "name": "people",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_624fb1edd59c5",
+                    "label": "Person",
+                    "name": "person",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "bios"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                }
+            ]
+        },
+        {
+            "key": "field_624fb0d5be141",
             "label": "Block 1",
             "name": "block_1",
             "type": "group",
@@ -157,7 +314,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_624f3c7084e0e",
+                    "key": "field_624fb0debe142",
                     "label": "Image",
                     "name": "image",
                     "type": "image",
@@ -165,7 +322,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "50",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
@@ -181,11 +338,11 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_624f3c8184e0f",
+                    "key": "field_624fb0dfbe143",
                     "label": "Content",
                     "name": "content",
                     "type": "wysiwyg",
-                    "instructions": "H2 and one paragraph",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -200,7 +357,7 @@
                     "delay": 0
                 },
                 {
-                    "key": "field_624f3cbd84e10",
+                    "key": "field_624fb0e1be144",
                     "label": "Link Page",
                     "name": "link_page",
                     "type": "page_link",
@@ -219,7 +376,7 @@
                     "multiple": 0
                 },
                 {
-                    "key": "field_624f3cce84e11",
+                    "key": "field_624fb0e3be145",
                     "label": "Link Text",
                     "name": "link_text",
                     "type": "text",
@@ -240,7 +397,7 @@
             ]
         },
         {
-            "key": "field_624f3cebe9a30",
+            "key": "field_624fb11edcceb",
             "label": "Block 2",
             "name": "block_2",
             "type": "group",
@@ -255,7 +412,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_624f3cebe9a31",
+                    "key": "field_624fb11edccec",
                     "label": "Image",
                     "name": "image",
                     "type": "image",
@@ -263,7 +420,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "50",
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
@@ -279,11 +436,11 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_624f3cebe9a32",
+                    "key": "field_624fb11edcced",
                     "label": "Content",
                     "name": "content",
                     "type": "wysiwyg",
-                    "instructions": "H2 and one paragraph",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -298,7 +455,7 @@
                     "delay": 0
                 },
                 {
-                    "key": "field_624f3cebe9a33",
+                    "key": "field_624fb11edccee",
                     "label": "Link Page",
                     "name": "link_page",
                     "type": "page_link",
@@ -317,7 +474,7 @@
                     "multiple": 0
                 },
                 {
-                    "key": "field_624f3cebe9a34",
+                    "key": "field_624fb11edccef",
                     "label": "Link Text",
                     "name": "link_text",
                     "type": "text",
@@ -338,7 +495,7 @@
             ]
         },
         {
-            "key": "field_624f3cf7e9a35",
+            "key": "field_624fb2cebdc82",
             "label": "CTA Area",
             "name": "cta_area",
             "type": "group",
@@ -353,11 +510,11 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_624f3d08e9a36",
-                    "label": "CTA Content",
+                    "key": "field_624fb2f6bdc83",
+                    "label": "Content",
                     "name": "cta_content",
-                    "type": "text",
-                    "instructions": "A short sentence.",
+                    "type": "textarea",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -367,12 +524,12 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
                 },
                 {
-                    "key": "field_624f3d26e9a37",
+                    "key": "field_624fb300bdc84",
                     "label": "Link Page",
                     "name": "link_page",
                     "type": "page_link",
@@ -391,7 +548,7 @@
                     "multiple": 0
                 },
                 {
-                    "key": "field_624f3d36e9a38",
+                    "key": "field_624fb308bdc85",
                     "label": "Link Text",
                     "name": "link_text",
                     "type": "text",
@@ -417,7 +574,7 @@
             {
                 "param": "page",
                 "operator": "==",
-                "value": "9513"
+                "value": "9495"
             }
         ]
     ],
@@ -432,5 +589,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649391319
+    "modified": 1649392029
 }

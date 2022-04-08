@@ -91,10 +91,16 @@
           width: 100%;
           margin-bottom: 60px;
         }
-        img {
-          margin-bottom: 20px;
+        .image {
+          max-height: 250px;
+          overflow: hidden;
           @include breakpoint(mobile){
             margin-bottom: 0;
+          }
+          img {
+            margin-bottom: 20px;
+            max-width: 100%;
+            height: auto;
           }
         }
         h3 {

@@ -26,9 +26,20 @@
     font-size: 20px;
     font-weight: 100;
     width: 80%;
-    // margin: 0 auto;
     margin-top: 30px;
     font-style: italic;
     color: $color-heroBG;
+  }
+  .aside {
+    a {
+      color: $color-teal;
+      text-decoration: none;
+    }
+  }
+}
+
+.page-template-template-people {
+  .subpage-head {
+    margin-bottom: 120px;
   }
 }

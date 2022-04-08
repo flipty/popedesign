@@ -34,7 +34,7 @@ main {
   }
   div.row {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     margin-left: -15px;
     margin-right: -15px;
@@ -190,6 +190,11 @@ header {
                 }
               }
             }
+          }
+        }
+        &.current-menu-item, &.current-menu-ancestor {
+          a {
+            color: $color-teal;
           }
         }
       }

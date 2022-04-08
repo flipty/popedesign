@@ -18,7 +18,7 @@
       <?php get_template_part('partials/page', 'breadcrumb'); ?>
 
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 aside">
           <?php echo wp_get_attachment_image( get_field( 'photo' ), 'bio');  ?>
           <p>
             <?php echo get_field('markets');?>

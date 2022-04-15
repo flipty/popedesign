@@ -2,7 +2,7 @@
 
 //enqueue theme styles and scripts
 function enqueue_theme_assets() {
-    wp_enqueue_style( 'popedesign', get_template_directory_uri() . '/css/popedesign.css',false,'1.0','all');
+    wp_enqueue_style( 'popedesign', get_template_directory_uri() . '/css/popedesign.css',false,'2.0','all');
     //wp_register_script('popedesign', get_template_directory_uri() . '/js/popedesign.js','','1.1', true);
     //wp_enqueue_script( 'popedesign', get_template_directory_uri() . '/js/popedesign.js',false,'1.0','all');
 }
@@ -112,7 +112,7 @@ function html5_search_form( $form ) {
  }
  add_action('init', 'df_disable_comments_admin_bar');
 
- //from helpers.php 
+ //from helpers.php
  function pope_get_excerpt($text, $word_count){
 
  	if ( $text != '' ) {
@@ -133,3 +133,5 @@ function html5_search_form( $form ) {
      $string = preg_replace("/[\s_]/", "-", $string);
      return $string;
  }
+
+ require_once locate_template('/partials/page-nav.php');

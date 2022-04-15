@@ -11,38 +11,39 @@
 get_header();
 ?>
 
+<?php $header = get_field('page_header');?>
 <section class="subpage-head">
     <div class="container">
       <div class="inner">
         <div class="content">
           <h1>
-            Our Approach
+            <?php echo $header['headline'];?>
           </h1>
-          <span class="h2">People<br>Centered<br>Design</span>
+          <span class="h2"><?php echo $header['subhead'];?></span>
         </div>
         <div class="image">
-          <img src="https://loremflickr.com/900/420/nyc" alt="">
+          <?php echo wp_get_attachment_image($header['image'], 'full');?>
         </div>
       </div>
     </div>
 </section>
 
+<?php $subhero = get_field('sub_hero');?>
 <section class="sub-hero rings-left">
   <div class="rings">
     <div class="ring1"></div>
     <div class="ring2"></div>
   </div>
   <div class="container">
-
     <div class="inner">
       <div class="headline">
         <h2>
-          We approach each project with critical questioning and effective listening. We don’t provide a solution until we know what we’re trying to solve.
+          <?php echo $subhero['subheadline'];?>
         </h2>
       </div>
       <div class="content">
         <p>
-We’ve built a reputation for listening to client needs and responding with thoughtful, practical design solutions. Every project is unique, and each collaborator brings their own perspective. Honoring these perspectives helps us hold practical considerations like cost effectiveness and timelines in balance with thoughtful design.
+          <?php echo $subhero['content'];?>
         </p>
       </div>
     </div>
@@ -50,124 +51,72 @@ We’ve built a reputation for listening to client needs and responding with tho
   </div>
 </section>
 
+<?php $fwblock = get_field('full_width_block');?>
 <section class="content-chunk color-wrap color-teal">
   <div class="container">
     <div class="inner">
-      <h2>Services</h2>
+      <h2><?php echo $fwblock['headline'];?></h2>
       <div class="content">
         <p>
-          Pope Design Group excels in providing architectural design, interior design, planning and sustainable design services through client-centric best practices and processes. Our measure of success is client satisfaction at all levels – achieving business goals and enhancing lives.
+          <?php echo $fwblock['content'];?>
         </p>
       </div>
     </div>
   </div>
 </section>
 
+<?php if (get_field('services')){?>
 <section class="services">
     <div class="container">
       <div class="inner">
         <ul class="service-list">
-
+          <?php while (have_rows('services')): the_row(); ?>
+          <?php $service = get_sub_field('service');?>
           <li>
             <div class="image">
-              <img src="https://loremflickr.com/600/600/istanbul" alt="">
+              <?php echo wp_get_attachment_image($service['image'], 'full');?>
             </div>
             <div class="content">
               <div class="pad">
-                <h3>Service Name Goes Here</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <ul>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                </ul>
+                <?php echo $service['content'];?>
               </div>
             </div>
           </li>
-
-          <li>
-            <div class="image">
-              <img src="https://loremflickr.com/600/600/istanbul" alt="">
-            </div>
-            <div class="content">
-              <div class="pad">
-                <h3>Service Name Goes Here</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <ul>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="image">
-              <img src="https://loremflickr.com/600/600/istanbul" alt="">
-            </div>
-            <div class="content">
-              <div class="pad">
-                <h3>Service Name Goes Here</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <ul>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                  <li>Item goes here</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-
+          <?php endwhile; ?>
         </ul>
       </div>
     </div>
 </section>
+<?php } ?>
 
+<?php $single_hero = get_field('single_hero');?>
 <section class="hero">
   <div class="carousel">
-
     <div class="owl-carousel owl-theme about-carousel">
       <div class="item">
-        <img src="https://loremflickr.com/1280/600/paris" alt="">
+        <?php echo wp_get_attachment_image($single_hero['image'], 'full');?>
       </div>
     </div>
-
   </div>
   <div class="content-block">
     <div class="inner">
-      <p>Creating environments that enhance lives</p>
-      <a href="#">VIEW OUR PROJECTS</a>
+      <p><?php echo $single_hero['content'];?></p>
+      <a href="<?php echo $single_hero['link_page'];?>"><?php echo $single_hero['link_text'];?></a>
     </div>
   </div>
 </section>
 
-
+<?php $bottom = get_field('bottom_content');?>
 <section class="cta-blurb">
   <div class="container">
     <div class="inner">
       <div class="content">
         <p>
-          We’ve built a reputation for listening to client needs and responding with thoughtful, practical design solutions.
+          <?php echo $bottom['content'];?>
         </p>
       </div>
       <div class="cta">
-        <a href="#"><span>TELL US ABOUT YOUR VISION</span></a>
+        <a href="<?php echo $bottom['link_page'];?>"><span><?php echo $bottom['link_text'];?></span></a>
       </div>
     </div>
   </div>

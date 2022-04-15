@@ -2,27 +2,21 @@
 
 <?php get_template_part('partials/page', 'header'); ?>
 
+<section class="subpage-head-small no-margin"><!--logic for color-->
+    <div class="container">
+      <div class="inner">
+          <h1>News</h1>
+      </div>
+    </div>
+</section>
+
 <div class="row">
 
     <div class="container nopadding isoGrid" id="news-ctabanners">
       <div class="col-xs-12">
+          <?php get_template_part('partials/page', 'breadcrumb'); ?>
 
         <div class="row">
-        	<?php if( $paged === 0 && have_rows( 'marketing_message' ) ): ?>
-
-              <div class="isotope marketing">
-                <a href="<?php the_field('marketing_link'); ?>">
-                  <h2>
-                    <?php while( have_rows( 'marketing_message' ) ): the_row(); ?>
-                      <?php the_sub_field('message'); ?>.<br />
-                    <?php endwhile; ?>
-                  </h2>
-                </a>
-              </div>
-
-          	<?php endif; ?>
-
-
             <?php if (have_posts()) : ?>
 
               <?php while (have_posts()) : the_post(); ?>
@@ -32,7 +26,7 @@
                     $isotope_class = 'no-image';
                   }
                 ?>
-                <div class="isotope col-md-4 <?php echo $isotope_class; ?>">
+                <div class="isotope <?php echo $isotope_class; ?>">
                   <a href="<?php the_permalink(); ?>">
                     <?php echo $image; ?>
                     <h2>
@@ -54,7 +48,7 @@
 </div><!--/container content-area-->
 <?php
   if (have_posts()) :
-     pope_page_nav( false );
+     // pope_page_nav( false );
   endif;
 ?>
 

@@ -1,42 +1,36 @@
 <?php
+/**
+ * Template Name: Culture
+ *
+ * @package WordPress
+ * @subpackage popedesign
+ * @since Twenty Sixteen 1.0
+ * template-culture
+ */
+
 get_header();
 ?>
 
-<section class="hero home-hero">
-  <div class="carousel">
-    <div class="owl-carousel owl-theme home-carousel">
-      <?php $images = get_field('carousel');
-      $size = 'full'; // (thumbnail, medium, large, full or custom size)
-      foreach( $images as $image_id ): ?>
-        <div class="item">
-          <?php echo wp_get_attachment_image( $image_id, $size ); ?>
+<?php $header = get_field('page_header');?>
+<section class="subpage-head">
+    <div class="container">
+      <div class="inner">
+        <div class="content">
+          <h1>
+            <?php echo $header['headline'];?>
+          </h1>
+          <span class="h2"><?php echo $header['subhead'];?></span>
         </div>
-      <?php endforeach; ?>
+        <div class="image">
+          <?php echo wp_get_attachment_image($header['image'], 'full');?>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="content-block">
-    <div class="inner">
-      <?php $hero = get_field('hero_content');?>
-      <p><?php echo $hero['intro_headline'];?></p>
-      <a href="<?php echo $hero['intro_link'];?>"><?php echo $hero['intro_link_text'];?></a>
-    </div>
-  </div>
 </section>
 
-<section class="sub-hero rings-right">
-  <div class="rings">
-    <div class="ring1"></div>
-    <div class="ring2"></div>
-  </div>
+<section class="plain-intro">
   <div class="container">
-    <div class="inner">
-      <div class="headline">
-        <h1><?php echo get_field('intro_headline');?></h1>
-      </div>
-      <div class="content">
-        <?php echo get_field('intro_content');?>
-      </div>
-    </div>
+    <p><?php echo get_field('intro_content');?></p>
   </div>
 </section>
 
@@ -70,17 +64,39 @@ get_header();
   </div>
 </section>
 
-<?php $cta = get_field('cta_area');?>
+<section class="hero">
+  <div class="carousel">
+    <div class="owl-carousel owl-theme home-carousel">
+      <?php $images = get_field('carousel');
+      $size = 'full'; // (thumbnail, medium, large, full or custom size)
+      foreach( $images as $image_id ): ?>
+        <div class="item">
+          <?php echo wp_get_attachment_image( $image_id, $size ); ?>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
+  <!-- <div class="content-block">
+    <div class="inner">
+      <?php $hero = get_field('hero_content');?>
+      <p><?php echo $hero['intro_headline'];?></p>
+      <a href="<?php echo $hero['intro_link'];?>"><?php echo $hero['intro_link_text'];?></a>
+    </div>
+  </div> -->
+</section>
+
+
+<?php $bottom = get_field('cta_area');?>
 <section class="cta-blurb">
   <div class="container">
     <div class="inner">
       <div class="content">
         <p>
-          <?php echo $cta['cta_content'];?>
+          <?php echo $bottom['cta_content'];?>
         </p>
       </div>
       <div class="cta">
-        <a href="<?php echo $cta['link_page'];?>"><span><?php echo $cta['link_text'];?></span></a>
+        <a href="<?php echo $bottom['link_page'];?>"><span><?php echo $bottom['link_text'];?></span></a>
       </div>
     </div>
   </div>
@@ -89,8 +105,7 @@ get_header();
 <section class="news">
   <div class="container">
     <div class="intro">
-      <h2>News</h2>
-      <a href="/news">VIEW ALL ARTICLES</a>
+      <h2>Culture News</h2>
     </div>
     <div class="news-items">
     <?php
@@ -99,20 +114,13 @@ get_header();
       'post_type'       => 'news',
       'orderby'         => 'date',
       'order'						=> 'DESC',
-      //do not show those excluded from the listing via ACF check option
-      'meta_query' => array(
-        'relation' => 'OR',
+      'tax_query' => array(
         array(
-          'key'     => 'home_page_exempt',
-          'value'   => true,
-          'compare' => '!='
-        ),
-        array(
-          'key'     => 'home_page_exempt',
-          'value' 	=> 'null',
-          'compare' => 'NOT EXISTS'
+            'taxonomy' => 'news-category',
+            'field' => 'slug',
+            'terms' => 'culture'
         )
-      )
+     )
     );
     $news_query = new WP_Query( $newsargs );
     ?>
@@ -132,6 +140,7 @@ get_header();
   </div>
 </section>
 
+
+
 <?php
 get_footer();
-?>

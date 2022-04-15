@@ -12,18 +12,18 @@ get_header();
 ?>
 
 
-
+<?php $header = get_field('page_header');?>
 <section class="subpage-head">
     <div class="container">
       <div class="inner">
         <div class="content">
           <h1>
-            People
+            <?php echo $header['headline'];?>
           </h1>
-          <span class="h2">Business<br>Minded<br>Designers</span>
+          <span class="h2"><?php echo $header['subheadline'];?></span>
         </div>
         <div class="image">
-          <img src="https://loremflickr.com/900/420/nyc" alt="">
+          <?php echo wp_get_attachment_image($header['image'], 'full');?>
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@ get_header();
 <section class="people">
   <div class="container">
     <h2>Leadership Team</h2>
-    <p>Pope Design Group is led by a diverse group of individuals representing our various practice areas. Each of them is dedicated to making sure team members are empowered, motivated, capable, and equipped to work effectively. We encourage everyone in the firm to have project ownership, take initiative, contribute creatively, and make a difference in the community.</p>
+    <?php the_content();?>
     <ul class="inner">
       <?php while (have_rows('people')): the_row();
       $person = get_sub_field('person');

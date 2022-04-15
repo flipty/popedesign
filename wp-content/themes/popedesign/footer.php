@@ -26,19 +26,19 @@
             </ul>
           </nav>
           <div class="socials">
-            <a href="#"><img src="/wp-content/themes/popedesign/images/linkedin.svg" alt="Follow Pope on LinkedIn"></a>
-            <a href="#"><img src="/wp-content/themes/popedesign/images/facebook.svg" alt="Follow Pope on Facebook"></a>
-            <a href="#"><img src="/wp-content/themes/popedesign/images/twitter.svg" alt="Follow Pope on Twitter"></a>
-            <a href="#"><img src="/wp-content/themes/popedesign/images/instagram.svg" alt="Follow Pope on Instagram"></a>
+            <a href="https://www.linkedin.com/company/pope-architects"><img src="/wp-content/themes/popedesign/images/linkedin.svg" alt="Follow Pope on LinkedIn"></a>
+            <a href="https://www.facebook.com/popearchitectsmn"><img src="/wp-content/themes/popedesign/images/facebook.svg" alt="Follow Pope on Facebook"></a>
+            <a href="https://twitter.com/popearchitects"><img src="/wp-content/themes/popedesign/images/twitter.svg" alt="Follow Pope on Twitter"></a>
+            <a href="https://www.instagram.com/popearchitects/"><img src="/wp-content/themes/popedesign/images/instagram.svg" alt="Follow Pope on Instagram"></a>
           </div>
           <div class="legal">
-            <a href="#">Privacy</a> |
-            <a href="#">Legal</a>
+            <a href="/privacy-legal">Privacy</a> |
+            <a href="/privacy-legal">Legal</a>
           </div>
         </div>
       </div>
       <div class="copyright">
-        Pope Architects, Inc. &copy; <?php echo date('Y'); ?> All Rights Reserved.
+        Pope Design Group, Inc. &copy; <?php echo date('Y'); ?> All Rights Reserved.
       </div>
     </div>
   </footer>

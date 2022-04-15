@@ -77,6 +77,25 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_62537916ddbd5",
+            "label": "Google Maps embed code",
+            "name": "google_maps_embed_code",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<iframe style=\"border: 0;\" src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2822.5642800472765!2d-93.15662104902032!3d44.97284697899563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b3c2b381e15%3A0x44fd39e7435ac6d2!2s1295+Bandana+Blvd+N%2C+St+Paul%2C+MN+55108!5e0!3m2!1sen!2sus!4v1449458271647\" width=\"600\" height=\"450\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"><\/iframe>",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -97,5 +116,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649288830
+    "modified": 1649638564
 }

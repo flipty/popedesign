@@ -126,7 +126,7 @@
 	}
 
 	if( is_tax('news-category') ){
-		$child_title = 'Category';
+		$child_title = false;
 		$child_link = home_url().'/news/category';
 		$grandchild_title = single_term_title( false, false );
 	}
@@ -142,8 +142,8 @@
 	}
 
 	if( is_single() && $post_type == 'bios'){
-		$title = 'People';
-		$link = home_url().'/people/';
+		$title = 'About';
+		$link = home_url().'/about/';
 	}
 
 	if( is_single() && $post_type == 'news'){

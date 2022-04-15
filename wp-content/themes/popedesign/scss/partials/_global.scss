@@ -52,13 +52,19 @@ main {
       }
     }
     div.col-md-4, div.col-sm-4 {
-      width: 33.3333333%;
+      width: 30.3333333%;
+      @include breakpoint(mobile){
+        width: 100%;
+      }
+    }
+    div.col-md-6, div.col-sm-6 {
+      width: 47%;
       @include breakpoint(mobile){
         width: 100%;
       }
     }
     div.col-md-8, div.col-sm-8 {
-      width: 66.6666667%;
+      width: 63.6666667%;
       @include breakpoint(mobile){
         width: 100%;
       }

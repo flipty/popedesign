@@ -2,33 +2,33 @@
 
 <?php get_template_part('partials/page', 'header'); ?>
 
+<section class="subpage-head-small no-margin"><!--logic for color-->
+    <div class="container">
+      <div class="inner">
+          <h1>
+            <?php echo single_term_title( false, false );?>
+          </h1>
+      </div>
+    </div>
+</section>
+
 <div class="row">
-          
+
+  <?php
+    global $post;
+    $term = get_term_by('slug', $term, 'project-type');
+  ?>
+
     <div class="container nopadding isoGrid" id="news-ctabanners">
+
       <div class="col-xs-12">
 
+        <?php get_template_part('partials/page', 'breadcrumb'); ?>
+
         <div class="row">
-          
-          <?php if( $paged === 0 && have_rows( 'marketing_message' ) ): ?>
 
-              <div class="isotope marketing">
-                <a href="<?php the_field('marketing_link'); ?>">
-                  <h2>
-                    <?php while( have_rows( 'marketing_message' ) ): the_row(); ?>
-                      <?php the_sub_field('message'); ?>.<br />
-                    <?php endwhile; ?>
-                  </h2>
-                </a>
-              </div>
 
-            <?php endif; ?>
-
-            <?php 
-              global $post;
-              $term = get_term_by('slug', $term, 'project-type');
-            ?>
-
-            <?php 
+            <?php
               $term_ids = array();
             ?>
 
@@ -42,9 +42,9 @@
 
                     <?php $post = $project; setup_postdata( $post ); ?>
 
-                      <?php 
+                      <?php
                         $isotope_class = '';
-                        $image = wp_get_attachment_image( get_field( 'project_image' ), 'isotope'); 
+                        $image = wp_get_attachment_image( get_field( 'project_image' ), 'isotope');
                         if( !$image ){
                           if( have_rows( 'photos' ) ):
                             while( have_rows( 'photos' ) ): the_row();
@@ -55,7 +55,7 @@
                         }
                         if( !$image ){
                           $isotope_class = ' no-image';
-                        } 
+                        }
                       ?>
 
                       <div class="isotope<?php echo $isotope_class; echo get_field( 'remove_link' ) ? ' no-link': ''; ?> projectIso">
@@ -80,11 +80,11 @@
             <?php endif; ?>
 
 
-           <?php 
-                $args = array( 
+           <?php
+                $args = array(
                   'post_type' => 'projects',
-                  'orderby' => 'name', 
-                  'order' => 'ASC', 
+                  'orderby' => 'name',
+                  'order' => 'ASC',
                   'posts_per_page' => -1,
                   'tax_query' => array(
                     array(
@@ -95,19 +95,19 @@
                   ),
                   'post__not_in' => $term_ids
                 );
-                
+
                 $posts = new WP_Query( $args );
           ?>
           <?php if ( $posts->have_posts() ) : ?>
 
-            <?php 
+            <?php
               $count = 0;
               $projects_count = $posts->post_count;
               $projects_per_column = round( $projects_count / 3 );
             ?>
 
             <div class="row projectTypeList">
-          
+
                 <div class="col-md-12">
                   <h2>Additional Experience</h2>
                 </div>
@@ -116,7 +116,7 @@
                   <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
                     <?php $count++; ?>
-                    
+
                     <p>
                       <strong>
                         <?php if( !get_field( 'remove_link' ) ) { ?>
@@ -127,7 +127,6 @@
                           <?php the_title(); ?>
                         <?php } ?>
                       </strong>
-                      <br>
                       <?php the_field('city'); ?>, <?php the_field('state'); ?>
                     </p>
 
@@ -139,7 +138,7 @@
                         <?php $count = 0; ?>
 
                     <?php endif; ?>
-                    
+
                   <?php endwhile; ?>
 
                 </div>

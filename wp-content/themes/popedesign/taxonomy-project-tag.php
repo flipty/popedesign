@@ -2,13 +2,25 @@
 
 <?php get_template_part('partials/page', 'header'); ?>
 
+<section class="subpage-head-small no-margin"><!--logic for color-->
+    <div class="container">
+      <div class="inner">
+          <h1>
+            Projects: <?php echo single_term_title( false, false );?>
+          </h1>
+      </div>
+    </div>
+</section>
+
 <div class="row">
-          
+
     <div class="container nopadding isoGrid" id="news-ctabanners">
       <div class="col-xs-12">
 
+        <?php get_template_part('partials/page', 'breadcrumb'); ?>
+
         <div class="row">
-          
+
           <?php if( $paged === 0 && have_rows( 'marketing_message' ) ): ?>
 
               <div class="isotope marketing">
@@ -26,7 +38,7 @@
             <?php if (have_posts()) : ?>
 
               <?php while (have_posts()) : the_post(); ?>
-                <?php 
+                <?php
                   $isotope_class = '';
                   $image = wp_get_attachment_image( get_field( 'project_image' ), 'isotope');
                   if( !$image ){
@@ -39,7 +51,7 @@
                   }
                   if( !$image ){
                     $isotope_class = ' no-image';
-                  } 
+                  }
                 ?>
                 <div class="isotope<?php echo $isotope_class; echo get_field( 'remove_link' ) ? ' no-link': ''; ?>">
                   <?php if( !get_field( 'remove_link' ) ) { ?>
@@ -47,17 +59,17 @@
                   <?php } ?>
                     <?php echo $image; ?>
                     <h2>
-                      <em><?php the_time('l, F jS, Y'); ?></em>
+                      <!-- <em><?php the_time('l, F jS, Y'); ?></em> -->
                       <?php the_title( ); ?>
                     </h2>
                   <?php if( !get_field( 'remove_link' ) ) { ?>
                     </a>
-                  <?php } ?>  
+                  <?php } ?>
                 </div>
 
               <?php endwhile; ?>
 
-            <?php endif; ?>       
+            <?php endif; ?>
         </div>
 
       </div><!--/col-->
@@ -65,10 +77,10 @@
   </div>
 
 </div><!--/container content-area-->
-<?php 
-  if (have_posts()) : 
-     pope_page_nav( false ); 
-  endif; 
+<?php
+  if (have_posts()) :
+     pope_page_nav( false );
+  endif;
 ?>
 
 <?php get_footer(); ?>

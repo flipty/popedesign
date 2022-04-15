@@ -20,6 +20,9 @@
   .isotope-grid {
     padding-top: 30px;
     padding-bottom: 45px;
+    img {
+      height: auto;
+    }
   }
   .photo-block.color-primary {
     margin-top: 60px;
@@ -107,5 +110,32 @@
   }
   footer {
     // margin-top: 60px;
+  }
+}
+
+.tax-project-type {
+  .subpage-head-small {
+    margin-bottom: 0;
+  }
+  .projectTypeList {
+    @include breakpoint(desktop){
+      margin-left: 0 !important;
+    }
+    p {
+      font-size: 12px;
+      margin-bottom: 25px;
+      strong {
+        font-size: 16px;
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+    a {
+      color: $color-darkteal;
+      text-decoration: none;
+      &:hover {
+        color: $color-watermelon;
+      }
+    }
   }
 }

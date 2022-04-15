@@ -1,6 +1,9 @@
 .page-template-template-approach {
   .subpage-head {
     background: linear-gradient(270deg, $white 50%, $color-plum 50%);
+    @include breakpoint(mobile){
+      background: $color-plum;
+    }
   }
   .sub-hero {
     .inner {

@@ -448,9 +448,9 @@
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "12924"
+                "value": "template-approach.php"
             }
         ]
     ],
@@ -465,5 +465,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649636226
+    "modified": 1650117962
 }

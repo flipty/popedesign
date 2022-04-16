@@ -143,7 +143,7 @@
 
 	if( is_single() && $post_type == 'bios'){
 		$title = 'About';
-		$link = home_url().'/about/';
+		$link = home_url().'/company/';
 	}
 
 	if( is_single() && $post_type == 'news'){

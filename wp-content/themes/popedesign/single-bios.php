@@ -20,12 +20,18 @@
       <div class="row">
         <div class="col-sm-4 aside">
           <?php echo wp_get_attachment_image( get_field( 'photo' ), 'bio');  ?>
+          <?php if (get_field('markets')){?>
+          <h4>Markets:</h4>
           <p>
             <?php echo get_field('markets');?>
           </p>
+          <?php } ?>
+          <?php if (get_field('email')){?>
+          <h4>Email:</h4>
           <p>
             <a href="mailto:<?php echo get_field('email');?>"><?php echo get_field('email');?></a>
           </p>
+          <?php } ?>
         </div>
 
         <div class="col-sm-8">

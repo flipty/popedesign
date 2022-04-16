@@ -374,9 +374,9 @@
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "12810"
+                "value": "template-history.php"
             }
         ]
     ],
@@ -391,5 +391,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649897461
+    "modified": 1650118212
 }

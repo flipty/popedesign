@@ -897,7 +897,7 @@ section.services {
         }
       }
       &:hover {
-        color: $color-teal; 
+        color: $color-teal;
         border-color: $color-teal;
         &:after {
           @include svgTeal();
@@ -953,7 +953,7 @@ section.services {
         .content {
           position: absolute;
           bottom: 0;
-          background-color: transparentize($color-teal, 0.3);
+          background-color: transparentize($color-teal, 0.2);
           padding: 15px;
           width: calc(100% - 30px);
           color: $white;
@@ -1005,7 +1005,7 @@ section.services {
           position: absolute;
           bottom: 0;
           width: calc(100% - 20px);
-          background-color: transparentize($color-teal, 0.3);
+          background-color: transparentize($color-teal, 0.2);
           color: $white;
           font-weight: 500;
           font-size: 16px;

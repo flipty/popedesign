@@ -1,6 +1,12 @@
-.post-type-archive-news {
+.post-type-archive-news, .tax-news-category {
   img {
     max-width: 100%;
     height: auto;
+  }
+  .isoGrid .row .isotope a h2 {
+    text-transform: none;
+    em {
+      display: none;
+    }
   }
 }

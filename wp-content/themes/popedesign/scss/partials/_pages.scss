@@ -53,10 +53,18 @@
 }
 
 .page-template-template-careers {
+  &.page-parent.page-child {
+    .return {
+      display: none;
+    }
+  }
   .content {
-    p {
+    p, ul li {
       line-height: 1.7;
       color: $textcolor;
+    }
+    li {
+      margin-bottom: 10px;
     }
   }
   .job {
@@ -183,7 +191,7 @@
           @include breakpoint(desktop){
             font-size: 40px;
           }
-        }        
+        }
       }
     }
   }

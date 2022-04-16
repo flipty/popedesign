@@ -401,9 +401,9 @@
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "9499"
+                "value": "template-culture.php"
             }
         ]
     ],
@@ -418,5 +418,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649896430
+    "modified": 1650117983
 }

@@ -2108,7 +2108,7 @@ section.services .inner ul.service-list > li:nth-child(even) {
 .isotope-grid ul li a .content {
   position: absolute;
   bottom: 0;
-  background-color: rgba(65, 139, 148, 0.7);
+  background-color: rgba(65, 139, 148, 0.8);
   padding: 15px;
   width: calc(100% - 30px);
   color: #ffffff;
@@ -2166,7 +2166,7 @@ section.services .inner ul.service-list > li:nth-child(even) {
   position: absolute;
   bottom: 0;
   width: calc(100% - 20px);
-  background-color: rgba(65, 139, 148, 0.7);
+  background-color: rgba(65, 139, 148, 0.8);
   color: #ffffff;
   font-weight: 500;
   font-size: 16px;
@@ -2685,6 +2685,14 @@ section.news .news-items .news-item a:hover {
   color: rgba(91, 91, 94, 0.9);
 }
 
+.single-bios .aside h4 {
+  margin-bottom: 0;
+}
+
+.single-bios .aside p {
+  margin-top: 5px;
+}
+
 .single-bios .aside a {
   color: #418b94;
   text-decoration: none;
@@ -2752,9 +2760,17 @@ section.news .news-items .news-item a:hover {
   border: 1px solid;
 }
 
-.page-template-template-careers .content p {
+.page-template-template-careers.page-parent.page-child .return {
+  display: none;
+}
+
+.page-template-template-careers .content p, .page-template-template-careers .content ul li {
   line-height: 1.7;
   color: #5B5B5E;
+}
+
+.page-template-template-careers .content li {
+  margin-bottom: 10px;
 }
 
 .page-template-template-careers .job {
@@ -2891,7 +2907,15 @@ section.news .news-items .news-item a:hover {
   margin-top: -120px;
 }
 
-.post-type-archive-news img {
+.post-type-archive-news img, .tax-news-category img {
   max-width: 100%;
   height: auto;
+}
+
+.post-type-archive-news .isoGrid .row .isotope a h2, .tax-news-category .isoGrid .row .isotope a h2 {
+  text-transform: none;
+}
+
+.post-type-archive-news .isoGrid .row .isotope a h2 em, .tax-news-category .isoGrid .row .isotope a h2 em {
+  display: none;
 }

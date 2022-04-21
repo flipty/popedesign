@@ -26,10 +26,10 @@
             </ul>
           </nav>
           <div class="socials">
-            <a href="https://www.linkedin.com/company/pope-architects"><img src="/wp-content/themes/popedesign/images/linkedin.svg" alt="Follow Pope on LinkedIn"></a>
-            <a href="https://www.facebook.com/popearchitectsmn"><img src="/wp-content/themes/popedesign/images/facebook.svg" alt="Follow Pope on Facebook"></a>
-            <a href="https://twitter.com/popearchitects"><img src="/wp-content/themes/popedesign/images/twitter.svg" alt="Follow Pope on Twitter"></a>
-            <a href="https://www.instagram.com/popearchitects/"><img src="/wp-content/themes/popedesign/images/instagram.svg" alt="Follow Pope on Instagram"></a>
+            <a href="https://www.linkedin.com/company/pope-design-group/?viewAsMember=true"><img src="/wp-content/themes/popedesign/images/linkedin.svg" alt="Follow Pope on LinkedIn"></a>
+            <a href="https://www.facebook.com/popedesigngroup"><img src="/wp-content/themes/popedesign/images/facebook.svg" alt="Follow Pope on Facebook"></a>
+            <a href="https://twitter.com/popedesigngroup"><img src="/wp-content/themes/popedesign/images/twitter.svg" alt="Follow Pope on Twitter"></a>
+            <a href="https://www.instagram.com/popedesigngroup/"><img src="/wp-content/themes/popedesign/images/instagram.svg" alt="Follow Pope on Instagram"></a>
           </div>
           <div class="legal">
             <a href="/privacy-legal">Privacy</a> |

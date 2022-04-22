@@ -129,6 +129,9 @@
         display: block;
         margin-bottom: 5px;
       }
+      &.no-link {
+        color: lighten($textcolor, 15%);
+      }
     }
     a {
       color: $color-darkteal;

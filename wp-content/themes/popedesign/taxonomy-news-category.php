@@ -49,6 +49,7 @@
 <?php
   if (have_posts()) :
      // pope_page_nav( false );
+      wp_pagenavi(); 
   endif;
 ?>
 

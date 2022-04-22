@@ -30,7 +30,7 @@ add_action( 'pre_get_posts', 'show_all_archive_posts' );
 function show_all_archive_posts( $query ) {
     if ( ! is_admin() && $query->is_main_query() ) {
         if ( is_archive( 'post' ) ) {
-            $query->set('posts_per_page', -1 );
+            $query->set('posts_per_page', 9 );
         }
     }
 }

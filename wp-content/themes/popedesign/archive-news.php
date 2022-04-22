@@ -60,7 +60,8 @@ $day      = get_query_var('day');
 </div><!--/container content-area-->
 <?php
   if (have_posts()) :
-     pope_page_nav( false );
+     //pope_page_nav( false );
+     wp_pagenavi();
   endif;
 ?>
 <?php get_footer(); ?>

@@ -117,7 +117,7 @@
 
                     <?php $count++; ?>
 
-                    <p>
+                    <p <?php if( get_field( 'remove_link' ) ) { echo 'class="no-link"'; } ?>>
                       <strong>
                         <?php if( !get_field( 'remove_link' ) ) { ?>
                           <a href="<?php the_permalink(); ?>">

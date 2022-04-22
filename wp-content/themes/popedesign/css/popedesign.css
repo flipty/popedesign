@@ -893,6 +893,19 @@ footer .copyright {
   color: #ed6564;
 }
 
+.wp-pagenavi {
+  text-align: center;
+  color: #5B5B5E;
+}
+
+.wp-pagenavi * {
+  border: none !important;
+}
+
+.wp-pagenavi a {
+  color: #418b94;
+}
+
 section.hero {
   position: relative;
 }
@@ -2635,6 +2648,10 @@ section.news .news-items .news-item a:hover {
   margin-bottom: 5px;
 }
 
+.tax-project-type .projectTypeList p.no-link {
+  color: #818185;
+}
+
 .tax-project-type .projectTypeList a {
   color: #195d67;
   text-decoration: none;
@@ -2722,6 +2739,7 @@ section.news .news-items .news-item a:hover {
   font-size: 13px;
   margin-bottom: 0.5em;
   font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .page-template-template-contact div.wpcf7 select.wpcf7-select, .page-template-template-careers div.wpcf7 select.wpcf7-select {
@@ -2758,6 +2776,7 @@ section.news .news-items .news-item a:hover {
   user-select: none;
   background-image: none;
   border: 1px solid;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .page-template-template-careers.page-parent.page-child .return {

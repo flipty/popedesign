@@ -486,3 +486,14 @@ footer {
     }
   }
 }
+
+.wp-pagenavi {
+  text-align: center;
+  color: $textcolor;
+  * {
+    border: none !important;
+  }
+  a {
+    color: $color-teal;
+  }
+}

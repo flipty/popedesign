@@ -117,9 +117,17 @@ get_header();
     $news_query = new WP_Query( $newsargs );
     ?>
     <?php if ($news_query->have_posts() ) : while ( $news_query->have_posts() ) : $news_query->the_post();?>
-      <?php $image = get_field('news_image');?>
+      <?php $image = get_field('news_image');
+      $image_type = get_field('image_type');
+      if( $image_type == 'full' ){
+        $isotope_class = 'full-image';
+      }
+      if( $image_type == 'sidebar' ){
+        $isotope_class = 'sidebar-image';
+      }
+      ?>
         <div class="news-item">
-          <div class="image">
+          <div class="image <?php echo $isotope_class;?>">
             <?php echo wp_get_attachment_image($image, 'full');?>
           </div>
           <h3><?php echo get_the_title();?></h3>

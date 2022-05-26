@@ -21,10 +21,22 @@
 
               <?php while (have_posts()) : the_post(); ?>
                 <?php
+
                   $image = wp_get_attachment_image( get_field( 'news_image' ), 'isotope');
                   if( !$image ){
                     $isotope_class = 'no-image';
                   }
+
+                  $image_type = get_field('image_type');
+
+                  if( $image_type == 'full' ){
+                    $isotope_class = 'full-image';
+                  }
+
+                  if( $image_type == 'sidebar' ){
+                    $isotope_class = 'sidebar-image';
+                  }
+
                 ?>
                 <div class="isotope <?php echo $isotope_class; ?>">
                   <a href="<?php the_permalink(); ?>">
@@ -49,7 +61,7 @@
 <?php
   if (have_posts()) :
      // pope_page_nav( false );
-      wp_pagenavi(); 
+      wp_pagenavi();
   endif;
 ?>
 

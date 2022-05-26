@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -7,7 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 	<script src="/wp-content/themes/popedesign/js/vendor/owl.carousel.min.js"></script>
-	<title><?php if (is_archive()){ echo 'Listing';} else { echo get_the_title(); } ?> | Pope Design</title>
+	<title><?php if (is_archive()){ echo 'Listing';} else { echo get_the_title(); } ?> | Pope Design Group</title>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

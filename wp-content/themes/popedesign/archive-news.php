@@ -34,6 +34,17 @@ $day      = get_query_var('day');
               <?php
                 $isotope_class = '';
                 $image = wp_get_attachment_image( get_field( 'news_image' ), 'isotope');
+
+                $image_type = get_field('image_type');
+
+                if( $image_type == 'full' ){
+                  $isotope_class = 'full-image';
+                }
+
+                if( $image_type == 'sidebar' ){
+                  $isotope_class = 'sidebar-image';
+                }
+
                 if( !$image ){
                   $isotope_class = 'no-image';
                 }

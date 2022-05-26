@@ -7,7 +7,7 @@
   <?php while (have_posts()) : the_post(); ?>
     <main>
 
-    <section class="subpage-head-small"><!--logic for color-->
+    <section class="subpage-head-small no-margin"><!--logic for color-->
         <div class="container">
           <div class="inner">
               <span>News</span>
@@ -15,6 +15,7 @@
         </div>
     </section>
     <div class="container">
+    <?php get_template_part('partials/page', 'breadcrumb'); ?>
     <div class="row">
       <?php $imageType = get_field( 'image_type' ); ?>
       <div class="col-md-8"><!-- was 8 12 -->
@@ -78,7 +79,7 @@
             </ul>
 
        </div>
-     
+
     </div><!--/row-->
   </div>
 

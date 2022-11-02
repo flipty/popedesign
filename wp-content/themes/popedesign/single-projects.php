@@ -39,7 +39,7 @@
 
             <div class="item">
               <div class="itemContent">
-                 <?php echo wp_get_attachment_image( get_sub_field( 'photo' ), 'photo'); ?>
+                 <?php echo wp_get_attachment_image( get_sub_field( 'photo' ), 'carousel'); ?>
               </div><!--/itemContent-->
             </div><!--/item-->
 

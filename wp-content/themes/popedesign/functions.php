@@ -135,3 +135,6 @@ function html5_search_form( $form ) {
  }
 
  require_once locate_template('/partials/page-nav.php');
+
+//isotope image size
+add_image_size( 'isotope', 600, 600, array( 'center', 'center' ) );

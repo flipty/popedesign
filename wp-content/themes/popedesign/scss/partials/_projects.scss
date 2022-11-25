@@ -75,12 +75,19 @@
     }
   }
   .post-content {
-    > p {
+    > p, > ul li {
       margin-top: 0;
       font-size: 18px;
       line-height: 1.6;
       color: $textcolor;
+      a {
+        color: $color-teal;
+        &:hover {
+          color: $color-watermelon;
+        }
+      }
     }
+
   }
   .statBlock {
     .row {
@@ -94,6 +101,18 @@
       .value {
         color: $textcolor;
       }
+    }
+  }
+  .project-quote {
+    background: $black5;
+    padding: 20px 40px;
+    p {
+      @include breakpoint(desktop){
+        line-height: 1.8;
+        font-size: 16px;
+        color: $black75;
+      }
+
     }
   }
   p.tags {

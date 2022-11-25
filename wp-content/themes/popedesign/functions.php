@@ -32,6 +32,9 @@ function show_all_archive_posts( $query ) {
         if ( is_archive( 'post' ) ) {
             $query->set('posts_per_page', 9 );
         }
+        if ( is_archive( 'news' ) ) {
+            $query->set('posts_per_page', 9 );
+        }
     }
 }
 

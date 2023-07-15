@@ -1,0 +1,54 @@
+.single-bios {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .subpage-head-small {
+    margin-bottom: 0;
+  }
+  h1 {
+    margin-top: 0;
+    font-weight: 400;
+    margin-bottom: 10px;
+    em {
+      font-style: normal;
+      font-weight: 300;
+      color: $textcolor;
+      font-size: 75%;
+    }
+  }
+  h2 {
+    font-weight: 300;
+    color: $textcolor;
+    font-size: 85%;
+  }
+  p {
+    line-height: 1.7;
+  }
+  p.quote {
+    font-size: 20px;
+    font-weight: 100;
+    width: 80%;
+    margin-top: 30px;
+    font-style: italic;
+    color: $color-heroBG;
+  }
+  .aside {
+    h4 {
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 5px;
+    }
+    a {
+      color: $color-teal;
+      text-decoration: none;
+    }
+  }
+}
+
+.page-template-template-people {
+  .subpage-head {
+    margin-bottom: 120px;
+  }
+}

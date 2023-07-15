@@ -1,0 +1,18 @@
+@mixin breakpoint($point) {
+  @if $point == mobile {
+    @media only screen and (max-width: 1023px) {
+      @content;
+    }
+  }
+  @if $point == desktop {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+  @if $point == awkward {
+    @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+
+}

@@ -55,7 +55,6 @@ get_header();
 <section class="full-photo">
   <?php echo wp_get_attachment_image(get_field('full_width_photo'), 'full');?>
 </section>
-
 <a name="leadership"></a>
 <section class="people">
   <div class="container">

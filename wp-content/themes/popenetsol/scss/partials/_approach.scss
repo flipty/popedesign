@@ -1,0 +1,29 @@
+.page-template-template-approach {
+  .subpage-head {
+    background: linear-gradient(270deg, $white 50%, $color-plum 50%);
+    @include breakpoint(mobile){
+      background: $color-plum;
+    }
+  }
+  .sub-hero {
+    .inner {
+      padding: 60px 0;
+      .headline {
+        h2 {
+          font-size: 26px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .full-photo {
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    @include breakpoint(mobile){
+      margin-bottom: 0;
+    }
+  }
+  .cta-blurb {
+    margin-bottom: 60px;
+  }
+}

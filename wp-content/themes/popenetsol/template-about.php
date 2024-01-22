@@ -107,6 +107,21 @@ get_header();
   </div>
 </section>
 
+<?php $block3 = get_field('block_3');?>
+<section class="photo-block photo-left color-primary">
+  <div class="container">
+    <div class="inner">
+      <div class="photo">
+        <?php echo wp_get_attachment_image($block3['image'], 'full');?>
+      </div>
+      <div class="content">
+        <?php echo $block3['content'];?>
+        <a href="<?php echo $block3['link_page'];?>"><?php echo $block3['link_text'];?></a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php $cta = get_field('cta_area');?>
 <section class="cta-blurb">
   <div class="container">

@@ -15,6 +15,9 @@
       margin-bottom: 0.5em;
       font-family: sans-serif;
       font-family: 'Montserrat', sans-serif;
+      @include breakpoint(mobile){
+        width: calc(100% - 30px);
+      }
     }
     select.wpcf7-select {
       background: #e7e7e7;
@@ -89,6 +92,676 @@
   }
 }
 
+.page-template-template-careers-2024 {
+  
+  .current-openings {
+    background: linear-gradient(270deg, $white 35%, $color-jadeitelight 35%);
+    @include breakpoint(mobile){
+      background: $color-jadeitelight;
+    }
+    padding: 0;
+    .job-types {
+      > .row {
+        justify-content: left;
+      }
+      .job-type {
+        width: 45%;
+        // padding-right: 0;
+        @include breakpoint(mobile){
+          width: 100%;
+        }
+
+      }
+      .heading {
+        position: relative;
+        margin-top: 15px;
+        overflow: hidden;
+        img {
+          padding-top: 15px;
+          position: relative;
+          z-index: 5;
+          width: 100% !important;
+          height: auto !important;
+          overflow: hidden;
+        }
+        h3 {  
+          position: absolute;
+          bottom: 4px;
+          z-index: 6;
+          font-size: 28px;
+          width: calc(100% - 100px);
+          padding: 15px 50px;
+          margin: 0;
+          background: $color-teal75;
+          color: $white;
+          text-align: center;
+        }        
+      }
+      .content {
+        p {
+          font-size: 13px;
+          line-height: 1.5em;
+          padding-bottom: 15px;
+          strong {
+
+          }
+        }        
+      }
+    }
+    .job-listings {
+      background: $white;
+      @include breakpoint(mobile){
+      }
+      .inner {
+        padding: 15px;
+        padding-top: 0;
+        background: $white;
+        > p {
+          font-size: 16px;
+          line-height: 1.6em;
+          margin-top: 0;
+        }
+        @include breakpoint(mobile){
+          margin-left: -15px;
+          margin-right: -15px;
+        }
+        ul {
+          list-style: none;
+          padding-left: 0;
+          li { 
+            margin-bottom: 15px;
+            h4 {
+              margin-bottom: 0;
+              padding-bottom: 0;
+            }
+            p {
+              padding-top: 0;
+              margin-top: 0;
+              color: $color-greyDark;
+              font-size: 11px;
+            }
+            a {
+              color: $color-teal;
+              text-decoration: none;
+            }
+            &:hover {
+              a, p {
+              color: $color-watermelon;  
+              }
+              
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.highlights {
+    .row {
+      align-items: center;
+    }
+    .content {
+      p {
+        line-height: 1.7em;
+      }
+    }
+    .image {
+      img {
+        max-width: 100%;
+        height: auto;        
+      }
+    }
+  }
+
+  section.benefits {
+    padding: 25px 0;
+    background: $color-jadeitelight;
+    .benefits-list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      .benefit {
+        background: $white;
+        width: calc(33% - 5px);
+        margin-bottom: 15px;
+        @include breakpoint(mobile){
+          width: 100%;
+        }
+        h4 {
+          background: $color-teal;
+          color: $white;
+          text-align: center;
+          font-weight: normal;
+          margin: 0;
+          padding: 15px 0;
+          @include breakpoint(mobile){
+            font-size: 13px;
+          }
+        }
+        ul {
+          padding-left: 15px;
+          list-style: none;
+          li {
+            color: $color-greyDark;
+            font-size: 14px;
+            line-height: 1.5em;
+            margin-bottom: 15px;
+          }
+        }
+      } 
+    }
+  }
+
+  section.contact {
+    .hr-info {
+      h2 {
+        color: $color-watermelon;
+      }
+      > p {
+        line-height: 1.7em;
+      }
+      .testimonial {
+        display: flex;
+        flex-flow: row;
+        justify-content: left;
+        .image {
+          width: 33%;
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 100px;
+          }
+        }
+        .content {
+          width: 66%;
+          color: $color-teal;
+          > p {
+            color: $color-teal;
+            padding-left: 15px;
+            font-size: 14px;
+            line-height: 1.6em;
+            position: relative;
+            &:before {
+              position: absolute;
+              top: 15px;
+              left: 0;
+              content: "“";
+              font-size: 100px;
+              color: $color-teal25;
+            }
+            &:after {
+              position: absolute;
+              bottom: -25px;
+              right: 0;
+              content: "”";
+              font-size: 100px;
+              color: $color-teal25;
+            }
+          }
+          > h6 {
+            display: block;
+            padding-left: 15px;
+            font-weight: normal;
+            em {
+              font-style: normal;
+            }
+            &:before {
+              content: '-';
+            }
+          }
+        }
+      }
+      .events {
+        margin-top: 30px;
+        background: $color-teal75;
+        padding: 25px;
+        h3 {
+          color: $white;
+          font-weight: normal;
+          padding: 0 0 15px 0;
+        }
+        ol {
+          list-style: none;
+          padding-left: 0;
+          li {
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+    .contact-form {
+      h3 {
+        color: $color-plum;
+      }
+      div.wpcf7 {
+          width: 100%;
+          input[type="text"],
+          input[type="email"],
+          textarea {
+            background: #e7e7e7;
+            border: none;
+            width: 100%;
+            padding: 0.85em;
+            font-size: 13px;
+            margin-bottom: 0.5em;
+            font-family: sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            @include breakpoint(mobile){
+              width: calc(100% - 30px);
+            }
+
+          }
+          select.wpcf7-select {
+            background: #e7e7e7;
+            border: none;
+            width: 100%;
+            padding: 0.85em;
+            font-size: 13px;
+            height: 3.5em;
+            border-radius: 0;
+            margin-bottom: 0.5em;
+          }
+          .wpcf7-submit {
+            color: #666;
+            border-radius: 0;
+            padding: 12px 24px;
+            background-color: #fff;
+            border-color: #ccc;
+            display: inline-block;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid;
+            font-family: 'Montserrat', sans-serif;
+          }
+        }
+      .disclaimer {
+        h5 {
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+        p {
+          padding-top: 0;
+          margin-top: 0;
+        }
+        font-size: 10px;
+        color: $color-greyMed;
+      }
+    }
+  }
+  section.culture {
+    h2 {
+      color: $color-teal;
+    }
+    .careers-carousel {
+      margin-bottom: 60px;
+      .owl-item {
+        .item {
+          img {
+            height: auto;
+          }
+        }
+      }
+    }
+    .culture-content {
+      line-height: 1.7em;
+    }
+    .culture-link {
+      a {
+        color: $color-plum; 
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 4em;
+        &:hover {
+          color: $color-watermelon;
+        }
+      }
+    }
+  }
+}
+
+.single-jobs {
+  .subpage-head-small {
+    margin-bottom: 0;
+  }
+  .full-image-hero {
+    margin-bottom: 30px;
+  }
+  section.job-details {
+    margin-top: 30px;
+    padding-top: 0;
+  }
+  h1 {
+    color: $color-teal;
+  }
+  .job-details-core {
+    color: $textcolor;
+    padding-bottom: 0;
+    padding-top: 0px;
+    h1 {
+      padding-top: 0;
+      margin-top: 0;
+    }
+    h2 {
+      color: $white;
+      font-weight: normal;
+      background: $color-plumlight;
+      padding: 15px 30px;
+    }
+    > p {
+      line-height: 1.5em;
+    }
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      //padding-left: 25px;
+      li {
+        width: 46%;
+        margin-bottom: 25px;
+        line-height: 1.5em;
+      }
+    }
+  }
+  .job-common {
+    color: $textcolor;
+    h3 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    .benefits {
+      padding: 30px;
+      background: $color-jadeitelight;
+      p {
+        line-height: 1.6em;
+        font-size: 14px;
+      }
+      ul {
+        padding-left: 30px;
+        li {
+          font-size: 14px;
+          line-height: 1.4em;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .current {
+      background: $color-jadeitelight;
+      padding: 30px;
+      padding-top: 0;
+      margin-bottom: 30px;
+      ul {
+        list-style: none;
+        padding-left: 0px;
+        li {
+          line-height: 1em;
+          margin-bottom: 15px;
+        }
+      }
+      a {
+        color: $color-teal;
+        text-decoration: none;
+        font-weight: 500;
+        &:hover {
+          color: $color-watermelon;
+        }
+      }
+    }
+    .manager {
+      .manager-header {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        .image {
+          width: 40%;
+          img {
+            border-radius: 100px;
+          }
+        }
+        .info {
+          width: 55%;
+          h3 {
+            color: $color-teal;
+            font-weight: 500;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            font-size: 15px;
+          }
+          h4 {
+            color: $textcolor;
+            font-weight: normal;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            padding-top: 0;
+            margin-top: 5px;
+            text-transform: uppercase;
+            font-size: 18px;
+            a {
+              text-decoration: none;
+              color: $textcolor;
+            }
+          }
+        }
+      }
+      .manager-content {
+        padding: 0 30px 15px 30px;
+        .manager-intro {
+          p {
+            color: $textcolorLite;
+            line-height: 1.6em;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            font-size: 15px;
+          }
+        }
+        .manager-quote {
+          // padding-right: 45px;
+          > p {
+            color: $color-tealmed;
+            padding-left: 15px;
+            font-size: 14px;
+            line-height: 1.6em;
+            position: relative;
+            &:before {
+              position: absolute;
+              top: 15px;
+              left: 0;
+              content: "“";
+              font-size: 100px;
+              color: $color-teal25;
+            }
+            &:after {
+              position: absolute;
+              bottom: -25px;
+              right: 0;
+              content: "”";
+              font-size: 100px;
+              color: $color-teal25;
+            }
+          }
+
+        }
+      }
+    }
+  }
+  section.job-contact {
+    padding-top: 0;
+    .hr-info {
+      background: $color-jadeitelight;
+      h2 {
+        color: $color-watermelon;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      > p {
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 1.7em;
+      }
+      .testimonial {
+        display: flex;
+        flex-flow: row;
+        justify-content: left;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        .image {
+          width: 33%;
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 100px;
+          }
+        }
+        .content {
+          width: 66%;
+          color: $color-teal;
+          > p {
+            color: $color-teal;
+            padding-left: 15px;
+            font-size: 14px;
+            line-height: 1.6em;
+            position: relative;
+            &:before {
+              position: absolute;
+              top: 15px;
+              left: 0;
+              content: "“";
+              font-size: 100px;
+              color: $color-teal25;
+            }
+            &:after {
+              position: absolute;
+              bottom: -25px;
+              right: 0;
+              content: "”";
+              font-size: 100px;
+              color: $color-teal25;
+            }
+          }
+          > h6 {
+            display: block;
+            padding-left: 15px;
+            font-weight: normal;
+            em {
+              font-style: normal;
+            }
+            &:before {
+              content: '-';
+            }
+          }
+        }
+      }
+    }
+    .contact-form {
+      h3 {
+        color: $color-plum;
+      }
+      div.wpcf7 {
+          width: 100%;
+          input[type="text"],
+          input[type="email"],
+          textarea {
+            background: #e7e7e7;
+            border: none;
+            width: 100%;
+            padding: 0.85em;
+            font-size: 13px;
+            margin-bottom: 0.5em;
+            font-family: sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            @include breakpoint(mobile){
+              width: calc(100% - 30px);
+            }
+
+          }
+          select.wpcf7-select {
+            background: #e7e7e7;
+            border: none;
+            width: 100%;
+            padding: 0.85em;
+            font-size: 13px;
+            height: 3.5em;
+            border-radius: 0;
+            margin-bottom: 0.5em;
+          }
+          .wpcf7-submit {
+            color: #666;
+            border-radius: 0;
+            padding: 12px 24px;
+            background-color: #fff;
+            border-color: #ccc;
+            display: inline-block;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid;
+            font-family: 'Montserrat', sans-serif;
+          }
+        }
+      .disclaimer {
+        h5 {
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+        p {
+          padding-top: 0;
+          margin-top: 0;
+        }
+        font-size: 10px;
+        color: $color-greyMed;
+      }
+    }
+  }
+  section.marketing {
+    &.photo-block {
+      margin-bottom: 60px;
+    }
+  }
+
+  section.outro {
+    .disclaimer {
+      font-size: 10px;
+      color: $color-greyMed;
+      h5 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      p {
+        padding-top: 0;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 .page-template-template-history {
   section.subpage-head {
     .inner {
@@ -103,5 +776,303 @@
   }
   section.cta-blurb {
     margin-top: -120px;
+  }
+}
+
+.page-template-template-approach-2024 {
+  .services {
+    padding-bottom: 0;
+    padding-top: 0;
+    z-index: 9; 
+    position: relative;
+    .intro {
+      p {
+        margin-top: 0;
+        line-height: 1.5em;
+        color: $textcolor;
+        @include breakpoint(desktop){
+          width: 66%;
+          font-size: 20px;
+        }
+      }
+    }
+    .inner {
+      ul.service-list {
+        margin-bottom: 0;
+        > li {
+          background: none;
+          .content {
+            ul {
+              padding-left: 0px;
+              li {
+                list-style: none;
+                color: $textcolor;
+              }
+            }
+          }
+          .image {
+            img {
+              position: relative;
+              top: 25px;;
+            }
+          }
+        }
+      }
+    }
+    .rings {
+      position: absolute;
+      bottom: -180px;
+      right: 0;
+      width: 145px;
+      height: 390px;
+      overflow: hidden;
+      @include breakpoint(mobile){
+        display: none;
+      }
+      .ring1, .ring2 {
+        display: block;
+        border: solid 40px $color-blackmed;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin-bottom: 15px;
+      }
+      .ring1 {
+        border-color: $color-blacklight;
+      }
+      .ring2 {
+        border-color: $color-tealmed;
+      }
+    }
+
+  }
+  .sub-hero {
+    &.rings-right {
+      .rings {
+        top: -100px;
+      }
+    }
+    .inner {
+      .headline {
+        h2 {
+          font-weight: 300;  
+          font-size: 26px;
+        }      
+      }
+      .content {
+        p {
+          color: $textcolor;
+          position: relative;
+        }
+      }
+    }
+    &.testimonial {
+      background: $color-jadeitelight;
+      .content {
+        p {
+          color: $textcolor;
+          position: relative;
+          padding-right: 0;
+          &:before {
+            position: absolute;
+            top: 15px;
+            left: -25px;
+            content: "“";
+            font-size: 100px;
+            color: $color-teal25;
+          }
+        }
+        h5 {
+          font-weight: normal;
+          font-size: 18px;
+          color: $textcolor;
+        }
+      }
+    }
+  }
+  .hero {
+    padding-top: 0;
+  }
+}
+
+.page-template-template-culture-2024 {
+  section.subpage-head {
+    .inner {
+      .content {
+        h1 {
+          //padding-right: 15px;
+        }
+        .h2 {
+          //padding-right: 15px;
+        }
+      }
+    }
+  }
+  h2.underlined {
+    
+  }
+  .plain-intro {
+    // margin-top: 0;
+    padding-bottom: 0;
+    // p {
+    //   width: auto;
+    //   font-size: 18px;
+    //   line-height: 1.6em;
+    //   color: $textcolor;
+    //   font-weight: normal;
+    // } 
+  }
+  .core-values {
+    padding-top: 0;
+    .values-intro {
+      padding-bottom: 25px;
+    }
+    .values {
+      background: $color-plum;
+      min-height: 400px;
+      .value-container {
+        padding-top: 20px;
+        ul {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-around;
+          padding: 0;
+          width: 100%;
+          li {
+            position: relative;
+            width: 26%;
+            height: 160px;
+            list-style: none;
+            margin: 0;
+            img {
+              position: absolute;
+              top: 0;
+            }
+            span {
+              color: $white;
+              font-weight: 500;
+              position: absolute;
+              line-height: 110px;
+              font-size: 20px;
+            }
+            &.right {
+              img {
+                right: 0;
+              }
+            }
+            &.left {
+              img {
+                left: 0;
+              }
+              span {
+                right: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .values-more {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background: $color-jadeitelight;
+      .row {
+        .item {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          &.white {
+            background: $white;
+          }
+          .image {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              max-width: 100%;
+              height: auto;
+            }
+            h4 {
+              position: absolute;
+              bottom: 0;
+              padding: 0;
+              margin: 0;
+              background: $color-teal75;
+              color: $white;
+              text-align: center;
+              font-size: 24px;
+              font-weight: 400;
+              width: 100%;
+              line-height: 1.75em;
+            }
+          }  
+          .content {
+            padding: 15px 0;
+            h5 {
+              font-size: 18px;
+              margin-top: 0;
+              margin-bottom: 0;
+              color: $textcolor;
+            }
+            p {
+              padding-top: 10px;
+              margin-top: 0;
+              font-size: 14px;
+              color: $textcolor;
+            }
+          }        
+          .link {
+            text-align: right;
+            a {
+              color: $textcolorLite;
+            }
+          }
+        }
+      }
+    }
+    .photo-block.block-first {
+      margin-bottom: 0;
+    }
+  }
+  .news {
+    background: #EEE;
+    margin-top: 100px;
+    .intro {
+      h2 {
+        font-size: 1.5em;
+      }      
+    }
+  }
+  .culture {
+    h2 {
+      color: $color-teal;
+    }
+    .careers-carousel {
+      margin-bottom: 60px;
+      .owl-item {
+        .item {
+          img {
+            height: auto;
+          }
+        }
+      }
+    }
+    .culture-content {
+      line-height: 1.7em;
+    }
+    .culture-link {
+      a {
+        color: $color-plum; 
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 4em;
+        &:hover {
+          color: $color-watermelon;
+        }
+      }
+    }
   }
 }

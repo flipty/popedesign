@@ -6,6 +6,7 @@
             "key": "field_624e262e03e95",
             "label": "Street Address",
             "name": "street_address",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_624e26444ef5d",
             "label": "City State ZIP",
             "name": "city_state_zip",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -44,6 +46,7 @@
             "key": "field_624e2668aecd5",
             "label": "Phone Number",
             "name": "phone_number",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -63,6 +66,7 @@
             "key": "field_624e2675f9b55",
             "label": "Phone Number (Display)",
             "name": "phone_number_display",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -82,6 +86,7 @@
             "key": "field_62537916ddbd5",
             "label": "Google Maps embed code",
             "name": "google_maps_embed_code",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -96,6 +101,174 @@
             "maxlength": "",
             "rows": "",
             "new_lines": ""
+        },
+        {
+            "key": "field_667851ec18bf2",
+            "label": "Job Opening Content",
+            "name": "job_opening_content",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6678521318bf3",
+                    "label": "Salary & Benefits",
+                    "name": "salary_&_benefits",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "<div class=\"benefits\">\r\n            <h3>Salary &amp; Benefits<\/h3>\r\n            <p>Salary &amp; Benefits Compensation based on candidate’s work experience, education and\/or skill level and will be finalized at the time of an offer.<\/p>\r\n<p>Individuals in this role working more than 32 hours a week are eligible to participate in our benefit programs which include:<\/p>\r\n<ul>\r\n<li>bonuses<\/li>\r\n<li>profit sharing<\/li>\r\n<li>401K contributions<\/li>\r\n<li>paid time off<\/li>\r\n<li>continuing education<\/li>\r\n<li>licensure &amp; professional memberships<\/li>\r\n<li>medical, dental, vision, life insurance<\/li>\r\n<li>short\/long-term disability programs<\/li>\r\n<\/ul>\r\n<p>We offer a flexible hybrid work environment allowing employees to work remotely two days a week.<\/p>\r\n          <\/div>",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_66785c00cc8ce",
+                    "label": "HR Intro",
+                    "name": "hr_intro",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "<h2>We want to hear from you!<\/h2>\r\n<p>If you are interested in learning more about working at Pope, please contact Karen our Human Resources Coordinator through our contact form. Tell us a little bit about yourself and what kind of career you are looking for.<\/p>",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_6678522318bf4",
+                    "label": "HR Manager Quote",
+                    "name": "hr_manager_quote",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_66785b12f4b1a",
+                    "label": "HR Manager Image",
+                    "name": "hr_manager_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_6678529e18bf5",
+                    "label": "Hiring Disclaimer",
+                    "name": "hiring_disclaimer",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_6678604f76ed8",
+                    "label": "Marketing Area",
+                    "name": "marketing_area",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "<h2>Do you love what you do?<\/h2>\r\n<p>Our core values guide us to hire and promote team members who share in the mission of using design as a tool to enhance the lives of our clients, the people they serve, our own team members, and the broader community.<\/p>\r\n<a href=\"http:\/\/popedesign.local\/about\/culture\">LEARN ABOUT OUR VALUES<\/a>",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_66786105c58cf",
+                    "label": "Marketing Area Image",
+                    "name": "marketing_area_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                }
+            ]
         }
     ],
     "location": [
@@ -116,5 +289,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649638564
+    "modified": 1719165209
 }

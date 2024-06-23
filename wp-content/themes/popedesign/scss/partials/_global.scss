@@ -57,8 +57,20 @@ main {
         width: 100%;
       }
     }
+    div.col-md-5, div.col-sm-5 {
+      width: 39.5%;
+      @include breakpoint(mobile){
+        width: 100%;
+      }
+    }
     div.col-md-6, div.col-sm-6 {
       width: 47%;
+      @include breakpoint(mobile){
+        width: 100%;
+      }
+    }
+    div.col-md-7, div.col-sm-7 {
+      width:55.5%;
       @include breakpoint(mobile){
         width: 100%;
       }
@@ -456,6 +468,11 @@ footer {
   justify-content: flex-end;
   width: 100%;
   margin: 15px 0;
+  @include breakpoint(mobile){
+    align-items: center;
+    display: none; //hardee har
+  }
+
   a {
     display: block;
     padding-right: 15px;
@@ -472,6 +489,10 @@ footer {
       position: relative;
       font-weight: 600;
       top: 4px;
+      @include breakpoint(mobile){
+        
+      }
+
     }
     &:first-child {
       &:before {

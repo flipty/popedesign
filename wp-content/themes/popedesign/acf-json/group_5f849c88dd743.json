@@ -6,6 +6,7 @@
             "key": "field_4f9eeb6fbb31d",
             "label": "Title",
             "name": "title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -26,6 +27,7 @@
             "key": "field_50213c6295494",
             "label": "Accreditation",
             "name": "accreditation",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -46,6 +48,7 @@
             "key": "field_4f9eec3ada992",
             "label": "Photo",
             "name": "photo",
+            "aria-label": "",
             "type": "image",
             "instructions": "the photo should be 291px by 276 px",
             "required": 0,
@@ -70,6 +73,7 @@
             "key": "field_4f9eeb6fbd0fa",
             "label": "Intro Copy",
             "name": "intro_copy",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -89,6 +93,7 @@
             "key": "field_4f9eeb6fbc352",
             "label": "Quote",
             "name": "quote",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -106,9 +111,30 @@
             "maxlength": ""
         },
         {
+            "key": "field_6660c88060cf5",
+            "label": "Hiring Manager Quote",
+            "name": "quote_hr",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_624f48351067a",
             "label": "Markets",
             "name": "markets",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -128,6 +154,7 @@
             "key": "field_624f486b1067b",
             "label": "Email",
             "name": "email",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -162,5 +189,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649363185
+    "modified": 1717618844
 }

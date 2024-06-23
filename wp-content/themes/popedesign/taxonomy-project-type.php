@@ -127,7 +127,7 @@
                           <?php the_title(); ?>
                         <?php } ?>
                       </strong>
-                      <?php the_field('city'); ?>, <?php the_field('state'); ?>
+                      <?php echo get_field('city'); ?>, <?php echo get_field('state'); ?>
                     </p>
 
                     <?php if( $count == $projects_per_column ): ?>

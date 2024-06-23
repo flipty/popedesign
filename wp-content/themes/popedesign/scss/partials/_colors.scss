@@ -1,4 +1,7 @@
 $color-teal:            #418b94;
+$color-teal75:          rgba(65,139,148,0.75);
+$color-teal50:          rgba(65,139,148,0.5);
+$color-teal25:          rgba(65,139,148,0.25);
 $color-black:           #1d1d1e;
 $color-navhighlight:    #2a2a2c;
 $color-blackmed:        #312f32;
@@ -7,8 +10,17 @@ $color-greyDark:        #5B5B5E;
 $color-blacklight:      #6d6e72;
 $color-grey:            #c4c4c4;
 $color-plum:            #66465a;
-$color-watermelon:      #ed6564;
+$color-plum75:          rgba(102,70,90,0.75);
+$color-plum50:          rgba(102,70,90,0.5);
+$color-plum25:          rgba(102,70,90,0.25);
+$color-plumlight:       #856a7b;
+$color-watermelon:      #ed6564;                   
+$color-salmon:          #f7a49f;                   
+$color-salmon75:        rgba(237,101,100,0.75);                   
+$color-salmon50:        rgba(237,101,100,0.5);                   
+$color-salmon25:        rgba(237,101,100,0.25);                   
 $color-jadeite:         #b4ddc9;
+$color-jadeitelight:    #e4f3ec;
 $color-tealmed:         #3B8B94;
 $color-darkteal:        #195d67;
 $textcolor:             $color-greyDark;
@@ -39,5 +51,5 @@ $black5:                rgba(0,0,0,0.05);
 
 @mixin bg-opacity($color, $opacity: 0.3) {
     background: $color; /* The Fallback */
-    background: rgba($color, $opacity);
+    background: rgba($color, $opacity); 
 }

@@ -261,6 +261,17 @@ section.sub-hero { //optional classes: rings-left, rings-right, rings-reversed r
       }
     }
   }
+  &.rings-invisible {
+    .rings {
+      visibility: hidden;
+      .ring1 {
+        border-color: $color-blacklight;
+      }
+      .ring2 {
+        border-color: $color-plum;
+      }
+    }
+  }
 }
 
 section.photo-block {
@@ -364,6 +375,24 @@ section.photo-block {
         background: $color-greyDark;
       }
     }
+    &.color-white {
+      background: $white;
+      @include breakpoint(mobile){
+        background: $white;
+      }
+      h2 {
+        color: $color-teal;
+      }
+      p {
+        color: $textcolor;  
+      }
+      a {
+        color: $color-darkteal;
+        &:hover {
+          color: $color-watermelon !important;
+        }
+      }
+    }
   }
   &.photo-right {
     .inner {
@@ -385,6 +414,140 @@ section.photo-block {
       background: linear-gradient(270deg, $white 30%, $color-greyDark 30%);
       @include breakpoint(mobile){
         background: $color-greyDark;
+      }
+    }
+    &.color-white {
+      background: $white;
+      @include breakpoint(mobile){
+        background: $white;
+      }
+      .inner .content {
+        h2 {
+          color: $color-teal;
+        }
+        p {
+          color: $textcolor;  
+        }
+        a {
+          color: $color-darkteal;
+          &:hover {
+            color: $color-watermelon;
+          }
+        }        
+      }
+    }
+  }
+  &.has-caption {
+    @include breakpoint(desktop){
+      margin-bottom: 140px;
+      margin-top: 80px;
+    }
+    .inner {
+      .photo {
+        @include breakpoint(desktop){
+          position: relative;
+          top: -77px;          
+        }
+        @include breakpoint(mobile){
+          position: relative;
+        }
+        img {
+          position: relative;
+        }
+        .caption {
+          position: absolute;
+          bottom: 25px;
+          background: $black50;
+          width: 100%;
+          color: $white;
+          p {
+            color: $white;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.1em;
+            padding: 10px 15px;
+            margin: 0;
+          }
+        }
+      }
+    }
+    &.photo-left {
+      .inner {
+        .photo {
+          .caption {
+            p {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.block-last {
+    margin-bottom: 80px;
+  }
+}
+
+h2.underlined {
+  font-weight: normal;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  &:after {
+    content: "";
+    display: block;
+    width: calc(100% - 63vw);
+    margin-left: -25px;
+    margin-top: -6px;
+    height: 5px;
+    background: $color-salmon;
+    @include breakpoint(mobile){
+      width: calc(100% - 10vw);
+    }
+  }
+}
+
+section.full-image-hero {
+  background-size: cover;
+  height: 46vw;
+  padding: 0;
+  margin-top: 0;
+  @include breakpoint(mobile){
+    height: 48vw;
+    
+  }
+  .inner {
+    position: relative;
+    .stripe {
+      width: 100%;
+      background: $color-teal75;
+      height: 100px;
+      position: relative;
+      top: 7vw;
+      @include breakpoint(mobile){
+        height: 9vw;
+      }
+    }
+    .image-hero-headline, h1 {
+      margin: 0;
+      padding: 0;
+      display: block;
+      font-size: 145px;
+      line-height: 1em;
+      position: relative;
+      top: -40px;
+      @include breakpoint(mobile){
+        font-size: 11vw;
+        top: auto;
+      }
+    }
+    .subheadline {
+      display: block;
+      position: relative;
+      top: 30vw;
+      font-size: 40px;
+      text-align: right;
+      @include breakpoint(mobile){
+        font-size: 19px;
       }
     }
   }
@@ -482,6 +645,9 @@ section.subpage-head {
   background: linear-gradient(270deg, $white 50%, $color-teal 50%);
   max-height: 290px;
   margin-bottom: 50px;
+  &.color-plum {
+    background: linear-gradient(270deg, $white 50%, $color-plum 50%);
+  }
   @include breakpoint(mobile){
     background: $color-teal;
     max-height: none;
@@ -582,6 +748,9 @@ section.subpage-head-small {
   padding: 0;
   &.color-secondary {
     background: linear-gradient(270deg, $color-plum 75%, $color-grey 25%);
+  }
+  &.color-white {
+    background: linear-gradient(270deg, $white 75%, $color-grey 25%);
   }
   @include breakpoint(mobile){
     background: $color-teal;
@@ -1174,6 +1343,14 @@ section.news {
           text-decoration: underline;
         }
       }
+    }
+  }
+}
+
+.has-video {
+  iframe {
+    @include breakpoint(mobile){
+      max-width: 100% !important;
     }
   }
 }

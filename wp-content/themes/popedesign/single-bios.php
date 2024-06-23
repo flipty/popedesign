@@ -38,10 +38,10 @@
           <h1>
             <?php the_title(); ?>
             <?php if( get_field( 'accreditation' ) ) : ?>
-              <em><?php the_field( 'accreditation' ); ?></em>
+              <em><?php echo get_field( 'accreditation' ); ?></em>
             <?php endif; ?>
           </h1>
-          <h2><?php the_field('title'); ?></h2>
+          <h2><?php echo get_field('title'); ?></h2>
 
           <div class="post-content">
             <?php the_content(); ?>

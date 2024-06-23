@@ -78,8 +78,8 @@
 
           <?php if(get_field('quote')) : ?>
             <div class="project-quote">
-              <p><?php the_field('quote');?></p>
-		            <h3><?php the_field('quote-name');?>, <?php the_field('quote-title');?></h3>
+              <p><?php echo get_field('quote');?></p>
+		            <h3><?php echo get_field('quote-name');?>, <?php echo get_field('quote-title');?></h3>
             </div>
           <?php endif; ?>
 

@@ -310,6 +310,7 @@
                     "multiple": 0,
                     "return_format": "id",
                     "ui": 1,
+                    "bidirectional_target": [],
                     "parent_repeater": "field_624fb1e0d59c4"
                 }
             ],
@@ -723,5 +724,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698260001
+    "modified": 1717983912
 }

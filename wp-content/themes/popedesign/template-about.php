@@ -69,7 +69,9 @@ get_header();
       <li>
         <a href="<?php echo get_the_permalink($person);?>">
           <?php echo wp_get_attachment_image($photo, 'full');?>
-          <h3><?php echo get_the_title($person);?><?php if (get_field('accreditation', $person)) {?>, <?php echo get_field('accreditation', $person);?><?php } ?></h3>
+          <h3><?php echo get_the_title($person);?>
+          <?php //if (get_field('accreditation', $person)) { echo ', '; echo get_field('accreditation', $person); } ?>
+          </h3>
           <h4><?php echo get_field('title', $person);?></h4>
         </a>
       </li>

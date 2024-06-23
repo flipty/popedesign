@@ -24,7 +24,7 @@
           <?php if( $paged === 0 && have_rows( 'marketing_message' ) ): ?>
 
               <div class="isotope marketing">
-                <a href="<?php the_field('marketing_link'); ?>">
+                <a href="<?php echo get_field('marketing_link'); ?>">
                   <h2>
                     <?php while( have_rows( 'marketing_message' ) ): the_row(); ?>
                       <?php the_sub_field('message'); ?>.<br />

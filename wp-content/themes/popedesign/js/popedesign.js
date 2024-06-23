@@ -93,6 +93,22 @@ var popedesign = {
       paginationSpeed : 2000 //how long does it take to physically move?
       }
     );
+
+    $('.careers-carousel').owlCarousel(
+      {
+      autoplay: true,
+      loop: false,
+      mouseDrag: false,
+      touchDrag: false,
+      dots: false,
+      lazyLoad: true,
+      margin: 15,
+      items: 4,
+      autoplayTimeout: 4000,
+      autoplayHoverPause: false,
+      paginationSpeed : 2000 //how long does it take to physically move?
+      }
+    );
   }
 
 }

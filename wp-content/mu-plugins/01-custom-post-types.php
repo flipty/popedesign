@@ -142,3 +142,51 @@ function person_post_type() {
 
 }
 add_action( 'init', 'person_post_type', 0 );
+
+// Register Jobs Post Type
+function job_post_type() {
+
+	$joblabels = array(
+		'name'                  => _x( 'Jobs', 'Job General Name', 'pope' ),
+		'singular_name'         => _x( 'Job', 'Job Singular Name', 'pope' ),
+		'menu_name'             => __( 'Jobs', 'pope' ),
+		'name_admin_bar'        => __( 'Job', 'pope' ),
+		'parent_item_colon'     => __( 'Parent Job:', 'pope' ),
+		'all_items'             => __( 'All Jobs', 'pope' ),
+		'add_new_item'          => __( 'Add New Job', 'pope' ),
+		'add_new'               => __( 'Add New Job', 'pope' ),
+		'new_item'              => __( 'New Job', 'pope' ),
+		'edit_item'             => __( 'Edit Job', 'pope' ),
+		'update_item'           => __( 'Update Job', 'pope' ),
+		'view_item'             => __( 'View Job', 'pope' ),
+		'search_items'          => __( 'Search Job', 'pope' ),
+		'not_found'             => __( 'Not found', 'pope' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'pope' ),
+		'items_list'            => __( 'Jobs list', 'pope' ),
+		'items_list_navigation' => __( 'Jobs list navigation', 'pope' ),
+		'filter_items_list'     => __( 'Filter Jobs list', 'pope' ),
+	);
+	$jobargs = array(
+		'label'                 => __( 'Job', 'pope' ),
+		'description'           => __( 'Job Description', 'pope' ),
+		'labels'                => $joblabels,
+		'supports'              => array( 'excerpts', 'title', 'editor'  ),
+		//'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => false,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+		'rewrite' => array( 'slug' => 'jobs' )
+	);
+	register_post_type( 'jobs', $jobargs );
+
+}
+add_action( 'init', 'job_post_type', 0 );

@@ -37,6 +37,9 @@
   else if( is_single() && $post_type == 'news'){
 		$content_id = 'newsDetail';
 	}
+  else if( is_single() && $post_type == 'jobs'){
+		$content_id = 'jobDetail';
+	}
   else if( is_page( 'projects' ) ){
 		$content_id = 'projectList';
 	}
@@ -144,6 +147,11 @@
 	if( is_single() && $post_type == 'bios'){
 		$title = 'About';
 		$link = home_url().'/company/';
+	}
+
+	if( is_single() && $post_type == 'jobs'){
+		$title = 'Careers';
+		$link = home_url().'/careers/';
 	}
 
 	if( is_single() && $post_type == 'news'){

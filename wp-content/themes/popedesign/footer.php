@@ -28,7 +28,7 @@
           <div class="socials">
             <a target="_blank" href="https://www.linkedin.com/company/pope-design-group/?viewAsMember=true"><img src="/wp-content/themes/popedesign/images/linkedin.svg" alt="Follow Pope on LinkedIn"></a>
             <a target="_blank" href="https://www.facebook.com/popedesigngroup"><img src="/wp-content/themes/popedesign/images/facebook.svg" alt="Follow Pope on Facebook"></a>
-            <a target="_blank" href="https://twitter.com/popedesigngroup"><img src="/wp-content/themes/popedesign/images/twitter.svg" alt="Follow Pope on Twitter"></a>
+            <a target="_blank" href="https://twitter.com/popedesigngroup"><img src="/wp-content/themes/popedesign/images/twitterx.svg" alt="Follow Pope on X"></a>
             <a target="_blank" href="https://www.instagram.com/popedesigngroup/"><img src="/wp-content/themes/popedesign/images/instagram.svg" alt="Follow Pope on Instagram"></a>
           </div>
           <div class="legal">
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="copyright">
-        Pope Design Group, Inc. &copy; <?php echo date('Y'); ?> All Rights Reserved.
+        Pope Design Group &copy; <?php echo date('Y'); ?> All Rights Reserved.
       </div>
     </div>
   </footer>

@@ -199,23 +199,23 @@ get_header();
       <?php endforeach; ?>
     </div>
   </div>  
+  
+</section>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="culture-content">
-        <?php echo get_field('bottom_content');?>
+  <section class="cta-blurb">
+    <div class="container">
+      <div class="inner">
+        <div class="content">
+          <p>
+            <?php echo get_field('bottom_content');?>
+          </p>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="culture-link">
-          <a href="<?php echo get_field('bottom_link_text');?>"><?php echo get_field('bottom_link_text');?></a>  
+        <div class="cta">
+          <a href="<?php echo get_field('bottom_link_text');?>"><?php echo get_field('bottom_link_text');?></a>    
         </div>
       </div>
     </div>
-    
-  </div>
-</section>
+  </section>
 
 
 

@@ -97,7 +97,7 @@ var popedesign = {
     $('.careers-carousel').owlCarousel(
       {
       autoplay: true,
-      loop: false,
+      loop: true,
       mouseDrag: false,
       touchDrag: false,
       dots: false,

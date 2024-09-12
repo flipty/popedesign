@@ -237,6 +237,13 @@
                 "operator": "==",
                 "value": "jobs"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-50-aniv.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -248,5 +255,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1717675664
+    "modified": 1721140975
 }

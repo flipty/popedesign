@@ -211,7 +211,7 @@ get_header();
           </p>
         </div>
         <div class="cta">
-          <a href="<?php echo get_field('bottom_link_text');?>"><?php echo get_field('bottom_link_text');?></a>    
+          <a href="<?php echo get_field('bottom_link_page');?>"><?php echo get_field('bottom_link_text');?></a>    
         </div>
       </div>
     </div>

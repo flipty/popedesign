@@ -1,13 +1,13 @@
 {
-    "key": "group_5f849c8927ecb",
-    "title": "Careers",
+    "key": "group_669689aa1e599",
+    "title": "50th Anniversary",
     "fields": [
         {
-            "key": "field_666083bdb6eec",
-            "label": "Current Openings Intro",
-            "name": "current_openings_intro",
+            "key": "field_669689aa21ded",
+            "label": "Sub-Hero",
+            "name": "sub_hero",
             "aria-label": "",
-            "type": "wysiwyg",
+            "type": "group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,38 +16,95 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Below are our current openings. If you don't see an applicable opportunity, please still reach out with your interest. We'd love to hear from you!",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_568b297e4755d",
-            "label": "Jobs",
-            "name": "jobs",
-            "aria-label": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "row_min": "",
-            "row_limit": "",
-            "layout": "table",
-            "button_label": "Add Job",
-            "min": 0,
-            "max": 0,
-            "collapsed": "",
+            "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_568b2a504755e",
-                    "label": "Title",
-                    "name": "title",
+                    "key": "field_669689aa2ae32",
+                    "label": "Subheadline",
+                    "name": "subheadline",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Milestones & Memories",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_669689aa2ae5d",
+                    "label": "Content",
+                    "name": "content",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Pope Design Group's structure and practice areas have evolved and expanded since our founding in 1974. Our commitment to collaboration and client service has always been our focus. Please join us in celebrating the journey and impact of our employees from the last five decades.",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_6696ff119c3df",
+            "label": "Intro Area Branding",
+            "name": "intro_area_0",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6696ff119c3e0",
+                    "label": "Intro Logo",
+                    "name": "intro_0_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_6696ff119c3e2",
+                    "label": "Intro Branding Headline",
+                    "name": "intro_0_headline",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -59,60 +116,15 @@
                         "id": ""
                     },
                     "default_value": "",
+                    "maxlength": "",
                     "placeholder": "",
                     "prepend": "",
-                    "append": "",
-                    "formatting": "html",
-                    "maxlength": "",
-                    "parent_repeater": "field_568b297e4755d"
-                },
-                {
-                    "key": "field_568b2a5b4755f",
-                    "label": "Description",
-                    "name": "description",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": "",
-                    "parent_repeater": "field_568b297e4755d"
-                },
-                {
-                    "key": "field_625383c244547",
-                    "label": "Job Page",
-                    "name": "job_link",
-                    "aria-label": "",
-                    "type": "page_link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "post_type": "",
-                    "taxonomy": "",
-                    "allow_null": 0,
-                    "allow_archives": 1,
-                    "multiple": 0,
-                    "parent_repeater": "field_568b297e4755d"
+                    "append": ""
                 }
-            ],
-            "rows_per_page": 20
+            ]
         },
         {
-            "key": "field_665f4ce50193e",
+            "key": "field_6696cd91d67a7",
             "label": "Intro Area 1",
             "name": "intro_area_1",
             "aria-label": "",
@@ -128,7 +140,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_665f4d5801941",
+                    "key": "field_6696cd91d67a8",
                     "label": "Intro 1 Image",
                     "name": "intro_1_image",
                     "aria-label": "",
@@ -141,8 +153,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "id",
-                    "library": "uploadedTo",
+                    "return_format": "",
+                    "library": "",
                     "min_width": "",
                     "min_height": "",
                     "min_size": "",
@@ -153,7 +165,7 @@
                     "preview_size": "medium"
                 },
                 {
-                    "key": "field_665f4d160193f",
+                    "key": "field_6696cd91d67a9",
                     "label": "Intro 1 Headline",
                     "name": "intro_1_headline",
                     "aria-label": "",
@@ -173,7 +185,7 @@
                     "append": ""
                 },
                 {
-                    "key": "field_665f4d3a01940",
+                    "key": "field_6696cd91d67aa",
                     "label": "Intro 1 Content",
                     "name": "intro_1_content",
                     "aria-label": "",
@@ -195,7 +207,7 @@
             ]
         },
         {
-            "key": "field_665f4d7ece79f",
+            "key": "field_6696cdfbf7661",
             "label": "Intro Area 2",
             "name": "intro_area_2",
             "aria-label": "",
@@ -211,7 +223,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_665f4d7ece7a0",
+                    "key": "field_6696cdfbf7662",
                     "label": "Intro 2 Image",
                     "name": "intro_2_image",
                     "aria-label": "",
@@ -225,7 +237,7 @@
                         "id": ""
                     },
                     "return_format": "id",
-                    "library": "uploadedTo",
+                    "library": "all",
                     "min_width": "",
                     "min_height": "",
                     "min_size": "",
@@ -236,7 +248,7 @@
                     "preview_size": "medium"
                 },
                 {
-                    "key": "field_665f4d7ece7a1",
+                    "key": "field_6696cdfbf7663",
                     "label": "Intro 2 Headline",
                     "name": "intro_2_headline",
                     "aria-label": "",
@@ -256,7 +268,7 @@
                     "append": ""
                 },
                 {
-                    "key": "field_665f4d7ece7a2",
+                    "key": "field_6696cdfbf7664",
                     "label": "Intro 2 Content",
                     "name": "intro_2_content",
                     "aria-label": "",
@@ -278,9 +290,9 @@
             ]
         },
         {
-            "key": "field_665f4ed658ba2",
-            "label": "Highlights",
-            "name": "highlights_area",
+            "key": "field_669689aa21df7",
+            "label": "The Beginning",
+            "name": "block_1",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -294,12 +306,12 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_665f4ed658ba3",
+                    "key": "field_669689aa308a1",
                     "label": "Image",
-                    "name": "highlights_image",
+                    "name": "image",
                     "aria-label": "",
                     "type": "image",
-                    "instructions": "",
+                    "instructions": "650 x 470 (or 1300 x 940)",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -308,7 +320,7 @@
                         "id": ""
                     },
                     "return_format": "id",
-                    "library": "uploadedTo",
+                    "library": "all",
                     "min_width": "",
                     "min_height": "",
                     "min_size": "",
@@ -319,33 +331,9 @@
                     "preview_size": "medium"
                 },
                 {
-                    "key": "field_6668f97fd2f65",
-                    "label": "Video Link",
-                    "name": "video_link",
-                    "aria-label": "",
-                    "type": "oembed",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_665f4ed658ba3",
-                                "operator": "==empty"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "width": "",
-                    "height": ""
-                },
-                {
-                    "key": "field_665f4ed658ba5",
-                    "label": "Highlights Content",
-                    "name": "highlights_content",
+                    "key": "field_669689aa308ca",
+                    "label": "Content",
+                    "name": "content",
                     "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
@@ -356,84 +344,38 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Pope Design Group offers employees and interns a place to do their best work in a creative and collaborative setting. As a people-centered organization, we structure a flexible workplace setting and engaging culture that supports each employee's individual needs.",
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_669689aa308b7",
+                    "label": "Caption",
+                    "name": "caption",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
                     "tabs": "all",
                     "toolbar": "full",
-                    "media_upload": 0,
+                    "media_upload": 1,
                     "delay": 0
                 }
             ]
         },
         {
-            "key": "field_665f4f25c9a04",
-            "label": "Benefit Grid",
-            "name": "benefit_grid",
-            "aria-label": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "table",
-            "pagination": 0,
-            "min": 0,
-            "max": 0,
-            "collapsed": "",
-            "button_label": "Add Row",
-            "rows_per_page": 20,
-            "sub_fields": [
-                {
-                    "key": "field_665f4f46c9a05",
-                    "label": "Headline",
-                    "name": "headline",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_665f4f25c9a04"
-                },
-                {
-                    "key": "field_665f4f79c9a06",
-                    "label": "Bullet List",
-                    "name": "bullet_list",
-                    "aria-label": "",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 0,
-                    "delay": 0,
-                    "parent_repeater": "field_665f4f25c9a04"
-                }
-            ]
-        },
-        {
-            "key": "field_6660b37d81d97",
-            "label": "Contact",
-            "name": "contact_area",
+            "key": "field_669689aa21dff",
+            "label": "80's - 90's",
+            "name": "block_2",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -447,52 +389,12 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_6660b39581d98",
-                    "label": "Headline",
-                    "name": "headline",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "We want to hear from you!",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_6660b3a481d99",
-                    "label": "Intro",
-                    "name": "intro",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "If you are interested in learning more about working at Pope, please contact Karen our Human Resources Coordinator through our contact form. Tell us a little bit about yourself and what kind of career you are looking for.",
-                    "maxlength": "",
-                    "rows": "",
-                    "placeholder": "",
-                    "new_lines": ""
-                },
-                {
-                    "key": "field_6660b3bf81d9a",
-                    "label": "HR Image",
-                    "name": "hr_image",
+                    "key": "field_669689aa3bc32",
+                    "label": "Image",
+                    "name": "image",
                     "aria-label": "",
                     "type": "image",
-                    "instructions": "",
+                    "instructions": "650 x 470 (or 1300 x 940)",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -500,8 +402,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "id",
-                    "library": "uploadedTo",
+                    "return_format": "",
+                    "library": "",
                     "min_width": "",
                     "min_height": "",
                     "min_size": "",
@@ -512,9 +414,9 @@
                     "preview_size": "medium"
                 },
                 {
-                    "key": "field_6660b3d081d9b",
-                    "label": "HR Content",
-                    "name": "hr_content",
+                    "key": "field_669689aa3bc4e",
+                    "label": "Content",
+                    "name": "content",
                     "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
@@ -527,34 +429,14 @@
                     },
                     "default_value": "",
                     "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
+                    "toolbar": "basic",
+                    "media_upload": 0,
                     "delay": 0
                 },
                 {
-                    "key": "field_6660b3f581d9c",
-                    "label": "HR Events",
-                    "name": "hr_events",
-                    "aria-label": "",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
-                    "delay": 0
-                },
-                {
-                    "key": "field_6660b55144d53",
-                    "label": "HR Disclaimer",
-                    "name": "hr_disclaimer",
+                    "key": "field_669689aa3bc3e",
+                    "label": "Caption",
+                    "name": "caption",
                     "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
@@ -574,29 +456,9 @@
             ]
         },
         {
-            "key": "field_6660bfa25e809",
-            "label": "Culture Headline",
-            "name": "culture_headline",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Happenings &amp; Shenanigans",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_6660bcf46f625",
-            "label": "Culture Carousel",
-            "name": "carousel",
+            "key": "field_6696b688db946",
+            "label": "80's-90's projects",
+            "name": "carousel_80s",
             "aria-label": "",
             "type": "gallery",
             "instructions": "",
@@ -622,11 +484,11 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_6660bf19a66d3",
-            "label": "Culture Content",
-            "name": "culture_content",
+            "key": "field_669689aa21e11",
+            "label": "Early 2000's",
+            "name": "block_3",
             "aria-label": "",
-            "type": "wysiwyg",
+            "type": "group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -635,18 +497,81 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "If our office culture sounds like the right fit for you, please check out our current openings.",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_669689aa469ae",
+                    "label": "Image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "650 x 470 (or 1300 x 940)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_669689aa469ca",
+                    "label": "Content",
+                    "name": "content",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_669689aa469ba",
+                    "label": "Caption",
+                    "name": "caption",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
         },
         {
-            "key": "field_66632aa50f05a",
-            "label": "Culture Link",
-            "name": "culture_link",
+            "key": "field_6696b6de1515e",
+            "label": "2022 - Now",
+            "name": "block_4",
             "aria-label": "",
-            "type": "page_link",
+            "type": "group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -655,19 +580,81 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": "",
-            "post_status": "",
-            "taxonomy": "",
-            "allow_archives": 1,
-            "multiple": 0,
-            "allow_null": 0
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6696b6de15162",
+                    "label": "Image",
+                    "name": "image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "650 x 470 (or 1300 x 940)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_6696b6de15165",
+                    "label": "Content",
+                    "name": "content",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_6696b6de15163",
+                    "label": "Caption",
+                    "name": "caption",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
         },
         {
-            "key": "field_66632a8f0f059",
-            "label": "Culture Link Text",
-            "name": "culture_link_text",
+            "key": "field_6696b6e415168",
+            "label": "Current projects",
+            "name": "carousel_current",
             "aria-label": "",
-            "type": "text",
+            "type": "gallery",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -676,37 +663,118 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "WORK WITH US",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "return_format": "id",
+            "library": "uploadedTo",
+            "min": "",
+            "max": "",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "insert": "append",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_669689aa21e45",
+            "label": "Bottom CTA",
+            "name": "bottom_content",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_669689aa6afc2",
+                    "label": "Content",
+                    "name": "content",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_669689aa6afe1",
+                    "label": "Link Page",
+                    "name": "link_page",
+                    "aria-label": "",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": "",
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "allow_archives": 1,
+                    "multiple": 0
+                },
+                {
+                    "key": "field_669689aa6afea",
+                    "label": "Link Text",
+                    "name": "link_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
         }
     ],
     "location": [
         [
             {
-                "param": "page",
-                "operator": "==",
-                "value": "9501"
-            }
-        ],
-        [
-            {
                 "param": "page_template",
                 "operator": "==",
-                "value": "template-careers-2024.php"
+                "value": "template-50-aniv.php"
             }
         ]
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "seamless",
+    "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1721159082
+    "modified": 1721172072
 }

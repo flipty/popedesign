@@ -51,6 +51,7 @@ get_header();
   </div>
 </section>
 
+<a name="equity"></a>
 <?php $block1 = get_field('block_1'); $caption1 = $block1['caption']; ?>
 <section class="photo-block photo-left color-secondary <?php if ($caption1){ echo 'has-caption';}?>">
   <div class="container">
@@ -70,6 +71,7 @@ get_header();
   </div>
 </section>
 
+<a name="community"></a>
 <?php $block2 = get_field('block_2'); $caption2 = $block2['caption']; ?>
 <section class="photo-block photo-right color-primary <?php if ($caption2){ echo 'has-caption';}?>">
   <div class="container">
@@ -90,6 +92,7 @@ get_header();
   </div>
 </section>
 
+<a name="sustainability"></a>
 <?php $block3 = get_field('block_3'); $caption3 = $block3['caption']; ?>
 <section class="photo-block photo-left color-secondary block-last <?php if ($caption3){ echo 'has-caption';}?>">
   <div class="container">

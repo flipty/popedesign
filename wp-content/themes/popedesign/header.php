@@ -16,7 +16,7 @@
 <header>
 	<div class="container">
 		<div class="branding">
-			<a href="/" title="Pope Design Group"><img src="/wp-content/themes/popedesign/images/logo-reverse.svg" alt="Pope Design Group"></a>
+			<a href="/" title="Pope Design Group"><img src="/wp-content/themes/popedesign/images/logo-50.svg" alt="Pope Design Group"></a>
 		</div>
 		<nav class="navigation">
 			<?php wp_nav_menu('primary'); ?>

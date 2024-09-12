@@ -487,6 +487,7 @@
       li {
         margin-bottom: 25px;
         line-height: 1.5em; 
+        width: 100%;
       }
     }
   }
@@ -1109,6 +1110,140 @@
           color: $color-watermelon;
         }
       }
+    }
+  }
+}
+
+.page-template-template-50-aniv {
+  .intro-content {
+    margin-bottom: 60px;
+    line-height: 1.7em;
+  }
+    .anniversary-highlights {
+    background: $color-jadeitelight;
+    padding: 0;
+    margin-bottom: 125px;
+    .highlight-areas {
+      > .row {
+        justify-content: left;
+      }
+      .intro {
+        width: 30%;
+        text-align: center;
+        @include breakpoint(mobile){
+          width: 100%;
+        }
+        img {
+          max-width: 300px;
+          height: auto;
+          margin-top: 100px;
+          margin-bottom: 50px;
+          @include breakpoint(mobile){
+            margin-top: 30px;
+            margin-bottom: 15px;
+          }
+        }
+        h3 {
+          color: $color-teal;
+          font-size: 30px;
+          line-height: 1.2;
+        }
+      }
+      .highlight {
+        width: 31%;
+        // padding-right: 0;
+        @include breakpoint(mobile){
+          width: 100%;
+        }
+
+      }
+      .heading {
+        position: relative;
+        margin-top: 15px;
+        overflow: hidden;
+        img {
+          padding-top: 15px;
+          position: relative;
+          z-index: 5;
+          width: 100% !important;
+          height: auto !important;
+          overflow: hidden;
+        }
+        h3 {  
+          position: absolute;
+          bottom: 4px;
+          z-index: 6;
+          font-size: 28px;
+          width: calc(100% - 100px);
+          padding: 15px 50px;
+          margin: 0;
+          background: $color-teal75;
+          color: $white;
+          text-align: center;
+        }        
+      }
+      .content {
+        p {
+          font-size: 13px;
+          line-height: 1.5em;
+          padding-bottom: 15px;
+          strong {
+
+          }
+        }        
+      }
+    }
+  }
+  .photo-block.has-caption {
+    @include breakpoint(desktop){
+      margin-bottom: 250px;
+    }
+    &.block-last {
+      margin-bottom: 90px;
+    }
+    .caption {
+      background: $color-jadeitelight;
+      @include breakpoint(desktop){
+        margin-top: -81px;
+      }
+      .container {
+        .caption-inner {
+          display: flex;
+          flex-flow: row;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+          align-items: center;
+          img {
+            max-height: 100px;
+          }
+        }
+      }
+    }
+    &#block2 {
+      margin-bottom: 100px;
+    }
+  }
+  .anniversary-carousel-1, .anniversary-carousel-2 {
+    h2 {
+      color: $color-teal;
+      margin-bottom: 40px;
+    }
+  }
+  .careers-carousel {
+  margin-bottom: 60px;
+    .owl-item {
+      .item {
+        img {
+          height: auto;
+        }
+      }
+    }
+  }
+
+  section.cta-blurb {
+    padding-top: 0;
+    .inner {
+      align-items: center;
     }
   }
 }

@@ -202,7 +202,7 @@ get_header();
               </p>
             </div>
             <div class="cta">
-              <a href="<?php echo get_field('culture_link_text');?>"><span><?php echo get_field('culture_link_text');?></span></a>  
+              <a href="<?php echo get_field('culture_link');?>"><span><?php echo get_field('culture_link_text');?></span></a>  
             </div>
           </div>
         </div>

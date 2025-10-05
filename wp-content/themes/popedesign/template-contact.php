@@ -26,14 +26,23 @@ get_header();
           <div class="col-md-6">
             <?php the_content();?>
             <h3>Pope Design Group</h3>
-            <?php echo get_field('street_address', 'options');?><br>
-            <?php echo get_field('city_state_zip', 'options');?><br>
-            <a href="tel:<?php echo get_field('phone_number', 'options');?>"><?php echo get_field('phone_number_display', 'options');?></a>
-
+            <div class="row locations">
+              <div class="col-md-6">
+                <h4>Headquarters</h4>
+                <?php echo get_field('street_address', 'options');?><br>
+                <?php echo get_field('city_state_zip', 'options');?><br>
+                <a href="tel:<?php echo get_field('phone_number', 'options');?>"><?php echo get_field('phone_number_display', 'options');?></a><br>
+              </div>
+              <div class="col-md-5">
+                <h4>North Dakota</h4>
+                <?php echo get_field('street_address_2', 'options');?><br>
+                <?php echo get_field('city_state_zip_2', 'options');?><br>
+                <a href="tel:+17015060846">701.506.0846</a><br>
+              </div>
+            </div>
+            marketing@popedesign.com
             <hr />
-
             <?php echo do_shortcode('[contact-form-7 id="517" title="Contact Us"]');?>
-
           </div>
 
           <div class="col-md-6">

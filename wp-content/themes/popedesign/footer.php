@@ -4,7 +4,7 @@
     <div class="container">
       <div class="inner">
         <div class="contact">
-          <a href="/" title="Pope Design Group"><img src="/wp-content/themes/popedesign/images/logo-50.svg" alt="Pope Design Group"></a>
+          <a href="/" title="Pope Design Group"><img src="/wp-content/themes/popedesign/images/logo-reverse.svg" alt="Pope Design Group"></a>
           <p>
             <?php echo get_field('street_address', 'options');?><br>
             <?php echo get_field('city_state_zip', 'options');?><br>

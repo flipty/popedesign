@@ -64,6 +64,7 @@ get_header();
       $openings1 = get_field('intro_area_1');
       $openings2 = get_field('intro_area_2');
       ?>
+      <!--
       <section class="anniversary-highlights">
         <div class="container">
           <div class="row">
@@ -86,7 +87,7 @@ get_header();
           </div>
         </div>
       </section>
-
+      -->
       <?php $block1 = get_field('block_1'); $caption1 = $block1['caption']; ?>
       <section class="photo-block photo-left color-primary <?php if ($caption1){ echo 'has-caption';}?>">
         <div class="container">

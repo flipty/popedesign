@@ -99,7 +99,7 @@
   }
 }
 
-.page-template-template-careers-2024 {
+.page-template-template-careers-2024,.page-template-template-careers-2026  {
   
   .current-openings {
     background: linear-gradient(270deg, $white 35%, $color-jadeitelight 35%);
@@ -174,7 +174,7 @@
         }
         ul {
           list-style: none;
-          padding-left: 0;
+          padding-left: 0 !important;
           li { 
             margin-bottom: 15px;
             h4 {
@@ -329,6 +329,11 @@
           }
         }
       }
+    }
+    .contact-form {
+      h3 {
+        color: $color-plum;
+      }
       .events {
         margin-top: 30px;
         background: $color-teal75;
@@ -338,6 +343,9 @@
           font-weight: normal;
           padding: 0 0 15px 0;
         }
+        p {
+          color: $white;
+        }
         ol {
           list-style: none;
           padding-left: 0;
@@ -345,11 +353,6 @@
             margin-bottom: 25px;
           }
         }
-      }
-    }
-    .contact-form {
-      h3 {
-        color: $color-plum;
       }
       div.wpcf7 {
           width: 100%;

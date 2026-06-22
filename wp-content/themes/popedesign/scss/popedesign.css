@@ -2640,10 +2640,13 @@ section.news .news-items .news-item a:hover {
   border: 1px solid;
   font-family: "Montserrat", sans-serif;
 }
+.page-template-template-contact .locations, .page-template-template-careers .locations {
+  display: none;
+}
 .page-template-template-contact .locations h4, .page-template-template-careers .locations h4 {
-  color: #999;
+  color: #C00;
   margin-bottom: 0;
-  padding-bottom: 5px;
+  padding-bottom: 25px;
 }
 
 .page-template-template-careers.page-parent.page-child .return {

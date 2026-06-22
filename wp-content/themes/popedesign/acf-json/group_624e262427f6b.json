@@ -3,86 +3,6 @@
     "title": "Global Options",
     "fields": [
         {
-            "key": "field_624e262e03e95",
-            "label": "Street Address",
-            "name": "street_address",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_624e26444ef5d",
-            "label": "City State ZIP",
-            "name": "city_state_zip",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_624e2668aecd5",
-            "label": "Phone Number",
-            "name": "phone_number",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_624e2675f9b55",
-            "label": "Phone Number (Display)",
-            "name": "phone_number_display",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_62537916ddbd5",
             "label": "Google Maps embed code",
             "name": "google_maps_embed_code",
@@ -237,7 +157,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "<h2>Do you love what you do?<\/h2>\r\n<p>Our core values guide us to hire and promote team members who share in the mission of using design as a tool to enhance the lives of our clients, the people they serve, our own team members, and the broader community.<\/p>\r\n<a href=\"http:\/\/popedesign.local\/about\/culture\">LEARN ABOUT OUR VALUES<\/a>",
+                    "default_value": "<h2>Do you love what you do?<\/h2>\r\n<p>Our core values guide us to hire and promote team members who share in the mission of using design as a tool to enhance the lives of our clients, the people they serve, our own team members, and the broader community.<\/p>\r\n<a href=\"https:\/\/popedesign.local\/about\/culture\">LEARN ABOUT OUR VALUES<\/a>",
                     "tabs": "all",
                     "toolbar": "full",
                     "media_upload": 1,
@@ -269,6 +189,162 @@
                     "preview_size": "medium"
                 }
             ]
+        },
+        {
+            "key": "field_6a386e03fddd5",
+            "label": "Locations",
+            "name": "locations",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6a386e24fddd6",
+                    "label": "Location Name",
+                    "name": "location_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6a386e03fddd5"
+                },
+                {
+                    "key": "field_6a386e31fddd7",
+                    "label": "Address 1",
+                    "name": "address_1",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6a386e03fddd5"
+                },
+                {
+                    "key": "field_6a386e38fddd8",
+                    "label": "Address 2 (optional)",
+                    "name": "address_2",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6a386e03fddd5"
+                },
+                {
+                    "key": "field_6a386e3efddd9",
+                    "label": "City State ZIP",
+                    "name": "city_state_zip",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6a386e03fddd5"
+                },
+                {
+                    "key": "field_6a386e4dfddda",
+                    "label": "Phone (Dial)",
+                    "name": "phone_dial",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "+13334445555",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6a386e03fddd5"
+                },
+                {
+                    "key": "field_6a387813fdddb",
+                    "label": "Phone (Display)",
+                    "name": "phone_display",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "xxx.xxx.xxxx",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6a386e03fddd5"
+                }
+            ]
         }
     ],
     "location": [
@@ -289,5 +365,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719165209
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1782087951
 }

@@ -27,26 +27,22 @@ get_header();
             <?php the_content();?>
             <h3>Pope Design Group</h3>
             <div class="row locations">
-              <div class="col-md-6">
-                <h4>Headquarters</h4>
-                <?php echo get_field('street_address', 'options');?><br>
-                <?php echo get_field('city_state_zip', 'options');?><br>
-                <a href="tel:<?php echo get_field('phone_number', 'options');?>"><?php echo get_field('phone_number_display', 'options');?></a><br>
+                <?php while (have_rows('locations', 'options')): the_row(); ?>
+              <div class="col-md-5"> 
+                <h4><?php echo get_sub_field('location_name'); ?></h4>
+                <?php echo get_sub_field('address_1'); ?><br>
+                <?php if (get_sub_field('address_2')){ echo get_sub_field('address_2') . '<br>';} ?>
+                <?php echo get_sub_field('city_state_zip'); ?><br>
+                <a href="tel:<?php echo get_sub_field('phone_dial'); ?>"><?php echo get_sub_field('phone_display'); ?></a><br>
               </div>
-              <div class="col-md-5">
-                <h4>North Dakota</h4>
-                <?php echo get_field('street_address_2', 'options');?><br>
-                <?php echo get_field('city_state_zip_2', 'options');?><br>
-                <a href="tel:+17015060846">701.506.0846</a><br>
-              </div>
-            </div>
-            marketing@popedesign.com
+              <?php endwhile; ?>              
+            </div>            
             <hr />
-            <?php echo do_shortcode('[contact-form-7 id="517" title="Contact Us"]');?>
+            <?php //echo do_shortcode('[contact-form-7 id="b3e149a" title="Contact form 1"]');?>
           </div>
 
           <div class="col-md-6">
-            <?php echo get_field('google_maps_embed_code', 'options');?>
+            <?php //echo get_field('google_maps_embed_code', 'options');?>
           </div>
 
         </div>

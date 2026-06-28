@@ -343,6 +343,25 @@
                     "prepend": "",
                     "append": "",
                     "parent_repeater": "field_6a386e03fddd5"
+                },
+                {
+                    "key": "field_6a39588387cb0",
+                    "label": "Location Link",
+                    "name": "location_link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6a386e03fddd5"
                 }
             ]
         }
@@ -368,5 +387,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1782087951
+    "modified": 1782143122
 }

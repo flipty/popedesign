@@ -60,11 +60,12 @@
           $client = get_field('client');
           $contractor = get_field('contractor');
           $services = get_field('services');
-          $completion_date = get_field('completion_date');
           $occupancy = get_field('occupancy');
-          $estimated_completion_date = get_field('estimated_completion_date');
+          //$completion_date = get_field('completion_date'); //removed by request
+          //$estimated_completion_date = get_field('estimated_completion_date'); //removed by request
           $construction_costs = get_field('construction_costs');
           $photographer = get_field('photographer');
+          $related = get_field('related_projects');
         ?>
 
 
@@ -155,6 +156,7 @@
               </div>
             <?php endif; ?>
 
+            
             <?php if( $completion_date ) : ?>
               <div class="row stats">
                 <div class="col-md-12 stat">
@@ -176,8 +178,7 @@
                 </div>
               </div>
              <?php endif; ?>
-
-
+            
             <?php if( $occupancy ) : ?>
               <div class="row stats">
                 <div class="col-md-12 stat">
@@ -228,6 +229,29 @@
             </p>
 
           <?php endif; ?>
+
+          <?php if($related) : ?>
+            <h3>Related Projects</h3>
+            <div class="related-projects">
+            <?php foreach ($related as $rproject){ ?>
+              <div class="related-project">
+                <a href="<?php echo get_the_permalink($rproject);?>">
+                  <?php if( have_rows( 'photos', $rproject ) ): $i = 0; ?>
+                    <?php while( have_rows( 'photos', $rproject ) ): the_row(); $i++; ?>
+                    <?php if ($i == 1){ ?>
+                    <div class="related-project-image">
+                    <?php echo wp_get_attachment_image( get_sub_field( 'photo' ), 'carousel'); ?>
+                    </div>
+                    <?php } ?>
+                    <?php endwhile; ?>
+                  <?php endif; ?>
+                  <h4><?php echo get_the_title($rproject);?></h4>          
+                </a>
+              </div>              
+            <?php }; ?>
+            </div>
+          <?php endif; ?>
+
 
         </div>
       </div>

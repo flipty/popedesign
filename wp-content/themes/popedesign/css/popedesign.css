@@ -2487,6 +2487,40 @@ section.news .news-items .news-item a:hover {
     color: rgba(0, 0, 0, 0.75);
   }
 }
+.single-projects .related-projects {
+  text-decoration: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.single-projects .related-projects .related-project {
+  width: 32%;
+  background: #418b94;
+}
+@media only screen and (max-width: 1023px) {
+  .single-projects .related-projects .related-project {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+.single-projects .related-projects .related-project a {
+  text-decoration: none;
+}
+.single-projects .related-projects .related-project .related-project-image {
+  margin: 0;
+  padding: 0;
+}
+.single-projects .related-projects .related-project .related-project-image img {
+  max-width: 100%;
+  height: auto;
+}
+.single-projects .related-projects .related-project h4 {
+  margin-top: -4px;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 14px;
+  padding: 7px;
+}
 .single-projects p.tags {
   border-top: solid 1px rgba(0, 0, 0, 0.15);
   padding-top: 20px;

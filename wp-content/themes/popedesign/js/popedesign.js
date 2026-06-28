@@ -51,10 +51,10 @@ var popedesign = {
       }
     );
 
-    var $projectDetail = $('#project-detail');
-    $projectDetail.on('changed.owl.carousel',function(e){
-        console.log('UPDATED!');
-    });
+    //var $projectDetail = $('#project-detail');
+    //$projectDetail.on('changed.owl.carousel',function(e){
+        //console.log('UPDATED!');
+    //});
 
     $("#project-carousel").owlCarousel({
         navigation : true,

@@ -115,6 +115,40 @@
 
     }
   }
+  
+  .related-projects {
+    text-decoration: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .related-project {
+      width: 32%;
+      background: #418b94;
+      @include breakpoint(mobile){
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .related-project-image {
+        margin: 0;
+        padding: 0;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      h4 {
+        margin-top: -4px;
+        margin-bottom: 0;
+        color: #fff;
+        font-size: 14px;
+        padding: 7px;
+      }
+    }
+  }
+
   p.tags {
     border-top: solid 1px $black15;
     padding-top: 20px;

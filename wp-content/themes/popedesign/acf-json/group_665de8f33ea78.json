@@ -111,7 +111,10 @@
                     },
                     "default_value": "",
                     "enable_opacity": 0,
-                    "return_format": "string"
+                    "return_format": "string",
+                    "custom_palette_source": "",
+                    "palette_colors": "",
+                    "show_color_wheel": true
                 },
                 {
                     "key": "field_665f390ea231f",
@@ -187,7 +190,10 @@
                     },
                     "default_value": "",
                     "enable_opacity": 0,
-                    "return_format": "string"
+                    "return_format": "string",
+                    "custom_palette_source": "",
+                    "palette_colors": "",
+                    "show_color_wheel": true
                 },
                 {
                     "key": "field_665f394a75db3",
@@ -244,6 +250,13 @@
                 "operator": "==",
                 "value": "template-50-aniv.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-market.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -255,5 +268,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1721140975
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1782093709
 }

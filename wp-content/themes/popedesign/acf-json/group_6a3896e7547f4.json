@@ -1,7 +1,76 @@
 {
     "key": "group_6a3896e7547f4",
-    "title": "Markets",
+    "title": "Market Detail",
     "fields": [
+        {
+            "key": "field_6a4be0d5f4a1f",
+            "label": "Market Secondary Content",
+            "name": "market_related",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6a3897210abf8",
+            "label": "Featured Projects",
+            "name": "projects",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "projects"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "id",
+            "multiple": 1,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_6a4be10af4a20",
+            "label": "Testimonial Content",
+            "name": "testimonial_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
         {
             "key": "field_6a3896e747996",
             "label": "Market Head",
@@ -30,11 +99,11 @@
             "bidirectional_target": []
         },
         {
-            "key": "field_6a3897210abf8",
-            "label": "Featured Projects",
-            "name": "projects",
+            "key": "field_6a4bea87f4cce",
+            "label": "CTA Area",
+            "name": "cta_area",
             "aria-label": "",
-            "type": "post_object",
+            "type": "group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -43,17 +112,98 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "projects"
-            ],
-            "post_status": "",
-            "taxonomy": "",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6a4bea87f4cd2",
+                    "label": "Content",
+                    "name": "cta_content",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 1,
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_6a4bea87f4cd3",
+                    "label": "Link Page",
+                    "name": "link_page",
+                    "aria-label": "",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": "",
+                    "post_status": "",
+                    "taxonomy": "",
+                    "allow_archives": 1,
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "allow_in_bindings": 1
+                },
+                {
+                    "key": "field_6a4bea87f4cd4",
+                    "label": "Link Text",
+                    "name": "link_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 1,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_6a4c1f3353e4e",
+            "label": "News Taxonomy Market",
+            "name": "news_taxonomy_market",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "market-news",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
             "return_format": "id",
-            "multiple": 1,
-            "allow_null": 0,
+            "field_type": "checkbox",
             "allow_in_bindings": 0,
             "bidirectional": 0,
-            "ui": 1,
+            "multiple": 0,
+            "allow_null": 0,
             "bidirectional_target": []
         }
     ],
@@ -78,5 +228,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1782094834
+    "modified": 1783373938
 }

@@ -10,64 +10,98 @@
 
 get_header();
 ?>
-      <?php //full page hero variables
-      $subpage_h1 = false;//true if there's a H1 in the subpage header bar
-      $hero = get_field('full_image_hero');
-      $hero_image = $hero['hero_image'];
-      $hero_stripe = $hero['stripe_color'];
-      $hero_headline = $hero['headline'];
-      $hero_headline_color = $hero['headline_color'];
-      $hero_headline_align = $hero['headline_align'];
-      $hero_subheadline = $hero['sub_headline'];
-      $hero_subheadline_color = $hero['subheadline_color'];
-      $hero_subheadline_align = $hero['subheadline_align'];
-      if ($hero_image){
-      ?>
-      <section class="full-image-hero career-hero" style="background-image: url('<?php echo wp_get_attachment_image_url($hero_image, 'full');?>');">
+  
+  <?php $header = get_field('page_header');?>
+  <section class="subpage-head color-grey">
+      <div class="container">
         <div class="inner">
-          <div class="stripe" style="background-color: <?php echo $hero_stripe;?>">
-            <div class="container">
-            <?php 
-            if ($subpage_h1){ ?><span class="image-hero-headline" style="
-              <?php if ($hero_headline_color){ echo 'color: '. $hero_headline_color . ';';}?>
-              <?php if ($hero_headline_align){ echo 'text-align: '. $hero_headline_align . ';';}?>
-            "><?php } ?><?php if (!$subpage_h1){ ?><h1 style="<?php if ($hero_headline_color){ echo 'color: '. $hero_headline_color . ';';}?>"><?php } 
-            echo $hero_headline;
-            if ($subpage_h1){ ?></span><?php } ?><?php if (!$subpage_h1){ ?></h1><?php } ?>
-            </div>
-              
+          <div class="content">
+            <h1>
+              <?php echo $header['headline'];?>
+            </h1>
+            <span class="h2"><?php echo $header['subhead'];?></span>
           </div>
-          <div class="container">
-          <span class="subheadline" style="
-          <?php if ($hero_subheadline_color){ echo 'color: '. $hero_subheadline_color . ';';}?>
-          <?php if ($hero_subheadline_align){ echo 'text-align: '. $hero_subheadline_align . ';';}?>
-          "><?php echo $hero_subheadline;?></span>            
+          <div class="image">
+            <?php echo wp_get_attachment_image($header['image'], 'full');?>
           </div>
         </div>
+      </div>
+  </section>
 
-      </section>
-      <?php } //hero image logic ?>
+  <?php $subhero = get_field('sub_hero');?>
+  <section class="sub-hero" id="sub-hero-1">
+    <div class="container">
+
+      <div class="inner">
+        <div class="headline">
+          <h2><?php echo $subhero['headline'];?></h2>
+          <h3><?php echo $subhero['subheadline'];?></h3>
+        </div>
+        <div class="content">
+          <p>
+            <?php echo $subhero['content'];?>
+          </p>
+          <a href="<?php echo $subhero['link_page'];?>"><?php echo $subhero['link_text'];?></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="market-select" style="background-image: url('<?php echo wp_get_attachment_image_url(get_field('market_list_background'), 'full');?>');">
+    <div class="container">
+      <div class="market-items">
+      <?php while(have_rows('market_pages')){ ?>
+      <?php the_row(); 
+        $marketID = get_sub_field('market_page');
+        $altText = get_sub_field('alternate_name');
+      ?>
+        <div class="item">
+          <a href="<?php echo get_the_permalink($marketID);?>">
+            <?php 
+            if ($altText){ echo get_sub_field('alternate_name'); }
+            if (!$altText){ echo get_the_title($marketID); }
+            ?>
+          </a>
+        </div>
+      <?php }?>
+      </div>
+    </div>
+  </section>
+
+<?php $block1 = get_field('block_1');?>
+<section class="photo-block photo-right color-primary" id="photo-block-1">
+  <div class="container">
+    <div class="inner">
+      <div class="photo">
+        <?php echo wp_get_attachment_image($block1['image'], 'full');?>
+      </div>
+      <div class="content">
+        <?php echo $block1['content'];?>
+        <a href="<?php echo $block1['link_page'];?>"><?php echo $block1['link_text'];?></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <?php $cta = get_field('cta_area');?>
+  <section class="cta-blurb">
+    <div class="container">
+      <div class="inner">
+        <div class="content">
+          <p>
+            <?php echo $cta['cta_content'];?>
+          </p>
+        </div>
+        <div class="cta">
+          <a href="<?php echo $cta['link_page'];?>"><span><?php echo $cta['link_text'];?></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div class="container">
 
-      <?php if (have_posts()) : ?>
-      	<?php while (have_posts()) : the_post(); ?>
-
-          <h1><?php echo get_the_title();?></h1>
-          <?php the_content(); ?>
-
-          <?php $marketHead = get_field('market_head'); ?>
-
-          <?php foreach ($marketHead as $head){ ?>
-            <?php 
-            echo get_the_title($head);
-            } //foreach ?>
-
-      	<?php endwhile; ?>
-
-      	<?php else : ?>
-
-      <?php endif; ?>
 
   </div>
 

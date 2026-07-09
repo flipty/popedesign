@@ -1,11 +1,10 @@
 <?php get_header(); ?>
 
 <?php get_template_part('partials/page', 'header'); ?>
-
+<main>
 <?php if (have_posts()) : ?>
 
   <?php while (have_posts()) : the_post(); ?>
-    <main>
 
     <section class="subpage-head-small no-margin"><!--logic for color-->
         <div class="container">
@@ -16,6 +15,7 @@
     </section>
     <div class="container">
     <?php get_template_part('partials/page', 'breadcrumb'); ?>
+    <article>
     <div class="row">
       <?php $imageType = get_field( 'image_type' ); ?>
       <div class="col-md-8"><!-- was 8 12 -->
@@ -81,14 +81,15 @@
        </div>
 
     </div><!--/row-->
+              </article>
   </div>
 
-
+              
   <?php endwhile; ?>
 
 
 <?php endif; ?>
-</main>
 
+              </main>
 
 <?php get_footer(); ?>

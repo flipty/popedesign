@@ -100,3 +100,37 @@ function news_category_taxonomy()  {
 }
 
 add_action( 'init', 'news_category_taxonomy', 0 );
+
+function news_market_taxonomy()  {
+	$labels = array(
+		'name'                       => _x( 'Market', 'Taxonomy General Name', 'pope' ),
+		'singular_name'              => _x( 'Markets', 'Taxonomy Singular Name', 'pope' ),
+		'menu_name'                  => __( 'Markets', 'pope' ),
+		'all_items'                  => __( 'All Markets', 'pope' ),
+		'parent_item'                => __( 'Parent Market', 'pope' ),
+		'parent_item_colon'          => __( 'Parent Market:', 'pope' ),
+		'new_item_name'              => __( 'New Market', 'pope' ),
+		'add_new_item'               => __( 'Add New Market', 'pope' ),
+		'edit_item'                  => __( 'Edit Market', 'pope' ),
+		'update_item'                => __( 'Update Market', 'pope' ),
+		'separate_items_with_commas' => __( 'Separate Markets with commas', 'pope' ),
+		'search_items'               => __( 'Search Markets', 'pope' ),
+		'add_or_remove_items'        => __( 'Add or remove Markets', 'pope' ),
+		'choose_from_most_used'      => __( 'Choose from the most used Markets', 'pope' )
+	);
+
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+		'rewrite' => array( 'slug' => 'market-news' )
+	);
+
+	register_taxonomy( 'market-news', 'news', $args );
+}
+
+add_action( 'init', 'news_market_taxonomy', 0 );

@@ -550,6 +550,16 @@ section.full-image-hero {
         font-size: 19px;
       }
     }
+    &.big-title {
+      .stripe {
+        height: 135px;
+      }
+      .image-hero-headline, h1 {
+        font-size: 75px;
+        top: -25px;
+      }
+    }
+
   }
 }
 
@@ -647,6 +657,9 @@ section.subpage-head {
   margin-bottom: 50px;
   &.color-plum {
     background: linear-gradient(270deg, $white 50%, $color-plum 50%);
+  }
+  &.color-grey {
+    background: linear-gradient(270deg, $white 50%, $color-blacklight 50%);
   }
   @include breakpoint(mobile){
     background: $color-teal;

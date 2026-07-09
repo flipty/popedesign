@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php get_template_part('partials/page', 'header'); ?>
-
+<main>
 <section class="subpage-head-small no-margin"><!--logic for color-->
     <div class="container">
       <div class="inner">
@@ -152,5 +152,5 @@
   </div>
 
 </div><!--/container content-area-->
-
+                    </main>
 <?php get_footer(); ?>

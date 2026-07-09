@@ -382,6 +382,31 @@
             "rows_per_page": 20
         },
         {
+            "key": "field_6a41a4d1d9d0c",
+            "label": "Gallery Layout",
+            "name": "gallery_layout",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Normal": "Normal",
+                "Staggered": "Staggered",
+                "Grid": "Grid"
+            },
+            "default_value": "Normal",
+            "return_format": "value",
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "layout": "horizontal"
+        },
+        {
             "key": "field_4f981e9981380",
             "label": "Photographer",
             "name": "photographer",
@@ -471,5 +496,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1782088341
+    "modified": 1782687198
 }

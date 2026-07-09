@@ -44,19 +44,43 @@
 .single-projects {
   #project-detail {
     max-height: 850px;
+    //margin-bottom: 50px;
     img {
       max-height: 850px;
       height: auto;
     }
   }
   section.title {
-    background: $color-greyMed;
+    //background: $color-greyMed;
     padding: 10px 0;
     // margin-bottom: 20px;
-    h1 {
-      color: $white;
-      font-weight: 300;
-      font-size: 32px;
+    .title-text {
+      h1 {
+        color: $color-teal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 42px;
+      }
+      &.big-title {
+        h1 {
+          font-size: 24px;
+          line-height: 48px;
+        }
+      }
+    }
+    .title-breadcrumb {
+      text-align: right;
+      a.bread {
+        white-space: nowrap;
+        line-height: 80px;
+        color: darken($color-grey, 20%);
+        text-decoration: none;
+        font-weight: 500;
+        &:hover {
+          text-decoration: underline;
+          color: $color-teal;
+        }
+      }
     }
   }
   #project-carousel {
@@ -115,18 +139,82 @@
 
     }
   }
-  
+  .gallery-container {
+      h2 {
+        color: $color-watermelon;
+      }
+    .inline-gallery {
+      margin-top: 40px;
+      .item {
+        margin-bottom: 15px;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      &.gallery-Normal {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &.gallery-Staggered {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        .item.has-caption {
+          width: 100%;
+          display: flex;
+          flex-flow: row;
+          justify-content: space-between;
+          align-items: center;
+          img {
+            max-width: 50%;
+          }
+          p {
+            font-size: 28px;
+            padding: 0 50px;
+            width: 100%;
+          }
+          &.staggeredItem-2, &.staggeredItem-4, &.staggeredItem-6 {
+            flex-flow: row-reverse;
+            p {
+              text-align: right;
+            }
+          }
+        }
+      }
+      &.gallery-Grid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        .item {
+          width: 30%;
+          margin: 15px 7.5px;
+        }
+      }
+    }
+    }
+  .related-title {
+    color: $color-watermelon;
+  }
+
   .related-projects {
     text-decoration: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     .related-project {
-      width: 32%;
+      width: 48%;
       background: #418b94;
+      margin-bottom: 15px;
       @include breakpoint(mobile){
         width: 100%;
-        margin-bottom: 15px;
       }
       a {
         text-decoration: none;

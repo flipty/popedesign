@@ -6,6 +6,7 @@
             "key": "field_4f8db1afeaa27",
             "label": "Image",
             "name": "news_image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -30,6 +31,7 @@
             "key": "field_5738acb104419",
             "label": "Image Type",
             "name": "image_type",
+            "aria-label": "",
             "type": "radio",
             "instructions": "",
             "required": 0,
@@ -54,20 +56,43 @@
             "key": "field_624f4a54538be",
             "label": "Leave off Home Page news",
             "name": "home_page_exempt",
+            "aria-label": "",
             "type": "true_false",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "message": "",
             "default_value": 0,
-            "ui": 1,
+            "allow_in_bindings": 1,
             "ui_on_text": "",
-            "ui_off_text": ""
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_6a4c22915a118",
+            "label": "Leave off Market Page news",
+            "name": "market_page_exempt",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
         }
     ],
     "location": [
@@ -88,5 +113,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649363567
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1783374551
 }

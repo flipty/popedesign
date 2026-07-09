@@ -1,8 +1,30 @@
 <?php get_header(); ?>
-
+<main>
 <?php if (have_posts()) : ?>
 
   <?php while (have_posts()) : the_post(); ?>
+    <?php 
+      $big_title = false;
+      $title = get_the_title(); 
+      $title_length = strlen($title);
+      if ($title_length >= 50) { $big_title = true; }
+    ?>
+    <section class="title">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9 title-text <?php if ($big_title){ echo ' big-title'; };?>">
+            <h1><?php echo get_the_title(); ?></h1>
+          </div>
+          <div class="col-sm-3 title-breadcrumb">
+              <?php 
+              $ptypeLink = wp_get_post_terms(get_the_ID(), 'project-type')[0]->slug;
+              $ptype = wp_get_post_terms(get_the_ID(), 'project-type')[0]->name;
+              ?>
+            <a href="/projects/type/<?php echo $ptypeLink;?>" class="bread">See More <?php echo $ptype; ?> Projects</a> 
+          </div>
+        </div>
+      </div>
+    </section>
 
     <?php if( have_rows( 'photos' ) ): ?>
 
@@ -20,37 +42,10 @@
 
         <?php endif; ?>
 
-    <section class="title">
-      <div class="container"><h1><?php echo get_the_title();?></h1></div>
-    </section>
-
     <div class="container">
 
       <?php get_template_part('partials/page', 'breadcrumb'); ?>
 
-      <div class="row">
-        <div class="col-xs-12">
-
-        <?php if( have_rows( 'photos' ) ): ?>
-
-          <div id="project-carousel" class="owl-carousel owl-theme">
-
-          <?php while( have_rows( 'photos' ) ): the_row(); ?>
-
-            <div class="item">
-              <div class="itemContent">
-                 <?php echo wp_get_attachment_image( get_sub_field( 'photo' ), 'carousel'); ?>
-              </div><!--/itemContent-->
-            </div><!--/item-->
-
-          <?php endwhile; ?>
-
-          </div>
-
-        <?php endif; ?>
-
-        </div>
-      </div>
     </div>
         <?php
           $city = get_field('city');
@@ -231,7 +226,7 @@
           <?php endif; ?>
 
           <?php if($related) : ?>
-            <h3>Related Projects</h3>
+            <h3 class="related-title">Related Projects</h3>
             <div class="related-projects">
             <?php foreach ($related as $rproject){ ?>
               <div class="related-project">
@@ -255,10 +250,36 @@
 
         </div>
       </div>
+      <?php 
+      $layout = 'Normal';
+      if (get_field('gallery_layout')){
+        $layout = get_field('gallery_layout'); 
+        $staggeredItem = 1;
+      }
+      ?>
+      <?php if( have_rows( 'photos' ) ): ?>
+      <div class="gallery-container">
+          <h2><?php echo get_the_title();?> Gallery</h2>
+          <div class="inline-gallery <?php if ($layout){ ?> gallery-<?php echo $layout; } ?>">
+
+          <?php while( have_rows( 'photos' ) ): the_row(); ?>
+          <?php $thisIndex = get_row_index(); ?>
+            <div class="item <?php if (wp_get_attachment_caption( get_sub_field('photo'))){ echo ' has-caption'; echo ' staggeredItem-' . $staggeredItem; } ?> index-<?php echo $thisIndex; ?>">
+                <?php echo wp_get_attachment_image( get_sub_field( 'photo' ), 'carousel'); ?>
+                <?php if (wp_get_attachment_caption( get_sub_field('photo'))){ $staggeredItem++ ?>
+                <?php echo '<p>' . wp_get_attachment_caption( get_sub_field('photo')) . '</p>'; } ?>
+            </div><!--/item-->
+
+          <?php endwhile; ?>
+
+          </div>
+      </div>
+      <?php endif; ?>
+
     </div><!--/container-->
 
     <?php endwhile; ?>
 
   <?php endif; ?>
-
+      </main>
 <?php get_footer(); ?>

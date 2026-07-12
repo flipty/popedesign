@@ -10,6 +10,7 @@
 
 get_header();
 ?>
+<main>
       <?php //full page hero variables
       $subpage_h1 = false;//true if there's a H1 in the subpage header bar
       $hero = get_field('full_image_hero');
@@ -134,21 +135,23 @@ get_header();
         </div><!--container-->
         
         <!--related news-->
-        
+<?php
+    $currentTaxonomy = get_field('news_taxonomy_market');
+    $currentTaxonomyID = $currentTaxonomy[0];
+    $currentTermName = get_term( $currentTaxonomyID )->name;
+?>   
         <section class="news">
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h2>Related News</h2>
+                <h2><?php echo $currentTermName; ?> News</h2>
               </div>
             </div>
         
 <div class="news-items">
     <?php
-    $currentTaxonomy = get_field('news_taxonomy_market');
-    $currentTaxonomyID = $currentTaxonomy[0];
     $newsargs = array(
-      'posts_per_page'  => 1,
+      'posts_per_page'  => 3,
       'post_type'       => 'news',
       'orderby'         => 'date',
       'order'						=> 'DESC',
@@ -228,6 +231,6 @@ get_header();
 
 
       <?php endif; ?>
-
+</main>
 <?php
 get_footer();

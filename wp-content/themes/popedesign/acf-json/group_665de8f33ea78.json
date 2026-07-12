@@ -257,6 +257,13 @@
                 "operator": "==",
                 "value": "template-market.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-services.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -271,5 +278,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1782093709
+    "modified": 1783780707
 }

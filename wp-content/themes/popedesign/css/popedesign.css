@@ -3994,6 +3994,83 @@ section.news .news-items .news-item a:hover {
 .page-template-template-markets .market-select .market-items .item:hover {
   background: rgba(102, 70, 90, 0.75);
 }
+.page-template-template-services section.intro .intro-content {
+  line-height: 1.8em;
+  font-size: 18px;
+  color: #5B5B5E;
+}
+.page-template-template-services section.intro .intro-content strong {
+  display: block;
+  margin-bottom: 0.75em;
+}
+.page-template-template-services section.intro .intro-content br {
+  display: none;
+}
+.page-template-template-services section.intro .intro-links .links {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.page-template-template-services section.intro .intro-links .links > div {
+  width: 48%;
+}
+.page-template-template-services section.intro .intro-links .links > div a {
+  text-decoration: none;
+}
+.page-template-template-services section.intro .intro-links .links > div img {
+  max-width: 100%;
+  height: auto;
+}
+.page-template-template-services section.intro .intro-links .links > div p {
+  background: rgba(65, 139, 148, 0.75);
+  line-height: 35px;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  top: -40px;
+  text-transform: uppercase;
+}
+.page-template-template-services #photo-block-1 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.page-template-template-services .specialty {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.page-template-template-services .specialty h2 {
+  color: #418b94;
+}
+.page-template-template-services .specialty ul {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 80%;
+  font-size: 18px;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.page-template-template-services .specialty ul li {
+  margin: 0 15px;
+  white-space: nowrap;
+  line-height: 2em;
+  padding-left: 10px;
+  color: #5B5B5E;
+}
+.page-template-template-services .specialty ul li:first-child {
+  list-style: none;
+}
+.page-template-template-services #photo-block-3 {
+  margin-bottom: 60px;
+}
+
 .post-type-archive-news img, .tax-news-category img {
   max-width: 100%;
   height: auto;

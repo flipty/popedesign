@@ -49,6 +49,30 @@
       max-height: 850px;
       height: auto;
     }
+    .owl-nav {
+      width: 100%;
+      position: relative;
+      z-index: 9999;
+      top: -90px;
+      button {
+        position: absolute;
+        span {
+          font-size: 75px;
+          line-height: 50px;
+          color: $white;
+          text-shadow: 0 0 5px $black50;
+        }
+        &.owl-prev {
+          left: 30px;
+        }
+        &.owl-next {
+          right: 30px;
+        }
+        &:hover {
+          background: none;
+        }
+      }
+    }
   }
   section.title {
     //background: $color-greyMed;
@@ -98,6 +122,11 @@
       }
     }
   }
+
+  .detail-container {
+    margin-top: 20px;
+  }
+
   .post-content {
     > p, > ul li {
       margin-top: 0;
@@ -248,9 +277,6 @@
         color: $color-plum;
       }
     }
-  }
-  footer {
-    // margin-top: 60px;
   }
 }
 

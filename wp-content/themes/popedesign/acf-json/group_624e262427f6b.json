@@ -235,9 +235,9 @@
                     "parent_repeater": "field_6a386e03fddd5"
                 },
                 {
-                    "key": "field_6a386e31fddd7",
-                    "label": "Address 1",
-                    "name": "address_1",
+                    "key": "field_6a555854fb39e",
+                    "label": "Special Note",
+                    "name": "special_note",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -257,9 +257,9 @@
                     "parent_repeater": "field_6a386e03fddd5"
                 },
                 {
-                    "key": "field_6a386e38fddd8",
-                    "label": "Address 2 (optional)",
-                    "name": "address_2",
+                    "key": "field_6a386e31fddd7",
+                    "label": "Address 1",
+                    "name": "address_1",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -345,11 +345,11 @@
                     "parent_repeater": "field_6a386e03fddd5"
                 },
                 {
-                    "key": "field_6a39588387cb0",
-                    "label": "Location Link",
-                    "name": "location_link",
+                    "key": "field_6a555a0df9426",
+                    "label": "Main Contact",
+                    "name": "main_contact",
                     "aria-label": "",
-                    "type": "url",
+                    "type": "post_object",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -358,9 +358,18 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
+                    "post_type": [
+                        "bios"
+                    ],
+                    "post_status": "",
+                    "taxonomy": "",
+                    "return_format": "id",
+                    "multiple": 0,
+                    "allow_null": 0,
                     "allow_in_bindings": 0,
-                    "placeholder": "",
+                    "bidirectional": 0,
+                    "ui": 1,
+                    "bidirectional_target": [],
                     "parent_repeater": "field_6a386e03fddd5"
                 }
             ]
@@ -387,5 +396,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1782143122
+    "modified": 1783978557
 }

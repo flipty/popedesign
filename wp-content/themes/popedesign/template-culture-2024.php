@@ -10,6 +10,7 @@
 
 get_header();
 ?>
+<main>
 
 <?php $header = get_field('page_header');?>
 <section class="subpage-head">
@@ -218,7 +219,6 @@ get_header();
   </section>
 
 
-
-
+</main>
 <?php
 get_footer();

@@ -115,8 +115,9 @@ get_header();
                 </div>
                 <div class="head-content">
                   <h3>Main Contact</h3>
-                  <h4><?php echo get_the_title($head);?> <?php echo get_field('accreditation', $head);?></h4>
+                  <h4><?php echo get_the_title($head);?> <?php //echo get_field('accreditation', $head);?></h4>
                   <a href="mailto:<?php echo get_field('email', $head);?>"><?php echo get_field('email', $head);?></a>
+                  <!--
                   <p><?php 
                     if (get_field('phone', $head)){
                       echo get_field('phone', $head);
@@ -125,6 +126,7 @@ get_header();
                       echo '651.642.9200'; //default phone
                     } ?>
                   </p>
+                  -->
                 </div>
               </div>
             <?php } //foreach ?>

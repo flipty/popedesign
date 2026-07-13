@@ -332,6 +332,11 @@ body {
 main {
   background: white;
 }
+@media only screen and (min-width: 1024px) {
+  main {
+    padding-top: 90px;
+  }
+}
 
 .container {
   width: 100%;
@@ -663,10 +668,6 @@ header nav.navigation button.mobile-trigger.active span.bot {
   margin-top: 10px;
   width: 0;
 }
-main {
-  padding-top: 90px;
-}
-
 footer {
   background: #1d1d1e;
   padding: 60px 0;
@@ -1548,12 +1549,16 @@ section.subpage-head {
   background: linear-gradient(270deg, #ffffff 50%, #418b94 50%);
   max-height: 290px;
   margin-bottom: 50px;
+  padding-top: 70px;
 }
 section.subpage-head.color-plum {
   background: linear-gradient(270deg, #ffffff 50%, #66465a 50%);
 }
 section.subpage-head.color-grey {
   background: linear-gradient(270deg, #ffffff 50%, #6d6e72 50%);
+}
+section.subpage-head.color-darkteal {
+  background: linear-gradient(270deg, #ffffff 50%, #195d67 50%);
 }
 @media only screen and (max-width: 1023px) {
   section.subpage-head {
@@ -2449,6 +2454,30 @@ section.news .news-items .news-item a:hover {
   max-height: 850px;
   height: auto;
 }
+.single-projects #project-detail .owl-nav {
+  width: 100%;
+  position: relative;
+  z-index: 9999;
+  top: -90px;
+}
+.single-projects #project-detail .owl-nav button {
+  position: absolute;
+}
+.single-projects #project-detail .owl-nav button span {
+  font-size: 75px;
+  line-height: 50px;
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.single-projects #project-detail .owl-nav button.owl-prev {
+  left: 30px;
+}
+.single-projects #project-detail .owl-nav button.owl-next {
+  right: 30px;
+}
+.single-projects #project-detail .owl-nav button:hover {
+  background: none;
+}
 .single-projects section.title {
   padding: 10px 0;
 }
@@ -2487,6 +2516,9 @@ section.news .news-items .news-item a:hover {
 }
 .single-projects #project-carousel .itemContent img {
   height: auto;
+}
+.single-projects .detail-container {
+  margin-top: 20px;
 }
 .single-projects .post-content > p, .single-projects .post-content > ul li {
   margin-top: 0;
@@ -2631,6 +2663,7 @@ section.news .news-items .news-item a:hover {
 .single-projects p.tags a:hover {
   color: #66465a;
 }
+
 .tax-project-type .subpage-head-small {
   margin-bottom: 0;
 }
@@ -2708,74 +2741,83 @@ section.news .news-items .news-item a:hover {
   margin-bottom: 120px;
 }
 
-.page-template-template-contact a, .page-template-template-careers a {
-  color: #418b94;
+.page-template-template-contact section.intro {
+  font-size: 18px;
 }
-.page-template-template-contact div.wpcf7, .page-template-template-careers div.wpcf7 {
-  width: 100%;
+.page-template-template-contact section.intro .content-area {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
-.page-template-template-contact div.wpcf7 input[type=text],
-.page-template-template-contact div.wpcf7 input[type=email],
-.page-template-template-contact div.wpcf7 textarea, .page-template-template-careers div.wpcf7 input[type=text],
-.page-template-template-careers div.wpcf7 input[type=email],
-.page-template-template-careers div.wpcf7 textarea {
-  background: #e7e7e7;
-  border: none;
-  width: 100%;
-  padding: 0.85em;
-  font-size: 13px;
-  margin-bottom: 0.5em;
-  font-family: sans-serif;
-  font-family: "Montserrat", sans-serif;
+.page-template-template-contact section.intro .content-area .spacer {
+  width: 30%;
 }
-@media only screen and (max-width: 1023px) {
-  .page-template-template-contact div.wpcf7 input[type=text],
-  .page-template-template-contact div.wpcf7 input[type=email],
-  .page-template-template-contact div.wpcf7 textarea, .page-template-template-careers div.wpcf7 input[type=text],
-  .page-template-template-careers div.wpcf7 input[type=email],
-  .page-template-template-careers div.wpcf7 textarea {
-    width: calc(100% - 30px);
+.page-template-template-contact section.intro .content-area .content {
+  width: 70%;
+}
+.page-template-template-contact section.intro .content-area .content p {
+  line-height: 1.7em;
+  color: #5B5B5E;
+}
+@media only screen and (min-width: 1024px) {
+  .page-template-template-contact section.intro .content-area .content p {
+    width: 75%;
   }
 }
-.page-template-template-contact div.wpcf7 select.wpcf7-select, .page-template-template-careers div.wpcf7 select.wpcf7-select {
-  background: #e7e7e7;
-  border: none;
-  width: 100%;
-  padding: 0.85em;
-  font-size: 13px;
-  height: 3.5em;
-  border-radius: 0;
-  margin-bottom: 0.5em;
+.page-template-template-contact section.locations {
+  background: #e4f3ec;
 }
-.page-template-template-contact div.wpcf7 .wpcf7-submit, .page-template-template-careers div.wpcf7 .wpcf7-submit {
-  color: #666;
-  border-radius: 0;
-  padding: 12px 24px;
-  background-color: #fff;
-  border-color: #ccc;
-  display: inline-block;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid;
-  font-family: "Montserrat", sans-serif;
+.page-template-template-contact section.locations .location-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
-.page-template-template-contact .locations h4, .page-template-template-careers .locations h4 {
-  color: #999;
-  margin-bottom: 0;
-  padding-bottom: 5px;
+@media only screen and (min-width: 1024px) {
+  .page-template-template-contact section.locations .location-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.page-template-template-contact section.locations .location-list .location {
+  line-height: 1.4em;
+  color: #5B5B5E;
+  min-width: 25%;
+}
+.page-template-template-contact section.locations .location-list .location h4 {
+  font-size: 24px;
+  color: #418b94;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.page-template-template-contact section.locations .location-list .location a {
+  color: #5B5B5E;
+  text-decoration: none;
+}
+.page-template-template-contact section.locations .location-list .location a.contact {
+  color: #418b94;
+}
+.page-template-template-contact section.secondary-content {
+  align-items: center;
+}
+.page-template-template-contact section.secondary-content .image img {
+  max-width: 100%;
+  height: auto;
+}
+.page-template-template-contact section.secondary-content .content-area {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.page-template-template-contact section.secondary-content .content-area h2 {
+  color: #ed6564;
+}
+.page-template-template-contact section.secondary-content .content-area p {
+  font-size: 18px;
+  color: #5B5B5E;
+  line-height: 1.8em;
+}
+.page-template-template-contact section.secondary-content .content-area p a {
+  color: #418b94;
 }
 
 .page-template-template-careers.page-parent.page-child .return {
@@ -3836,6 +3878,9 @@ section.news .news-items .news-item a:hover {
   align-items: center;
 }
 
+.page-template-template-market .content-area {
+  margin-top: 20px;
+}
 .page-template-template-market .content-area .main-content p {
   font-size: 18px;
   line-height: 1.7em;

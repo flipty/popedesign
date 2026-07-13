@@ -655,11 +655,15 @@ section.subpage-head {
   background: linear-gradient(270deg, $white 50%, $color-teal 50%);
   max-height: 290px;
   margin-bottom: 50px;
+  padding-top: 70px;
   &.color-plum {
     background: linear-gradient(270deg, $white 50%, $color-plum 50%);
   }
   &.color-grey {
     background: linear-gradient(270deg, $white 50%, $color-blacklight 50%);
+  }
+  &.color-darkteal {
+    background: linear-gradient(270deg, $white 50%, $color-darkteal 50%);
   }
   @include breakpoint(mobile){
     background: $color-teal;

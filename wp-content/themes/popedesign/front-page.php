@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-
+<main>
 <section class="hero home-hero">
   <div class="carousel">
     <div class="owl-carousel owl-theme home-carousel">
@@ -139,7 +139,7 @@ get_header();
     </div>
   </div>
 </section>
-
+    </main>
 <?php
 get_footer();
 ?>

@@ -10,8 +10,8 @@
 
 get_header();
 ?>
-    <?php while ( have_posts() ) : the_post(); ?>
     <main>
+    <?php while ( have_posts() ) : the_post(); ?>
 <!--       <section class="subpage-head-small">
           <div class="container">
             <div class="inner">
@@ -192,9 +192,9 @@ get_header();
       </section>
 
 
-    </main>
 
     <?php endwhile; ?>
+    </main>
 
 <?php
  get_footer();

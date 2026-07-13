@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<main>
 <?php get_template_part('partials/page', 'header'); ?>
 
 <section class="subpage-head-small no-margin"><!--logic for color-->
@@ -82,5 +82,5 @@
     // pope_page_nav( false );
   endif;
 ?>
-
+</main>
 <?php get_footer(); ?>

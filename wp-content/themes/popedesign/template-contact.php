@@ -10,47 +10,79 @@
 
 get_header();
 ?>
-    <?php while ( have_posts() ) : the_post(); ?>
-    <main>
+<main>
 
-      <section class="subpage-head-small"><!--logic for color-->
+<?php while ( have_posts() ) : the_post(); ?>
+
+      <?php $header = get_field('page_header');?>
+      <section class="subpage-head color-darkteal">
           <div class="container">
             <div class="inner">
-                <h1>Connect</h1>
+              <div class="content">
+                <h1>
+                  <?php echo $header['headline'];?>
+                </h1>
+                <span class="h2"><?php echo $header['subhead'];?></span>
+              </div>
+              <div class="image">
+                <?php echo wp_get_attachment_image($header['image'], 'full');?>
+              </div>
             </div>
           </div>
       </section>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <?php the_content();?>
-            <h3>Pope Design Group</h3>
-            <div class="row locations">
-                <?php while (have_rows('locations', 'options')): the_row(); ?>
-              <div class="col-md-5"> 
-                <h4><?php echo get_sub_field('location_name'); ?></h4>
-                <?php echo get_sub_field('address_1'); ?><br>
-                <?php if (get_sub_field('address_2')){ echo get_sub_field('address_2') . '<br>';} ?>
-                <?php echo get_sub_field('city_state_zip'); ?><br>
-                <a href="tel:<?php echo get_sub_field('phone_dial'); ?>"><?php echo get_sub_field('phone_display'); ?></a><br>
-              </div>
-              <?php endwhile; ?>              
-            </div>            
-            <hr />
-            <?php //echo do_shortcode('[contact-form-7 id="b3e149a" title="Contact form 1"]');?>
-          </div>
+      <section class="intro">
+        <div class="container">
+          <div class="content-area">
+            <div class="spacer">
 
-          <div class="col-md-6">
-            <?php //echo get_field('google_maps_embed_code', 'options');?>
+            </div>
+            <div class="content">
+                <?php the_content();?>
+            </div>
           </div>
-
         </div>
-      </div>
+      </section>
 
-    </main>
+      <section class="locations">
+        <div class="container">
+            
+            <div class="location-list">
+                <?php while (have_rows('locations', 'options')): the_row(); ?>
+                <?php $person = get_sub_field('main_contact');?>
+                <div class="location">
+                  <h4><?php echo get_sub_field('location_name'); ?></h4>
+                  <strong><?php echo get_sub_field('special_note');?></strong><br>
+                  <?php echo get_sub_field('address_1'); ?><br>
+                  <?php echo get_sub_field('city_state_zip'); ?><br>
+                  Phone: <a href="tel:<?php echo get_sub_field('phone_dial'); ?>"><?php echo get_sub_field('phone_display'); ?></a><br><br>
+                  <strong>Main Contact</strong><br>
+                  <a href="<?php echo get_the_permalink($person);?>" class="contact"><?php echo get_the_title($person);?><br>
+                  <?php echo get_field('title', $person);?>
+                  </a>
+                </div>  
+                <?php endwhile; ?>              
+            </div>
+            
+            
+        </div>
+      </section>
+
+      <section class="secondary-content">
+        <div class="container">
+          <div class="row content-row">
+            <div class="col-md-6 image">
+               <?php echo wp_get_attachment_image(get_field('secondary_image'), 'full');?>
+            </div>
+            <div class="col-md-6 content-area">
+              <?php echo get_field('secondary_content');?>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <?php endwhile; ?>
+    </main>
 
 <?php
  get_footer();

@@ -152,5 +152,5 @@
   </div>
 
 </div><!--/container content-area-->
-                    </main>
+</main>
 <?php get_footer(); ?>

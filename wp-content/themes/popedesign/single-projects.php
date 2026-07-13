@@ -42,7 +42,7 @@
 
         <?php endif; ?>
 
-    <div class="container">
+    <div class="container breadcrumb-container">
 
       <?php get_template_part('partials/page', 'breadcrumb'); ?>
 
@@ -64,7 +64,7 @@
         ?>
 
 
-    <div class="container">
+    <div class="container detail-container">
       <div class="row">
         <div class="col-md-8 detailText">
 
@@ -281,5 +281,5 @@
     <?php endwhile; ?>
 
   <?php endif; ?>
-      </main>
+</main>
 <?php get_footer(); ?>

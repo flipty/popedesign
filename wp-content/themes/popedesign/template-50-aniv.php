@@ -10,8 +10,8 @@
 
 get_header();
 ?>
+<main>
     <?php while ( have_posts() ) : the_post(); ?>
-    <main>
       <?php //full page hero variables
       $subpage_h1 = false;//true if there's a H1 in the subpage header bar
       $hero = get_field('full_image_hero');
@@ -219,10 +219,9 @@ get_header();
         </div>
       </section>
 
-
-    </main>
-
     <?php endwhile; ?>
+
+</main>
 
 <?php
  get_footer();

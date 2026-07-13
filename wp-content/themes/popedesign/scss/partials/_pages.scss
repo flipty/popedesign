@@ -1,68 +1,86 @@
-.page-template-template-contact, .page-template-template-careers {
-  a {
-    color: $color-teal;
-  }
-  div.wpcf7 {
-    width: 100%;
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      background: #e7e7e7;
-      border: none;
-      width: 100%;
-      padding: 0.85em;
-      font-size: 13px;
-      margin-bottom: 0.5em;
-      font-family: sans-serif;
-      font-family: 'Montserrat', sans-serif;
-      @include breakpoint(mobile){
-        width: calc(100% - 30px);
+.page-template-template-contact {
+  section.intro {
+    font-size: 18px;
+    .content-area {
+      display: flex; 
+      flex-flow: row;
+      justify-content: space-between;
+      .spacer {
+        width: 30%;
+      }
+      .content {
+        width: 70%;
+        p {
+          line-height: 1.7em;
+          color: $textcolor;
+          @include breakpoint(desktop){
+            width: 75%;
+          }
+        }
       }
     }
-    select.wpcf7-select {
-      background: #e7e7e7;
-      border: none;
-      width: 100%;
-      padding: 0.85em;
-      font-size: 13px;
-      height: 3.5em;
-      border-radius: 0;
-      margin-bottom: 0.5em;
-    }
-    .wpcf7-submit {
-      color: #666;
-      border-radius: 0;
-      padding: 12px 24px;
-      background-color: #fff;
-      border-color: #ccc;
-      display: inline-block;
-      margin-bottom: 0;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 1.42857143;
-      text-align: center;
-      white-space: nowrap;
-      vertical-align: middle;
-      -ms-touch-action: manipulation;
-      touch-action: manipulation;
-      cursor: pointer;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      background-image: none;
-      border: 1px solid;
-      font-family: 'Montserrat', sans-serif;
+  }
+  section.locations {
+    background: $color-jadeitelight;
+    .location-list {
+      display: flex; 
+      flex-flow: row wrap;
+      justify-content: space-between;
+      @include breakpoint(desktop){
+        width: 80%;
+        margin: 0 auto;        
+      }
+      .location {
+        //margin: 0 30px;
+        line-height: 1.4em;
+        color: $textcolor;
+        min-width: 25%;
+        
+        
+        // background: $black15;
+        h4 {
+          font-size: 24px;
+          color: $color-teal;
+          margin-bottom: 10px;
+          margin-top: 0;
+        }
+        a {
+          color: $textcolor;
+          text-decoration: none;
+          &.contact {
+            color: $color-teal;
+          }
+        }
+      }
     }
   }
-  .locations {
-    h4 {
-      color: #999;
-      margin-bottom:0;
-      padding-bottom: 5px;
+  section.secondary-content {
+    align-items: center;
+    .image {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .content-area {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      h2 {
+        color: $color-watermelon;
+      }
+      p {
+        font-size: 18px;
+        color: $textcolor;
+        line-height: 1.8em;
+        a {
+          color: $color-teal;
+        }
+      }
     }
   }
 }
+
 
 .page-template-template-careers {
   &.page-parent.page-child {
@@ -1260,6 +1278,7 @@
 
 .page-template-template-market {
     .content-area {
+      margin-top: 20px;
       .main-content {
         p {
           font-size: 18px;

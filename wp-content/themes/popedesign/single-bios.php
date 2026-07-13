@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<main>
 <section class="subpage-head-small"><!--logic for color-->
     <div class="container">
       <div class="inner">
@@ -65,5 +65,5 @@
   <?php endwhile; ?>
 
 <?php endif; ?>
-
+</main>
 <?php get_footer(); ?>

@@ -20,6 +20,10 @@ body {
 
 main {
   background: white;
+  @include breakpoint(desktop){
+    padding-top: 90px; 
+  }
+  
 }
 
 .container {
@@ -343,10 +347,6 @@ header {
       }
     }
   }
-}
-
-main {
-  padding-top: 90px;
 }
 
 footer {

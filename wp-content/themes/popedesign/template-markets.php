@@ -10,7 +10,7 @@
 
 get_header();
 ?>
-  
+<main>
   <?php $header = get_field('page_header');?>
   <section class="subpage-head color-grey">
       <div class="container">
@@ -104,6 +104,6 @@ get_header();
 
 
   </div>
-
+</main>
 <?php
 get_footer();

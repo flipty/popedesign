@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<main>
 <?php get_template_part('partials/page', 'header'); ?>
 
 <section class="subpage-head-small no-margin"><!--logic for color-->
@@ -64,5 +64,5 @@
       wp_pagenavi();
   endif;
 ?>
-
+</main>
 <?php get_footer(); ?>

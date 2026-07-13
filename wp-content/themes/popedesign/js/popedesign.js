@@ -47,6 +47,8 @@ var popedesign = {
         singleItem: true,
         addClassActive: true,
         slideSpeed: 2000,
+        nav: true,
+        navigationText: ["&#xe803;","&#xe804;"],
         dots: false
       }
     );
@@ -56,27 +58,27 @@ var popedesign = {
         //console.log('UPDATED!');
     //});
 
-    $("#project-carousel").owlCarousel({
-        navigation : true,
-        singleItem: false,
-        pagination: false,
-        items: 5,
-        responsive: false,
-        navigationText: ["&#xe803;","&#xe804;"],
-        onInitialized: function(){
-          var carouselItem = $("#project-carousel .item");
-          carouselItem.each(function(){
-            $(this).on("click", function(){
-              var thisSlide = $(this).parents().index();
-              var bigPhoto = $("#project-detail");
-              bigPhoto.trigger('to.owl.carousel', thisSlide);
-              $(".item").removeClass("activeItem");
-              $(this).addClass("activeItem");
-            });
-          });
-        }
-      }
-    );
+    // $("#project-carousel").owlCarousel({
+    //     navigation : true,
+    //     singleItem: false,
+    //     pagination: false,
+    //     items: 5,
+    //     responsive: false,
+    //     navigationText: ["&#xe803;","&#xe804;"],
+    //     onInitialized: function(){
+    //       var carouselItem = $("#project-carousel .item");
+    //       carouselItem.each(function(){
+    //         $(this).on("click", function(){
+    //           var thisSlide = $(this).parents().index();
+    //           var bigPhoto = $("#project-detail");
+    //           bigPhoto.trigger('to.owl.carousel', thisSlide);
+    //           $(".item").removeClass("activeItem");
+    //           $(this).addClass("activeItem");
+    //         });
+    //       });
+    //     }
+    //   }
+    // );
 
     $('.about-carousel').owlCarousel(
       {

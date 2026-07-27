@@ -56,10 +56,12 @@ get_header();
                   <?php echo get_sub_field('address_1'); ?><br>
                   <?php echo get_sub_field('city_state_zip'); ?><br>
                   Phone: <a href="tel:<?php echo get_sub_field('phone_dial'); ?>"><?php echo get_sub_field('phone_display'); ?></a><br><br>
-                  <strong>Main Contact</strong><br>
-                  <a href="<?php echo get_the_permalink($person);?>" class="contact"><?php echo get_the_title($person);?><br>
-                  <?php echo get_field('title', $person);?>
-                  </a>
+                  <p class="subcontent">
+                    <strong>Main Contact</strong><br>
+                    <a href="<?php echo get_the_permalink($person);?>" class="contact" target="_blank"><?php echo get_the_title($person);?><br>
+                    <?php echo get_field('title', $person);?>
+                    </a>
+                  </p>
                 </div>  
                 <?php endwhile; ?>              
             </div>

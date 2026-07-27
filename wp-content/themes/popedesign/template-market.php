@@ -26,7 +26,7 @@ get_header();
       $big_title = false;
       $title = $hero_headline; 
       $title_length = strlen($title);
-      if ($title_length >= 10) { $big_title = true; }
+      if ($title_length >= 15) { $big_title = true; }
       ?>
       <section class="full-image-hero career-hero" style="background-image: url('<?php echo wp_get_attachment_image_url($hero_image, 'full');?>');">
         <div class="inner <?php if ($big_title){ echo ' big-title';}?>">

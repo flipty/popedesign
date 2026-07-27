@@ -351,6 +351,8 @@ section.photo-block {
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 600;
+        white-space: nowrap;
+        display: block;
         @include breakpoint(mobile){
           font-size: 20px;
           display: block;

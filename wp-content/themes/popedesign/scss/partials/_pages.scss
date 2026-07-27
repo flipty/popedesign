@@ -51,6 +51,9 @@
             color: $color-teal;
           }
         }
+        p.subcontent {
+          width: calc(100% - 30px);
+        }
       }
     }
   }
@@ -61,6 +64,9 @@
         max-width: 100%;
         height: auto;
       }
+    }
+    .content-row {
+      align-items: center;      
     }
     .content-area {
       display: flex;
@@ -847,6 +853,10 @@
           font-size: 20px;
         }
       }
+      a {
+          color: $color-teal;
+      }
+
     }
     .inner {
       ul.service-list {
@@ -873,7 +883,7 @@
     }
     .rings {
       position: absolute;
-      bottom: -180px;
+      bottom: -231px;
       right: 0;
       width: 145px;
       height: 390px;
@@ -1277,6 +1287,27 @@
 }
 
 .page-template-template-market {
+  section.full-image-hero {
+    .inner {
+      .image-hero-headline, h1 {
+            font-size: 115px;
+            @include breakpoint(mobile){
+              // font-size: 11vw;
+              // top: auto;
+            }
+          }
+          &.big-title {
+            .stripe {
+              height: 135px;
+            }
+            .image-hero-headline, h1 {
+              font-size: 75px;
+              top: -25px;
+            }
+      }
+    }
+  }
+    
     .content-area {
       margin-top: 20px;
       .main-content {
@@ -1340,18 +1371,24 @@
   }
   .market-extras {
     margin: 60px 0;
-    align-items: center;
+    align-items: flex-start;
+
     .testimonial {
+      p {
+        padding-left: 60px;
+        color: $color-teal;
+        line-height: 1.7em;
+      }
       &:after {
-        content: '"';
-        font-family: 'Times New Roman';
-        font-size: 100px;
-        color: $color-teal50;
+        content: '';
+        width: 70px;
+        height: 70px;
+        background: url('/wp-content/themes/popedesign/images/quote.png');
+        background-size: 70px;
         display: block;
         position: relative;
-        top: -70px;
+        top: -110px;
         left: -10px;
-        line-height: 30px;
       }
       strong {
         display: block;
@@ -1398,9 +1435,16 @@
   .subpage-head {
     @include breakpoint(desktop){
       padding-top: 70px;
-    }
-    
+    } 
   }
+
+  section.sub-hero .inner .headline h3 {
+    @include breakpoint(desktop){
+      padding-left: 60px;
+      font-size: 22px;
+    }
+  }
+  
   #sub-hero-1 {
     margin-top: 90px;
   }
@@ -1487,7 +1531,7 @@
             text-decoration: none;
             text-align: center;
             font-size: 20px;
-            font-weight: 400;
+            font-weight: 600;
             position: relative;
             top: -40px;
             text-transform: uppercase;
@@ -1517,6 +1561,7 @@
       padding-top: 0;
       padding-bottom: 0;
       li {
+        // list-style: none;
         margin: 0 15px;
         white-space: nowrap;
         line-height: 2em;

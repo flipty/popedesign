@@ -1,15 +1,24 @@
 .page-template-template-contact {
   section.intro {
     font-size: 18px;
+    @include breakpoint(mobile){
+      padding-top: 0;
+    }
     .content-area {
       display: flex; 
       flex-flow: row;
       justify-content: space-between;
       .spacer {
         width: 30%;
+        @include breakpoint(mobile){
+          display: none;
+        }
       }
       .content {
         width: 70%;
+        @include breakpoint(mobile){
+          width: 100%;
+        }
         p {
           line-height: 1.7em;
           color: $textcolor;
@@ -217,9 +226,22 @@
             }
             &:hover {
               a, p {
-              color: $color-watermelon;  
+              //color: $color-watermelon;  
               }
               
+            }
+          }
+        }
+        #BambooHR-ATS {
+          .BambooHR-ATS-board {
+            a {
+              font-size: 13px !important;
+              &:hover {
+                color: $color-watermelon !important;
+              }
+            }
+            .BambooHR-ATS-Location {
+              padding-top: 5px !important;
             }
           }
         }
@@ -1292,18 +1314,25 @@
       .image-hero-headline, h1 {
             font-size: 115px;
             @include breakpoint(mobile){
-              // font-size: 11vw;
-              // top: auto;
+              font-size: 11vw;
+              top: auto;
             }
           }
           &.big-title {
             .stripe {
               height: 135px;
+              @include breakpoint(mobile){
+                height: 55px;
+              }
             }
             .image-hero-headline, h1 {
               font-size: 75px;
               top: -25px;
-            }
+              @include breakpoint(mobile){
+                font-size: 8vw;
+                top: auto;
+              }
+          }
       }
     }
   }
@@ -1432,19 +1461,12 @@
 }
 
 .page-template-template-markets {
-  .subpage-head {
-    @include breakpoint(desktop){
-      padding-top: 70px;
-    } 
-  }
-
   section.sub-hero .inner .headline h3 {
     @include breakpoint(desktop){
       padding-left: 60px;
       font-size: 22px;
     }
-  }
-  
+  }  
   #sub-hero-1 {
     margin-top: 90px;
   }
@@ -1459,6 +1481,9 @@
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
+      @include breakpoint(mobile){
+        
+      }
       .item {
         width: calc(32% - 15px);
         display: flex;
@@ -1469,6 +1494,9 @@
         margin: 15px;
         @include breakpoint(desktop){
           min-height: 150px;
+        }
+        @include breakpoint(mobile){
+          width: calc(46% - 15px);
         }
         a {
           display: flex;
@@ -1483,6 +1511,9 @@
           height: 100%;
           align-items: center;
           text-transform: uppercase;
+          @include breakpoint(mobile){
+            font-size: 15px;
+          }
         }
         &:hover {
           background: $color-plum75;
@@ -1560,6 +1591,9 @@
       margin: 0 auto;
       padding-top: 0;
       padding-bottom: 0;
+      @include breakpoint(mobile){
+        padding-left: 0;
+      }
       li {
         // list-style: none;
         margin: 0 15px;
@@ -1567,6 +1601,9 @@
         line-height: 2em;
         padding-left: 10px;
         color: $textcolor;
+        @include breakpoint(mobile){
+          list-style: none;
+        }
         &:first-child {
           list-style: none;
         }

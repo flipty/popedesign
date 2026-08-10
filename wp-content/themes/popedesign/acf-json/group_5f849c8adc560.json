@@ -6,6 +6,7 @@
             "key": "field_625392584c805",
             "label": "Page Header",
             "name": "page_header",
+            "aria-label": "",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -21,6 +22,7 @@
                     "key": "field_625392634c806",
                     "label": "Image",
                     "name": "image",
+                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -45,6 +47,7 @@
                     "key": "field_6253926d4c807",
                     "label": "Headline",
                     "name": "headline",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -64,6 +67,7 @@
                     "key": "field_625392754c808",
                     "label": "Subheadline",
                     "name": "subheadline",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "Use \"br\" tags to break lines",
                     "required": 0,
@@ -85,6 +89,7 @@
             "key": "field_566dce9828fc2",
             "label": "People",
             "name": "people",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -106,6 +111,7 @@
                     "key": "field_566dcea328fc3",
                     "label": "Person",
                     "name": "person",
+                    "aria-label": "",
                     "type": "post_object",
                     "instructions": "",
                     "required": 0,
@@ -122,9 +128,12 @@
                     "allow_null": 0,
                     "multiple": 0,
                     "return_format": "id",
-                    "ui": 1
+                    "ui": 1,
+                    "bidirectional_target": [],
+                    "parent_repeater": "field_566dce9828fc2"
                 }
-            ]
+            ],
+            "rows_per_page": 20
         }
     ],
     "location": [
@@ -145,5 +154,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649644172
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1786195836
 }

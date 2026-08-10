@@ -84,6 +84,10 @@
         font-weight: 600;
         font-size: 28px;
         line-height: 42px;
+        @include breakpoint(mobile){
+          font-size: 24px;
+          line-height: 28px;
+        }
       }
       &.big-title {
         h1 {
@@ -100,6 +104,10 @@
         color: darken($color-grey, 20%);
         text-decoration: none;
         font-weight: 500;
+        @include breakpoint(mobile){
+          line-height: 25px;
+          font-size: 13px;
+        }
         &:hover {
           text-decoration: underline;
           color: $color-teal;
@@ -185,6 +193,9 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        @include breakpoint(mobile){
+          width: 100%;
+        }
       }
       &.gallery-Staggered {
         display: flex;
@@ -193,6 +204,9 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        @include breakpoint(mobile){
+          width: 100%;
+        }
         .item.has-caption {
           width: 100%;
           display: flex;

@@ -356,6 +356,7 @@ section.photo-block {
         @include breakpoint(mobile){
           font-size: 20px;
           display: block;
+          white-space: normal;
         }
         &:hover {
           color: $white;
@@ -668,7 +669,7 @@ section.subpage-head {
     background: linear-gradient(270deg, $white 50%, $color-darkteal 50%);
   }
   @include breakpoint(mobile){
-    background: $color-teal;
+    background: $color-teal !important;
     max-height: none;
     padding-top: 0;
     padding-bottom: 0;

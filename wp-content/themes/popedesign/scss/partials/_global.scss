@@ -23,7 +23,9 @@ main {
   @include breakpoint(desktop){
     padding-top: 90px; 
   }
-  
+  @include breakpoint(mobile){
+    padding-top: 90px; 
+  }  
 }
 
 .container {

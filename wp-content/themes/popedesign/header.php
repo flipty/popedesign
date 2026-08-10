@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<script src="/wp-content/themes/popedesign/js/vendor/jquery-3.6.0.min.js"></script>
+	<script src="/wp-content/themes/popedesign/js/vendor/jquery-3.7.1.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">

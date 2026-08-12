@@ -2,7 +2,7 @@
 
 //enqueue theme styles and scripts
 function enqueue_theme_assets() {
-    wp_enqueue_style( 'popedesign', get_template_directory_uri() . '/css/popedesign.css',false,'2.3','all');
+    wp_enqueue_style( 'popedesign', get_template_directory_uri() . '/css/popedesign.css',false,'2.4','all');
     //wp_register_script('popedesign', get_template_directory_uri() . '/js/popedesign.js','','1.1', true);
     //wp_enqueue_script( 'popedesign', get_template_directory_uri() . '/js/popedesign.js',false,'1.0','all');
 }

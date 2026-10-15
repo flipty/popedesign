@@ -55,7 +55,19 @@
               <em class="endquote">&rdquo;</em> -->
             </p>
           <?php endif; ?>
-
+          
+          <?php if (get_field('carousel')){ ?>
+          <div class="carousel">
+            <div class="owl-carousel owl-theme careers-carousel" id="bio-carousel">
+              <?php $images = get_field('carousel');
+              $size = 'full'; // (thumbnail, medium, large, full or custom size)
+              foreach( $images as $image_id ): ?>
+              <div class="item">
+              <?php echo wp_get_attachment_image( $image_id, $size ); ?>
+              </div>
+            <?php endforeach; ?>
+          </div>
+          <?php } ?>
 
         </div>
 

@@ -95,20 +95,20 @@
 	}
 
 	if( is_page('Project Tags') ){
-		$title = 'Projects';
-		$link = home_url().'/projects/';
+		$title = 'Portfolio';
+		$link = home_url().'/portfolio/';
 		$child_title = 'Tags';
 		$child_link = home_url().'/news/tags';
 	}
 
 	if( is_page('Projects') || is_tax('project-type') || is_tax('project-tag') ){
-		$title = 'Projects';
-		$link = home_url().'/projects/';
+		$title = 'Portfolio';
+		$link = home_url().'/portfolio/';
 	}
 
 	if( $post_type == 'projects' && is_single() ){
-		$title = 'Projects';
-		$link = home_url().'/projects/';
+		$title = 'Portfolio';
+		$link = home_url().'/portfolio/';
 		$terms = get_the_terms( get_the_ID(), 'project-type' );
 		$type_title = $terms[0]->name;
 		$type_link = home_url().'/projects/type/'.$terms[0]->slug;

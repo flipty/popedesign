@@ -220,6 +220,10 @@
             font-size: 28px;
             padding: 0 50px;
             width: 100%;
+            @include breakpoint(mobile){
+              padding: 0 25px;
+              font-size: 18px;
+            }
           }
           &.staggeredItem-2, &.staggeredItem-4, &.staggeredItem-6 {
             flex-flow: row-reverse;

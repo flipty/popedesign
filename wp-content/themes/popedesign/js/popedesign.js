@@ -105,10 +105,15 @@ var popedesign = {
       dots: false,
       lazyLoad: true,
       margin: 15,
-      items: 4,
+      items: 2,
       autoplayTimeout: 4000,
       autoplayHoverPause: false,
-      paginationSpeed : 2000 //how long does it take to physically move?
+      paginationSpeed : 2000,
+      responsive : {
+        768 : {
+          items : 4
+        }
+      }
       }
     );
   }

@@ -40,13 +40,12 @@
         margin: 0 auto;        
       }
       .location {
-        //margin: 0 30px;
         line-height: 1.4em;
         color: $textcolor;
         min-width: 25%;
-        
-        
-        // background: $black15;
+        @include breakpoint(mobile){
+          margin-bottom: 50px;
+        }
         h4 {
           font-size: 24px;
           color: $color-teal;
@@ -62,6 +61,23 @@
         }
         p.subcontent {
           width: calc(100% - 30px);
+          @include breakpoint(mobile){
+            width: 100%;
+            padding-top: 0;
+            margin-top: 0;
+            a {
+              font-size: 13px;
+              display: block;
+              line-height: 1.25em;
+            }
+          }
+        }
+        &:first-of-type {
+          @include breakpoint(mobile){
+            width: 100%;
+            border-bottom: solid 1px $color-teal;
+            padding-bottom: 25px;
+          }
         }
       }
     }
@@ -1030,15 +1046,26 @@
           justify-content: space-around;
           padding: 0;
           width: 100%;
+          @include breakpoint(mobile){
+            
+          }
           li {
             position: relative;
             width: 26%;
             height: 160px;
             list-style: none;
             margin: 0;
+            @include breakpoint(mobile){
+              width: 40%;
+              height: 215px;
+            }
             img {
               position: absolute;
               top: 0;
+              @include breakpoint(mobile){
+                max-width: 100%;
+                height: auto;
+              }
             }
             span {
               color: $white;
@@ -1046,18 +1073,35 @@
               position: absolute;
               line-height: 110px;
               font-size: 20px;
+              @include breakpoint(mobile){
+                display: block;
+                line-height: 1em;
+                text-align: center;
+                left: 0 !important;
+                right: 0 !important;
+                margin-top: 140px;
+              }
             }
             &.right {
               img {
                 right: 0;
+                @include breakpoint(mobile){
+                  right: auto;
+                }
               }
             }
             &.left {
               img {
                 left: 0;
+                @include breakpoint(mobile){
+                  left: auto;
+                }
               }
               span {
                 right: 25px;
+                @include breakpoint(mobile){
+                  right: auto;
+                }
               }
             }
           }
@@ -1477,6 +1521,10 @@
     background-size: cover;
     padding: 60px 0;
     margin: 30px 0 120px 0;
+    @include breakpoint(mobile){
+      padding: 45px 0;
+      margin: 15px 0 60px 0;
+    }
     .market-items {
       display: flex;
       flex-flow: row wrap;
@@ -1496,7 +1544,8 @@
           min-height: 150px;
         }
         @include breakpoint(mobile){
-          width: calc(46% - 15px);
+          width: calc(43% - 7.5px);
+          min-height: 75px;
         }
         a {
           display: flex;
@@ -1512,7 +1561,8 @@
           align-items: center;
           text-transform: uppercase;
           @include breakpoint(mobile){
-            font-size: 15px;
+            font-size: 14px;
+            padding: 15px 7.5px;
           }
         }
         &:hover {
